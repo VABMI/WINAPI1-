@@ -1,0 +1,60 @@
+<html>
+<body>
+<pre>
+<h1>Erstellungsprotokoll</h1>
+<h3>
+--------------------Konfiguration: Taskb3 - Win32 Debug--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Creating command line "rc.exe /l 0x407 /fo"Debug/Taskb3.res" /d "_DEBUG" /d "_AFXDLL" "C:\test\TskProgressCtrl\Taskb3.rc"" 
+Erstellen der temporären Datei  "C:\DOKUME~1\ADMINI~1\LOKALE~1\Temp\RSP92.tmp" mit Inhalten
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Taskb3.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\test\TskProgressCtrl\Taskb3.cpp"
+"C:\test\TskProgressCtrl\Taskb3Dlg.cpp"
+"C:\test\TskProgressCtrl\NOperatingSystem.cpp"
+"C:\test\TskProgressCtrl\NProgressBar.cpp"
+"C:\test\TskProgressCtrl\TextProgressCtrl.cpp"
+"C:\test\TskProgressCtrl\wnd.cpp"
+]
+Creating command line "cl.exe @C:\DOKUME~1\ADMINI~1\LOKALE~1\Temp\RSP92.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\ADMINI~1\LOKALE~1\Temp\RSP93.tmp" mit Inhalten
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Taskb3.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\test\TskProgressCtrl\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOKUME~1\ADMINI~1\LOKALE~1\Temp\RSP93.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\ADMINI~1\LOKALE~1\Temp\RSP94.tmp" mit Inhalten
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Taskb3.pdb" /debug /machine:I386 /out:"Debug/Taskb3.exe" /pdbtype:sept 
+.\Debug\StdAfx.obj
+.\Debug\Taskb3.obj
+.\Debug\Taskb3Dlg.obj
+.\Debug\NOperatingSystem.obj
+.\Debug\NProgressBar.obj
+.\Debug\TextProgressCtrl.obj
+.\Debug\wnd.obj
+.\Debug\Taskb3.res
+]
+Erstellen der Befehlzeile "link.exe @C:\DOKUME~1\ADMINI~1\LOKALE~1\Temp\RSP94.tmp"
+<h3>Ausgabefenster</h3>
+Ressourcen werden kompiliert...
+Kompilierung läuft...
+StdAfx.cpp
+Kompilierung läuft...
+Taskb3.cpp
+Taskb3Dlg.cpp
+NOperatingSystem.cpp
+NProgressBar.cpp
+TextProgressCtrl.cpp
+wnd.cpp
+Generieren von Code...
+Linker-Vorgang läuft...
+
+
+
+<h3>Ergebnisse</h3>
+Taskb3.exe - 0 Fehler, 0 Warnung(en)
+</pre>
+</body>
+</html>

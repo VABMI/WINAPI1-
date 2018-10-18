@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quellcodedateien">
+      <UniqueIdentifier>{162ccbe0-4a6d-499b-939e-08a1c0d3b20f}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header-Dateien">
+      <UniqueIdentifier>{d1b2e195-ec05-4445-8771-27086bcf2092}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{8b25d7db-e243-4c0e-ad94-dfb9ebf6857f}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="CNProgressBar Control">
+      <UniqueIdentifier>{7700048c-48b2-4585-aeb8-84b27adbd327}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Taskb3.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Taskb3Dlg.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="NOperatingSystem.cpp">
+      <Filter>CNProgressBar Control</Filter>
+    </ClCompile>
+    <ClCompile Include="wnd.cpp">
+      <Filter>CNProgressBar Control</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Taskb3.rc">
+      <Filter>Quellcodedateien</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Taskb3.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Taskb3Dlg.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.hpp">
+      <Filter>CNProgressBar Control</Filter>
+    </ClInclude>
+    <ClInclude Include="NOperatingSystem.h">
+      <Filter>CNProgressBar Control</Filter>
+    </ClInclude>
+    <ClInclude Include="TemplateAFX.hpp">
+      <Filter>CNProgressBar Control</Filter>
+    </ClInclude>
+    <ClInclude Include="TTaskbarContainer.h">
+      <Filter>CNProgressBar Control</Filter>
+    </ClInclude>
+    <ClInclude Include="wnd.hpp">
+      <Filter>CNProgressBar Control</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\Taskb3.ico">
+      <Filter>Ressourcendateien</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Taskb3.rc2">
+      <Filter>Ressourcendateien</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

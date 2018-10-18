@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Erstellungsprotokoll</h1>
+<h3>
+--------------------Konfiguration: Taskb3 - Win32 Debug--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Creating command line "rc.exe /l 0x407 /fo"Debug/Taskb3.res" /d "_DEBUG" /d "_AFXDLL" "C:\schicken\TTaskbarContainerTemplate\Taskb3.rc"" 
+Erstellen der temporären Datei  "C:\DOKUME~1\Jason\LOKALE~1\Temp\RSP42A.tmp" mit Inhalten
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/Taskb3.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\schicken\TTaskbarContainerTemplate\Taskb3.cpp"
+"C:\schicken\TTaskbarContainerTemplate\Taskb3Dlg.cpp"
+"C:\schicken\TTaskbarContainerTemplate\NOperatingSystem.cpp"
+"C:\schicken\TTaskbarContainerTemplate\wnd.cpp"
+]
+Creating command line "cl.exe @C:\DOKUME~1\Jason\LOKALE~1\Temp\RSP42A.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\Jason\LOKALE~1\Temp\RSP42B.tmp" mit Inhalten
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/Taskb3.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\schicken\TTaskbarContainerTemplate\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOKUME~1\Jason\LOKALE~1\Temp\RSP42B.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\Jason\LOKALE~1\Temp\RSP42C.tmp" mit Inhalten
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Taskb3.pdb" /debug /machine:I386 /out:"Debug/Taskb3.exe" /pdbtype:sept 
+.\Debug\StdAfx.obj
+.\Debug\Taskb3.obj
+.\Debug\Taskb3Dlg.obj
+.\Debug\NOperatingSystem.obj
+.\Debug\wnd.obj
+.\Debug\Taskb3.res
+]
+Erstellen der Befehlzeile "link.exe @C:\DOKUME~1\Jason\LOKALE~1\Temp\RSP42C.tmp"
+<h3>Ausgabefenster</h3>
+Ressourcen werden kompiliert...
+Kompilierung läuft...
+StdAfx.cpp
+Kompilierung läuft...
+Taskb3.cpp
+Taskb3Dlg.cpp
+NOperatingSystem.cpp
+wnd.cpp
+Generieren von Code...
+Linker-Vorgang läuft...
+Erstellen der Befehlzeile "bscmake.exe /nologo /o"Debug/Taskb3.bsc"  .\Debug\StdAfx.sbr .\Debug\Taskb3.sbr .\Debug\Taskb3Dlg.sbr .\Debug\NOperatingSystem.sbr .\Debug\wnd.sbr"
+Browse-Informationsdatei wird erstellt...
+<h3>Ausgabefenster</h3>
+
+
+
+<h3>Ergebnisse</h3>
+Taskb3.exe - 0 Fehler, 0 Warnung(en)
+</pre>
+</body>
+</html>

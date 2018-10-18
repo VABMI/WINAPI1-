@@ -1,0 +1,49 @@
+﻿Build started 9/21/2018 4:54:24 AM.
+     1>Project "C:\Users\vaxoa\OneDrive\Documents\GitHub\WINAPI\progressBar\TTaskbarContainerTemplate\Taskb3.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching ".\Debug\Taskb3.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+         F:\New Folder (1)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug\Taskb3.pch" /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt Taskb3.cpp Taskb3Dlg.cpp
+         Taskb3Dlg.cpp
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\templateafx.hpp(70): warning C4005: 'BEGIN_TEMPLATE_MESSAGE_MAP' : macro redefinition
+                 f:\new folder (1)\vc\atlmfc\include\afxwin.h(1286) : see previous definition of 'BEGIN_TEMPLATE_MESSAGE_MAP'
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(162): error C2039: '_GetBaseMessageMap' : is not a member of 'TTaskbarContainer<T>'
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(162): error C2039: 'messageMap' : is not a member of 'TTaskbarContainer<T>'
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(166): error C2039: '_messageEntries' : is not a member of 'TTaskbarContainer<T>'
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(166): error C2653: 'TheBaseClass' : is not a class or namespace name
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(166): error C2065: 'GetThisMessageMap' : undeclared identifier
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(166): error C2065: '_messageEntries' : undeclared identifier
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(166): error C2059: syntax error : 'return'
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(166): error C2059: syntax error : '}'
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(166): error C2143: syntax error : missing ';' before '}'
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(166): error C2059: syntax error : '}'
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(173): error C2065: 'T' : undeclared identifier
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(173): error C2955: 'TTaskbarContainer' : use of class template requires template argument list
+                 c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(105) : see declaration of 'TTaskbarContainer'
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(173): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(174): error C2448: 'm_stnWindowHeight' : function-style initializer appears to be a function definition
+         Taskb3.cpp
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\templateafx.hpp(70): warning C4005: 'BEGIN_TEMPLATE_MESSAGE_MAP' : macro redefinition
+                 f:\new folder (1)\vc\atlmfc\include\afxwin.h(1286) : see previous definition of 'BEGIN_TEMPLATE_MESSAGE_MAP'
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(162): error C2039: '_GetBaseMessageMap' : is not a member of 'TTaskbarContainer<T>'
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(162): error C2039: 'messageMap' : is not a member of 'TTaskbarContainer<T>'
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(166): error C2039: '_messageEntries' : is not a member of 'TTaskbarContainer<T>'
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(166): error C2653: 'TheBaseClass' : is not a class or namespace name
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(166): error C2065: 'GetThisMessageMap' : undeclared identifier
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(166): error C2065: '_messageEntries' : undeclared identifier
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(166): error C2059: syntax error : 'return'
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(166): error C2059: syntax error : '}'
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(166): error C2143: syntax error : missing ';' before '}'
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(166): error C2059: syntax error : '}'
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(173): error C2065: 'T' : undeclared identifier
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(173): error C2955: 'TTaskbarContainer' : use of class template requires template argument list
+                 c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(105) : see declaration of 'TTaskbarContainer'
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(173): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\ttaskbarcontainertemplate\ttaskbarcontainer.h(174): error C2448: 'm_stnWindowHeight' : function-style initializer appears to be a function definition
+         Generating Code...
+     1>Done Building Project "C:\Users\vaxoa\OneDrive\Documents\GitHub\WINAPI\progressBar\TTaskbarContainerTemplate\Taskb3.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:05.06

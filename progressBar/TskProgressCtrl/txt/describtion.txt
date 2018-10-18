@@ -1,0 +1,52 @@
+
+How does it work?
+
+First we need to create an Instance of the new Progress Control.
+The Progressbar Control will be automatily attached to the 
+Taskbar. At startup, the program searches for 3 specific hwnd's.
+These are Shell_TrayWnd, ReBarWindow32 and TrayNotifyWnd.
+The Programtasks, shortcut bar etc.. are all included into this
+window using the ReBarWindow32 class. ReBarWindow32 is directly 
+placed beside the TrayNotifyWnd Window. All we need to do now is
+to create the Progressbar using the Methode Create but we don't
+add it to our main Window, we add it to the taskbar using
+CWnd* CWnd::FromHandle(hWnd to taskbar)
+An important fact is, that the control needs it's own message
+map, else you will get a 100% cpu usage due to the Message Handling
+when we click on the control in the taskbar.
+
+
+
+Facts
+
+- The Progress Control is directly attached into the taskbar.
+  When you have enabled the Auto Hide Option of the Windows
+  Taskbar, the control moves with it.
+- We need to renew the control when we
+  * add an icon into the Tray Notify Bar
+  * change move the taskbar from horizontal to vertical and
+    vice versa.
+  * etc..
+- To renew the control, we need a timer at this time (I did't
+  find a kind of breadcast message yet)
+- Parent wnd of the control is Shell_TrayWnd of the Taskbar
+
+
+
+Other classes
+
+- CTextProgressCtrl by Chris Maunder
+
+
+
+Where does it work?
+
+It's tested on 
+- WinXP
+- Win2000 Prof.
+- Win2003 Server
+
+
+Use this Program / Sourcecode at your own risk. The author of
+this program is not responsible for any damage on your or another
+computer caused by this program.

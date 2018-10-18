@@ -1,0 +1,58 @@
+﻿Build started 7/24/2018 6:02:40 AM.
+     1>Project "C:\Users\vaxoa\OneDrive\Documents\GitHub\WINAPI\progressBar\TskProgressCtrl\Taskb3.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\Debug\Taskb3.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         F:\New Folder (1)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Debug\Taskb3.pch" /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+         F:\New Folder (1)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug\Taskb3.pch" /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Taskb3.cpp Taskb3Dlg.cpp NOperatingSystem.cpp NProgressBar.cpp TextProgressCtrl.cpp wnd.cpp
+         wnd.cpp
+         TextProgressCtrl.cpp
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\tskprogressctrl\textprogressctrl.cpp(177): warning C4996: '_tcsncpy': This function or variable may be unsafe. Consider using _tcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 f:\new folder (1)\vc\include\tchar.h(1516) : see declaration of '_tcsncpy'
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\tskprogressctrl\textprogressctrl.cpp(378): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 f:\new folder (1)\vc\include\string.h(105) : see declaration of 'strcpy'
+         NProgressBar.cpp
+         NOperatingSystem.cpp
+         Taskb3Dlg.cpp
+         Taskb3.cpp
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar\tskprogressctrl\taskb3.cpp(52): warning C4996: 'CWinApp::Enable3dControls': CWinApp::Enable3dControls is no longer needed. You should remove this call.
+                 f:\new folder (1)\vc\atlmfc\include\afxwin.h(5344) : see declaration of 'CWinApp::Enable3dControls'
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _VC80_UPGRADE=0x0600 /D _AFXDLL /l"0x0407" /nologo /fo".\Debug\Taskb3.res" Taskb3.rc 
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo".\Debug\Taskb3.exe.embed.manifest.res" .\Debug\Taskb3_manifest.rc 
+       Link:
+         F:\New Folder (1)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\Taskb3.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:".\Debug\Taskb3.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\vaxoa\OneDrive\Documents\GitHub\WINAPI\progressBar\TskProgressCtrl\Debug\Taskb3.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\Taskb3.lib" /MACHINE:X86 .\Debug\Taskb3.res
+         .\Debug\Taskb3.exe.embed.manifest.res
+         .\Debug\StdAfx.obj
+         .\Debug\Taskb3.obj
+         .\Debug\Taskb3Dlg.obj
+         .\Debug\NOperatingSystem.obj
+         .\Debug\NProgressBar.obj
+         .\Debug\TextProgressCtrl.obj
+         .\Debug\wnd.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:".\Debug\Taskb3.exe.embed.manifest" /manifest .\Debug\Taskb3.exe.intermediate.manifest "F:\New Folder (1)\VC\Include\Manifest\dpiaware.manifest"
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo".\Debug\Taskb3.exe.embed.manifest.res" .\Debug\Taskb3_manifest.rc 
+       LinkEmbedManifest:
+         F:\New Folder (1)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\Taskb3.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:".\Debug\Taskb3.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\vaxoa\OneDrive\Documents\GitHub\WINAPI\progressBar\TskProgressCtrl\Debug\Taskb3.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\Taskb3.lib" /MACHINE:X86 .\Debug\Taskb3.res
+         .\Debug\Taskb3.exe.embed.manifest.res
+         .\Debug\StdAfx.obj
+         .\Debug\Taskb3.obj
+         .\Debug\Taskb3Dlg.obj
+         .\Debug\NOperatingSystem.obj
+         .\Debug\NProgressBar.obj
+         .\Debug\TextProgressCtrl.obj
+         .\Debug\wnd.obj
+         Taskb3.vcxproj -> C:\Users\vaxoa\OneDrive\Documents\GitHub\WINAPI\progressBar\TskProgressCtrl\.\Debug\Taskb3.exe
+       FinalizeBuildStatus:
+         Deleting file ".\Debug\Taskb3.unsuccessfulbuild".
+         Touching ".\Debug\Taskb3.lastbuildstate".
+     1>Done Building Project "C:\Users\vaxoa\OneDrive\Documents\GitHub\WINAPI\progressBar\TskProgressCtrl\Taskb3.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.59
