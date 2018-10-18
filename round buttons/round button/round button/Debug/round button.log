@@ -1,0 +1,136 @@
+﻿Build started 10/12/2018 5:51:00 AM.
+     1>Project "F:\WINAPI-F\round buttons\round button\round button\round button.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\round button.unsuccessfulbuild".
+       ClCompile:
+         F:\New Folder (1)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>f:\winapi-f\round buttons\round button\round button\roundbutton.h(38): error C2504: 'CButton' : base class undefined
+     1>f:\winapi-f\round buttons\round button\round button\roundbutton.h(53): error C2061: syntax error : identifier 'LPDRAWITEMSTRUCT'
+     1>f:\winapi-f\round buttons\round button\round button\roundbutton.h(62): error C2146: syntax error : missing ';' before identifier 'm_rgn'
+     1>f:\winapi-f\round buttons\round button\round button\roundbutton.h(62): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>f:\winapi-f\round buttons\round button\round button\roundbutton.h(62): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>f:\winapi-f\round buttons\round button\round button\roundbutton.h(63): error C2146: syntax error : missing ';' before identifier 'm_ptCentre'
+     1>f:\winapi-f\round buttons\round button\round button\roundbutton.h(63): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>f:\winapi-f\round buttons\round button\round button\roundbutton.h(63): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>f:\winapi-f\round buttons\round button\round button\roundbutton.h(65): error C2146: syntax error : missing ';' before identifier 'm_bDrawDashedFocusCircle'
+     1>f:\winapi-f\round buttons\round button\round button\roundbutton.h(65): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>f:\winapi-f\round buttons\round button\round button\roundbutton.h(65): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>f:\winapi-f\round buttons\round button\round button\roundbutton.h(73): error C2143: syntax error : missing ';' before '}'
+     1>f:\winapi-f\round buttons\round button\round button\roundbutton.h(73): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>f:\winapi-f\round buttons\round button\round button\roundbutton.h(73): warning C4183: 'DECLARE_MESSAGE_MAP': missing return type; assumed to be a member function returning 'int'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(64): error C2146: syntax error : missing ';' before identifier 'GetColour'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(64): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(64): error C2061: syntax error : identifier 'COLORREF'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(64): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(65): error C2065: 'CDC' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(65): error C2065: 'pDC' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(65): error C2065: 'CPoint' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(65): error C2146: syntax error : missing ')' before identifier 'p'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(65): error C2182: 'DrawCircle' : illegal use of type 'void'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(65): error C2078: too many initializers
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(65): error C2059: syntax error : ')'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(66): error C2065: 'CDC' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(66): error C2065: 'pDC' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(66): error C2065: 'CPoint' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(66): error C2146: syntax error : missing ')' before identifier 'p'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(66): error C2182: 'DrawCircle' : illegal use of type 'void'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(66): error C2374: 'DrawCircle' : redefinition; multiple initialization
+                 f:\winapi-f\round buttons\round button\round button\main.cpp(65) : see declaration of 'DrawCircle'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(66): error C2078: too many initializers
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(66): error C2059: syntax error : ')'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(76): error C2146: syntax error : missing ';' before identifier 'GetColour'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(76): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(76): error C2086: 'int COLORREF' : redefinition
+                 f:\winapi-f\round buttons\round button\round button\main.cpp(64) : see declaration of 'COLORREF'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(76): error C2061: syntax error : identifier 'COLORREF'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(77): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(81): error C3861: 'ASSERT': identifier not found
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(89): error C2065: 'BYTE' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(89): error C2146: syntax error : missing ';' before identifier 'Red'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(89): error C2065: 'Red' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(89): error C2065: 'BYTE' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(89): error C2065: 'crBright' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(89): error C2065: 'crDark' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(89): error C3861: 'GetRValue': identifier not found
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(89): error C3861: 'GetRValue': identifier not found
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(90): error C2065: 'BYTE' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(90): error C2146: syntax error : missing ';' before identifier 'Green'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(90): error C2065: 'Green' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(90): error C2065: 'BYTE' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(90): error C2065: 'crBright' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(90): error C2065: 'crDark' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(90): error C3861: 'GetGValue': identifier not found
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(90): error C3861: 'GetGValue': identifier not found
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(91): error C2065: 'BYTE' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(91): error C2146: syntax error : missing ';' before identifier 'Blue'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(91): error C2065: 'Blue' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(91): error C2065: 'BYTE' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(91): error C2065: 'crBright' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(91): error C2065: 'crDark' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(91): error C3861: 'GetBValue': identifier not found
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(91): error C3861: 'GetBValue': identifier not found
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(96): error C2065: 'Red' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(96): error C2065: 'Green' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(96): error C2065: 'Blue' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(96): error C3861: 'RGB': identifier not found
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(99): error C2065: 'CDC' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(99): error C2065: 'pDC' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(99): error C2065: 'CPoint' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(99): error C2146: syntax error : missing ')' before identifier 'p'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(99): error C2182: 'DrawCircle' : illegal use of type 'void'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(99): error C2374: 'DrawCircle' : redefinition; multiple initialization
+                 f:\winapi-f\round buttons\round button\round button\main.cpp(65) : see declaration of 'DrawCircle'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(99): error C2078: too many initializers
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(99): error C2059: syntax error : ')'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(100): error C2143: syntax error : missing ';' before '{'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(100): error C2447: '{' : missing function header (old-style formal list?)
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(142): error C2065: 'CDC' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(142): error C2065: 'pDC' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(142): error C2065: 'CPoint' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(142): error C2146: syntax error : missing ')' before identifier 'p'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(142): error C2182: 'DrawCircle' : illegal use of type 'void'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(142): error C2374: 'DrawCircle' : redefinition; multiple initialization
+                 f:\winapi-f\round buttons\round button\round button\main.cpp(65) : see declaration of 'DrawCircle'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(142): error C2078: too many initializers
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(142): error C2059: syntax error : ')'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(143): error C2143: syntax error : missing ';' before '{'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(143): error C2447: '{' : missing function header (old-style formal list?)
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(203): error C2065: 'm_bDrawDashedFocusCircle' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(203): error C2065: 'TRUE' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(208): error C2065: 'm_rgn' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(208): error C2228: left of '.DeleteObject' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(211): error C2061: syntax error : identifier 'CButton'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(214): error C3646: 'END_MESSAGE_MAP' : unknown override specifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(219): error C2091: function returns function
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(219): error C2144: syntax error : 'void' should be preceded by ';'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(219): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(221): error C2653: 'CButton' : is not a class or namespace name
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(223): error C2065: 'BS_OWNERDRAW' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(223): error C3861: 'ModifyStyle': identifier not found
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(225): error C2065: 'CRect' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(225): error C2146: syntax error : missing ';' before identifier 'rect'
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(225): error C2065: 'rect' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(226): error C2065: 'rect' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(226): error C3861: 'GetClientRect': identifier not found
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(229): error C2065: 'rect' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(229): error C2228: left of '.bottom' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(229): error C2065: 'rect' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(229): error C2228: left of '.right' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(229): error C2065: 'rect' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(229): error C2228: left of '.bottom' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(229): error C2065: 'rect' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(229): error C2228: left of '.right' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(229): error C3861: 'min': identifier not found
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(232): error C2065: 'm_ptCentre' : undeclared identifier
+     1>f:\winapi-f\round buttons\round button\round button\main.cpp(232): fatal error C1003: error count exceeds 100; stopping compilation
+     1>Done Building Project "F:\WINAPI-F\round buttons\round button\round button\round button.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.40
