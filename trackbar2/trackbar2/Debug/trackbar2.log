@@ -1,0 +1,38 @@
+﻿Build started 10/11/2018 5:12:56 AM.
+     1>Project "F:\WINAPI-F\trackbar2\trackbar2\trackbar2.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\trackbar2.unsuccessfulbuild".
+       ClCompile:
+         F:\New Folder (1)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>f:\winapi-f\trackbar2\trackbar2\main.cpp(70): warning C4060: switch statement contains no 'case' or 'default' labels
+     1>f:\winapi-f\trackbar2\trackbar2\main.cpp(88): warning C4244: 'initializing' : conversion from 'LRESULT' to 'float', possible loss of data
+     1>f:\winapi-f\trackbar2\trackbar2\main.cpp(93): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>f:\winapi-f\trackbar2\trackbar2\main.cpp(94): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>f:\winapi-f\trackbar2\trackbar2\main.cpp(243): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+                 f:\new folder (1)\vc\include\stdlib.h(867) : see declaration of 'itoa'
+     1>f:\winapi-f\trackbar2\trackbar2\main.cpp(75): warning C4101: 'si' : unreferenced local variable
+     1>f:\winapi-f\trackbar2\trackbar2\main.cpp(89): warning C4101: 'v' : unreferenced local variable
+     1>f:\winapi-f\trackbar2\trackbar2\main.cpp(89): warning C4101: 'z' : unreferenced local variable
+     1>f:\winapi-f\trackbar2\trackbar2\main.cpp(89): warning C4101: 'c' : unreferenced local variable
+     1>f:\winapi-f\trackbar2\trackbar2\main.cpp(269): warning C4700: uninitialized local variable 'hwnd' used
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\trackbar2.exe.embed.manifest.res" Debug\trackbar2_manifest.rc 
+       Link:
+         F:\New Folder (1)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\WINAPI-F\trackbar2\Debug\trackbar2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\trackbar2.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\WINAPI-F\trackbar2\Debug\trackbar2.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\WINAPI-F\trackbar2\Debug\trackbar2.lib" /MACHINE:X86 Debug\trackbar2.exe.embed.manifest.res
+         Debug\main.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\trackbar2.exe.embed.manifest" /manifest Debug\trackbar2.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\trackbar2.exe.embed.manifest.res" Debug\trackbar2_manifest.rc 
+       LinkEmbedManifest:
+         F:\New Folder (1)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\WINAPI-F\trackbar2\Debug\trackbar2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\trackbar2.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\WINAPI-F\trackbar2\Debug\trackbar2.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\WINAPI-F\trackbar2\Debug\trackbar2.lib" /MACHINE:X86 Debug\trackbar2.exe.embed.manifest.res
+         Debug\main.obj
+         trackbar2.vcxproj -> F:\WINAPI-F\trackbar2\Debug\trackbar2.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\trackbar2.unsuccessfulbuild".
+         Touching "Debug\trackbar2.lastbuildstate".
+     1>Done Building Project "F:\WINAPI-F\trackbar2\trackbar2\trackbar2.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.20

@@ -1,0 +1,25 @@
+HIMAGELIST himl;  // handle to image list 
+HBITMAP hbmp;     // handle to bitmap 
+
+// Create the image list. 
+if ((himl = ImageList_Create(16, 16,
+    ILC_COLOR32, 1, 0)) == NULL)
+    return ;
+
+// Add the open file, closed file, and document bitmaps. 
+hbmp = LoadBitmap(hInst, MAKEINTRESOURCE(IDI_FOLDER));
+if (-1 == ImageList_Add(himl, hbmp, (HBITMAP)NULL))
+    return;
+DeleteObject(hbmp);
+if (ImageList_GetImageCount(himl) < 1)
+    return;
+
+// Associate the image list with the tree-view control. 
+TreeView_SetImageList(hTree, himl, TVSIL_NORMAL);
+
+//init normal books
+tvs.hInsertAfter = NULL;
+tvs.hParent = TVI_ROOT;
+tvs.item.pszText = L"Notebook";
+tvs.item.mask = TVIF_TEXT;
+HTREEITEM rootItem = TreeView_InsertItem(hTree, &tvs);
