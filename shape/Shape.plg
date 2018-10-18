@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Shape - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/Shape.res" /d "_DEBUG" /d "_AFXDLL" "F:\Shape\Shape.rc"" 
+Creating temporary file "C:\TEMP\RSP32.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Shape.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\Shape\CntrItem.cpp"
+"F:\Shape\MainFrm.cpp"
+"F:\Shape\Shape.cpp"
+"F:\Shape\ShapeDoc.cpp"
+"F:\Shape\ShapeView.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSP32.tmp" 
+Creating temporary file "C:\TEMP\RSP33.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Shape.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\Shape\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSP33.tmp" 
+Creating temporary file "C:\TEMP\RSP34.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Shape.pdb" /debug /machine:I386 /out:"Debug/Shape.exe" /pdbtype:sept 
+.\Debug\CntrItem.obj
+.\Debug\MainFrm.obj
+.\Debug\Shape.obj
+.\Debug\ShapeDoc.obj
+.\Debug\ShapeView.obj
+.\Debug\StdAfx.obj
+.\Debug\Shape.res
+]
+Creating command line "link.exe @C:\TEMP\RSP34.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CntrItem.cpp
+MainFrm.cpp
+Shape.cpp
+ShapeDoc.cpp
+ShapeView.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Shape.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
