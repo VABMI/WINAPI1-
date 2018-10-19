@@ -1,7 +1,7 @@
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 #include <windows.h>
 #include "head.h"
 #include "globals.h"
-
+	//	#include <ole.h>
 #include "defines.h"
 #include "ReadAndWrite.cpp"
 #include "functions.cpp"
@@ -45,6 +45,7 @@ long __stdcall vaxo(HWND hwnd,unsigned int message, unsigned int wparam,long lpa
 #include "FindeReplace.cpp"
 
 /////////////////////////////////////////////END REPLACE_finde funqciaaa //////////////////////////////////////////////////////////////////////////////
+
 	switch(message)
 	{ 
 	
@@ -61,9 +62,56 @@ long __stdcall vaxo(HWND hwnd,unsigned int message, unsigned int wparam,long lpa
 	  	on_create(hwnd,message,wparam,lparam,10);
 		// RegisterDragDrop(editaa,);
 
+		DragAcceptFiles(hwnd,1); ////// calll drag and drop function
+
 		break;
-	
 		
+		case WM_LBUTTONUP:
+
+			break;
+
+//////////////////////////Drag and drop Receve /////////////////////////
+		case WM_DROPFILES:
+		{
+			static char ksk[100];
+					
+			HDROP	hDrop =(HDROP) wparam;
+				DragQueryFile(hDrop,0,ksk,99);
+
+    	//	MessageBox(hwnd,ksk,ksk,0);
+				int co=0;
+		 for(int i=0;i<=strlen(ksk);i++)
+				 {
+
+				//	if(((int)(szFile[i]))==47)
+					if(((int)ksk[i])==92)
+					{
+					path[co]=ksk[i];
+					
+					co++;
+					path[co]=ksk[i];
+
+					}
+					else
+					{
+						path[co]=ksk[i];
+
+					}
+
+
+
+			  
+				co++;
+
+
+				 }
+		 MessageBox(hwnd,path,path,0);
+			void *buferEdit1=read(hwnd);
+			SendMessage(editaa,WM_SETTEXT,99,(LPARAM)buferEdit1);
+		}
+		break;
+//////////////////////////	END Drag and drop Receve /////////////////////////
+
 		case WM_COMMAND:
 			on_cmd(hwnd,message,wparam,lparam);
 
@@ -101,13 +149,13 @@ long __stdcall vaxo(HWND hwnd,unsigned int message, unsigned int wparam,long lpa
 				GetClientRect(hwnd,&r);
 	     		MoveWindow(editaa,2,31,r.right-4,r.bottom-55,1);
 				//// toll bari Status bari ///////////////
-			 SendMessage(tolbar,TB_AUTOSIZE, 0, 0);/////
+				SendMessage(tolbar,TB_AUTOSIZE, 0, 0);/////
 		//	 SendMessage(StatusBar, TB_AUTOSIZE, 0, 0); //////
-			 SendMessage(tolbar,TB_AUTOSIZE, 0, 0);/////
+				SendMessage(tolbar,TB_AUTOSIZE, 0, 0);/////
 			//  SendMessage(StatusBar, WM_SIZE, 0, 0); 
-				DoCreateStatusBar(hwnd,6,0,5);
+			StatusBar=DoCreateStatusBar(hwnd,6,0,5);
 
-			 static char statusc[5];
+				static  char statusc[5];
 			  sprintf(statusc,"BOTTOM /=/%i",r.bottom);
 			  SendMessage(StatusBar, SB_SETTEXT, 3,(LPARAM)statusc);
 			  ZeroMemory(&statusc,strlen(statusc));
@@ -129,7 +177,8 @@ long __stdcall vaxo(HWND hwnd,unsigned int message, unsigned int wparam,long lpa
 		exit(1);
 		break;
 	}
-		SendMessage(StatusBar,SB_SETTEXT,0,(LPARAM)"Ready");
+	 SendMessage(StatusBar,SB_SETTEXT,0,(LPARAM)"Ready");
+	
 return DefWindowProc(hwnd,message,wparam,lparam);
 }
 //----------------------------------------------------------------
@@ -157,7 +206,7 @@ wc.hCursor=LoadCursor(NULL,IDC_WAIT);
 
 
 //mtavari fanjara:
-style=WS_VISIBLE|WS_OVERLAPPEDWINDOW|WS_CLIPCHILDREN;
+style=WS_VISIBLE|WS_OVERLAPPEDWINDOW|WS_CLIPCHILDREN|WS_EX_TRANSPARENT;
 X=10;Y=30;W=750;H=500;
 hwnd=CreateWindow(wc.lpszClassName,"Main",style,X,Y,W,H,0,0,0,0);
 

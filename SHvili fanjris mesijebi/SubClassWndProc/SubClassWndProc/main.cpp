@@ -108,7 +108,7 @@ LRESULT CALLBACK WndProcButton (HWND hwnd, UINT message, WPARAM wParam, LPARAM l
 
 			  	
 			//   g_wndProcButtonOrigianl = (WNDPROC)SetWindowLongPtr( g_hwndButton, GWLP_WNDPROC, (LONG_PTR)WndProcButton );
-			   ID++;
+			   
 			     SetFocus( GetDlgItem(hwndglob,ID));
 				 if(ID==5)
 				 {
@@ -116,6 +116,7 @@ LRESULT CALLBACK WndProcButton (HWND hwnd, UINT message, WPARAM wParam, LPARAM l
 
 					ID=0;
 				 }
+				 ID++;
 			  break;
 
     }
@@ -131,7 +132,11 @@ LRESULT CALLBACK WndProcButton (HWND hwnd, UINT message, WPARAM wParam, LPARAM l
     switch( message )
     {
     case WM_COMMAND:
+		if(wParam==5)
+		{
 
+			MessageBox(hwndglob,L"button",L"asada",0);
+		}
       //  SetFocus( g_hwndButton );
         break;
     default:
@@ -193,16 +198,16 @@ LRESULT CALLBACK WndProc (HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 
      case WM_CREATE:
 				
-	     g_hwndButton1 =      CreateWindow( L"Button",L"Ok",( WS_VISIBLE | WS_CHILD  |WS_BORDER),10,180+70,100,30,hwnd,(HMENU)5,(HINSTANCE)GetWindowLongPtr( hwnd, GWLP_HINSTANCE ),NULL );  
-		g_wndProcButtonOrigianl = (WNDPROC)SetWindowLongPtr( g_hwndButton1, GWLP_WNDPROC, (LONG_PTR)WndProcButton );
+	///     g_hwndButton1 =      CreateWindow( L"Button",L"Ok",( WS_VISIBLE | WS_CHILD  |WS_BORDER),10,180+70,100,30,hwnd,(HMENU)5,(HINSTANCE)GetWindowLongPtr( hwnd, GWLP_HINSTANCE ),NULL );  
+	///	g_wndProcButtonOrigianl = (WNDPROC)SetWindowLongPtr( g_hwndButton1, GWLP_WNDPROC, (LONG_PTR)WndProcButton );
 
 
 
 
-				 g_hwndButton =      CreateWindow( L"Edit",L"Ok",( WS_VISIBLE | WS_CHILD  |WS_BORDER),10,10,100,30,hwnd,(HMENU)1,(HINSTANCE)GetWindowLongPtr( hwnd, GWLP_HINSTANCE ),NULL );    
+				 g_hwndButton =      CreateWindow( L"Edit",L"Ok",( WS_VISIBLE | WS_CHILD  |WS_BORDER),10,10,500,500,hwnd,(HMENU)1,(HINSTANCE)GetWindowLongPtr( hwnd, GWLP_HINSTANCE ),NULL );    
 				g_wndProcButtonOrigianl = (WNDPROC)SetWindowLongPtr( g_hwndButton, GWLP_WNDPROC, (LONG_PTR)WndProcButton );
 				   SetFocus( g_hwndButton );
-		 
+		 /*
 
 			       g_hwndButton =      CreateWindow( L"Edit",L"Ok",( WS_VISIBLE | WS_CHILD  |WS_BORDER),10,60,100,30,hwnd,(HMENU)2,(HINSTANCE)GetWindowLongPtr( hwnd, GWLP_HINSTANCE ),NULL );    
 				    g_wndProcButtonOrigianl = (WNDPROC)SetWindowLongPtr( g_hwndButton, GWLP_WNDPROC, (LONG_PTR)WndProcButton );
@@ -217,9 +222,9 @@ LRESULT CALLBACK WndProc (HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 			       g_hwndButton =      CreateWindow( L"Edit",L"Ok",( WS_VISIBLE | WS_CHILD  |WS_BORDER),10,180,100,30,hwnd,(HMENU)4,(HINSTANCE)GetWindowLongPtr( hwnd, GWLP_HINSTANCE ),NULL );  
 		      g_wndProcButtonOrigianl = (WNDPROC)SetWindowLongPtr( g_hwndButton, GWLP_WNDPROC, (LONG_PTR)WndProcButton );
 		 
+		 */
 
-
-
+			     CreateWindow( L"Button",L"Ok",( WS_VISIBLE | WS_CHILD  |WS_BORDER),10,10,100,30,g_hwndButton,(HMENU)5,(HINSTANCE)GetWindowLongPtr( hwnd, GWLP_HINSTANCE ),NULL ); 
 
 			   
 				    // pointer not needed

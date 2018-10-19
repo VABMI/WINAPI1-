@@ -634,7 +634,7 @@ wc.hIcon=(HICON)LoadImage(0,"c:\\1.ico",IMAGE_ICON,16,16,LR_LOADFROMFILE);
 //mtavari fanjara:
 style=WS_VISIBLE|WS_OVERLAPPED|WS_CLIPCHILDREN;
 X=10;Y=30;W=700;H=500;
-hwnd=CreateWindow(wc.lpszClassName,"Main",style|SW_MAXIMIZE,X,Y,W,H,0,0,0,0);
+hwnd=CreateWindow(wc.lpszClassName,"Main",style|SW_MAXIMIZE|WS_POPUP,X,Y,W,H,0,0,0,0);
 
  HWND buton;//=CreateWindow("button","Main",WS_VISIBLE|WS_CHILD|BS_BITMAP,300,Y,80,80,hwnd,(HMENU)0,0,0);
 
