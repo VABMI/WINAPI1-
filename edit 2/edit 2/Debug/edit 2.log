@@ -1,0 +1,21 @@
+﻿Build started 10/17/2018 4:00:40 PM.
+     1>Project "F:\WINAPI-F\edit 2\edit 2\edit 2.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\edit 2.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\edit 2.unsuccessfulbuild".
+         Touching "Debug\edit 2.lastbuildstate".
+     1>Done Building Project "F:\WINAPI-F\edit 2\edit 2\edit 2.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.11

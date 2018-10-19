@@ -1,0 +1,18 @@
+﻿Build started 10/12/2018 6:40:16 AM.
+     1>Project "F:\WINAPI-F\buttxp\buttxp\buttxp.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\buttxp.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         F:\New Folder (1)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\WINAPI-F\buttxp\Debug\buttxp.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\buttxp.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\WINAPI-F\buttxp\Debug\buttxp.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\WINAPI-F\buttxp\Debug\buttxp.lib" /MACHINE:X86 Debug\buttxp.exe.embed.manifest.res
+         Debug\main.obj
+     1>main.obj : error LNK2019: unresolved external symbol __imp__InitCommonControlsEx@4 referenced in function _WinMain@16
+     1>F:\WINAPI-F\buttxp\Debug\buttxp.exe : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "F:\WINAPI-F\buttxp\buttxp\buttxp.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.63

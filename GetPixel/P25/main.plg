@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: main - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\QUANTU~1\AppData\Local\Temp\RSP5BE9.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/main.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\PROGR\PROJECTS\TRAININGS\GRP_1_1\P25\main.cpp"
+]
+Creating command line "cl.exe @C:\Users\QUANTU~1\AppData\Local\Temp\RSP5BE9.tmp" 
+Creating temporary file "C:\Users\QUANTU~1\AppData\Local\Temp\RSP5BFA.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/main.pdb" /debug /machine:I386 /out:"Debug/main.exe" /pdbtype:sept 
+.\Debug\main.obj
+]
+Creating command line "link.exe @C:\Users\QUANTU~1\AppData\Local\Temp\RSP5BFA.tmp"
+<h3>Output Window</h3>
+Compiling...
+main.cpp
+d:\progr\projects\trainings\grp_1_1\p25\functions.cpp(113) : warning C4101: 'hbrush' : unreferenced local variable
+d:\progr\projects\trainings\grp_1_1\p25\cmd_msg.cpp(151) : warning C4244: 'argument' : conversion from '__int64' to 'int', possible loss of data
+d:\progr\projects\trainings\grp_1_1\p25\main.cpp(107) : warning C4715: 'WinMain' : not all control paths return a value
+d:\progr\projects\trainings\grp_1_1\p25\functions.cpp(51) : warning C4715: 'create_menu' : not all control paths return a value
+d:\progr\projects\trainings\grp_1_1\p25\cmd_msg.cpp(83) : warning C4700: local variable 'hdcMem' used without having been initialized
+d:\progr\projects\trainings\grp_1_1\p25\cmd_msg.cpp(154) : warning C4700: local variable 'hedit' used without having been initialized
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/main.bsc"  .\Debug\main.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+main.exe - 0 error(s), 6 warning(s)
+</pre>
+</body>
+</html>

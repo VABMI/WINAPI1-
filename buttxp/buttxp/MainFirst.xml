@@ -1,0 +1,123 @@
+'-----------------------------------------------------------------
+'FILE DESCRIPTION: Macros to set a manifest file with your application
+'----------------------------------------------------------------------
+private const FileString1 = "<?xml version=""1.0"" 
+                                      encoding=""UTF-8"" 
+                                      standalone=""yes""?>" 
+private const FileString2 = "<assembly 
+                               xmlns=""urn:schemas-microsoft-com:asm.v1"" 
+                               manifestVersion=""1.0"">"
+private const FileString3 = "<assemblyIdentity"
+private const FileString4 = "    version=""1.0.0.1"""
+private const FileString5 = "   processorArchitecture=""x86"""
+private const FileString6a = "    name=""Microsoft.Windows."
+private const FileString6b = """"
+private const FileString7 = "    type=""win32"""
+private const FileString8 = "/>"
+private const FileString9a = "<description>"
+private const FileString9b = "</description>"
+private const FileString10 = "<dependency>"
+private const FileString11 = "   <dependentAssembly>"
+private const FileString12 = "      <assemblyIdentity"
+private const FileString13 = "        type=""win32"""
+private const FileString14 = "        name=""Microsoft.Windows.Common-Controls"""
+private const FileString15 = "        version=""6.0.0.0"""
+private const FileString16 = "        processorArchitecture=""X86"""
+private const FileString17 = "        publicKeyToken=""6595b64144ccf1df"""
+private const FileString18 = "        language=""*"""
+private const FileString19 = "      />"
+private const FileString20 = "   </dependentAssembly>"
+private const FileString21 = "</dependency>"
+private const FileString22 = "</assembly>"
+
+Sub MakeManifest()
+'DESCRIPTION: Make a manifest file for your application
+'AUTHOR: Stephan Poirier, Feb 27th, 2005
+
+ ' Save the workspace
+ ExecuteCommand "WorkspaceSave"
+ 
+ ' Ugly assembling of the text for the manifest document
+ dim OutString
+ OutString = FileString1 + vbCrLf
+ OutString = OutString + FileString2 + vbCrLf
+ OutString = OutString + FileString3 + vbCrLf
+ OutString = OutString + FileString4 + vbCrLf
+ OutString = OutString + FileString5 + vbCrLf
+ OutString = OutString + FileString6a
+ OutString = OutString + Application.ActiveProject.Name
+ OutString = OutString + FileString6b + vbCrLf
+ OutString = OutString + FileString7 + vbCrLf
+ OutString = OutString + FileString8 + vbCrLf
+ OutString = OutString + FileString9a
+ OutString = OutString + Application.ActiveProject.Name
+ OutString = OutString + FileString9b + vbCrLf
+ OutString = OutString + FileString10 + vbCrLf
+ OutString = OutString + FileString11 + vbCrLf
+ OutString = OutString + FileString12 + vbCrLf
+ OutString = OutString + FileString13 + vbCrLf
+ OutString = OutString + FileString14 + vbCrLf
+ OutString = OutString + FileString15 + vbCrLf
+ OutString = OutString + FileString16 + vbCrLf
+ OutString = OutString + FileString17 + vbCrLf
+ OutString = OutString + FileString18 + vbCrLf
+ OutString = OutString + FileString19 + vbCrLf
+ OutString = OutString + FileString20 + vbCrLf
+ OutString = OutString + FileString21 + vbCrLf
+ OutString = OutString + FileString22
+  
+ ' Add it to the project workspace if needed 
+ ' (MSDEV will crash if added more than one time)
+ Dim s 
+ s = IsFileInWorkspace ("SOURCE=.\res\" & _
+               Application.ActiveProject.Name & ".exe.Manifest")
+ if( s=false ) then 
+
+  ' Create a new doc that is the 
+  ' manifest then paste the template text
+  Documents.Add "Text"
+  ActiveDocument.Selection.StartOfDocument
+  ActiveDocument.Selection = OutString
+
+  ' Save document
+  ActiveDocument.Save "res\" & Application.ActiveProject.Name & _
+                                                   ".exe.Manifest"
+  ActiveDocument.Save
+
+  ' Close document
+  ActiveDocument.Close
+
+  ' Add the file to the project
+  ActiveProject.AddFile "res\" & Application.ActiveProject.Name & _
+                                                    ".exe.Manifest"
+  msgbox "Added " & Application.ActiveProject.Name & _
+                    ".exe.Manifest" & " into the project workspace"
+ end if
+  
+ ' Change project settings to generate a manifest file 
+ ' for each output config each time a build is done
+ dim cfg
+ for each cfg in ActiveProject.Configurations
+   PrintToOutputWindow "Set manifest custom buld step for " & cfg
+                   cfg.AddCustomBuildStep "copy $(ProjDir)\res\" & _
+                                  Application.ActiveProject.Name & _
+             ".exe.manifest $(OutDir)\$(TargetName).exe.manifest", _
+             "$(OutDir)\$(TargetName).exe.manifest", "Copy manifest"
+ next
+ 
+ ' Save the workspace
+ ExecuteCommand "WorkspaceSave"
+
+ ' Done
+ PrintToOutputWindow "Manifest for " & _
+                    Application.ActiveProject.Name & " generated."
+ MsgBox "Manifest for" & Application.ActiveProject.Name & " generated."
+
+End Sub
+
+Function IsFileInWorkspace(file)
+ Documents.Open ActiveProject.FullName, "Text", True
+ IsFileInWorkspace = _
+        ActiveDocument.Selection.FindText(file, dsMatchFromStart )
+ ActiveDocument.Close
+End Function
