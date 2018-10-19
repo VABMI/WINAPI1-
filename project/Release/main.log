@@ -1,0 +1,102 @@
+﻿Build started 8/1/2018 9:03:27 AM.
+     1>Project "F:\P25\main.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\Release\main.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         F:\New Folder (1)\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Release\\" /Fd".\Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt CreateForm.cpp clock.cpp hwnd.cpp main.cpp
+         CreateForm.cpp
+         clock.cpp
+     1>clock.cpp(17): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 F:\New Folder (1)\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>clock.cpp(22): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 F:\New Folder (1)\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>clock.cpp(28): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 F:\New Folder (1)\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>clock.cpp(33): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 F:\New Folder (1)\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>clock.cpp(40): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 F:\New Folder (1)\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>clock.cpp(43): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 F:\New Folder (1)\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>clock.cpp(48): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 F:\New Folder (1)\VC\include\stdio.h(371) : see declaration of 'sprintf'
+         hwnd.cpp
+     1>hwnd.cpp(4): error C2146: syntax error : missing ';' before identifier 'edit1'
+     1>hwnd.cpp(4): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(4): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(6): error C2146: syntax error : missing ';' before identifier 'edit2'
+     1>hwnd.cpp(6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(6): error C2086: 'int HWND' : redefinition
+                 hwnd.cpp(4) : see declaration of 'HWND'
+     1>hwnd.cpp(6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(7): error C2146: syntax error : missing ';' before identifier 'but1'
+     1>hwnd.cpp(7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(7): error C2086: 'int HWND' : redefinition
+                 hwnd.cpp(4) : see declaration of 'HWND'
+     1>hwnd.cpp(7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(8): error C2146: syntax error : missing ';' before identifier 'static1'
+     1>hwnd.cpp(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(8): error C2086: 'int HWND' : redefinition
+                 hwnd.cpp(4) : see declaration of 'HWND'
+     1>hwnd.cpp(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(9): error C2146: syntax error : missing ';' before identifier 'but2'
+     1>hwnd.cpp(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(9): error C2086: 'int HWND' : redefinition
+                 hwnd.cpp(4) : see declaration of 'HWND'
+     1>hwnd.cpp(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(15): error C2146: syntax error : missing ';' before identifier 'stat300'
+     1>hwnd.cpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(15): error C2086: 'int HWND' : redefinition
+                 hwnd.cpp(4) : see declaration of 'HWND'
+     1>hwnd.cpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(17): error C2146: syntax error : missing ';' before identifier 'stat313'
+     1>hwnd.cpp(17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(17): error C2086: 'int HWND' : redefinition
+                 hwnd.cpp(4) : see declaration of 'HWND'
+     1>hwnd.cpp(17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(18): error C2146: syntax error : missing ';' before identifier 'stat314'
+     1>hwnd.cpp(18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(18): error C2086: 'int HWND' : redefinition
+                 hwnd.cpp(4) : see declaration of 'HWND'
+     1>hwnd.cpp(18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(19): error C2146: syntax error : missing ';' before identifier 'stat315'
+     1>hwnd.cpp(19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(19): error C2086: 'int HWND' : redefinition
+                 hwnd.cpp(4) : see declaration of 'HWND'
+     1>hwnd.cpp(19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(20): error C2146: syntax error : missing ';' before identifier 'stat316'
+     1>hwnd.cpp(20): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(20): error C2086: 'int HWND' : redefinition
+                 hwnd.cpp(4) : see declaration of 'HWND'
+     1>hwnd.cpp(20): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(22): error C2146: syntax error : missing ';' before identifier 'stat317'
+     1>hwnd.cpp(22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(22): error C2086: 'int HWND' : redefinition
+                 hwnd.cpp(4) : see declaration of 'HWND'
+     1>hwnd.cpp(22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(23): error C2146: syntax error : missing ';' before identifier 'stat318'
+     1>hwnd.cpp(23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>hwnd.cpp(23): error C2086: 'int HWND' : redefinition
+                 hwnd.cpp(4) : see declaration of 'HWND'
+     1>hwnd.cpp(23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+         main.cpp
+     1>main.cpp(91): warning C4101: 'hinst' : unreferenced local variable
+         Generating Code...
+     1>f:\p25\main.cpp(280): warning C4715: 'WinMain' : not all control paths return a value
+     1>Done Building Project "F:\P25\main.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.98

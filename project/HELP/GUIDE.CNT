@@ -1,0 +1,4 @@
+:TITLE Microsoft Windows Developer's Guide
+:INDEX Microsoft Windows Developer's Guide = guide.hlp
+:INCLUDE WIN32SDK.CFG
+:INCLUDE GUIDE.TOC
