@@ -1,0 +1,51 @@
+﻿Build started 9/12/2018 8:25:00 AM.
+     1>Project "C:\Users\vaxoa\OneDrive\Documents\GitHub\WINAPI\ProgressBar_demo\ProgressDemo.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\Debug\ProgressDemo.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         F:\New Folder (1)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _AFXDLL /Gm /EHsc /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Debug\ProgressDemo.pch" /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+         F:\New Folder (1)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _AFXDLL /Gm /EHsc /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug\ProgressDemo.pch" /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt MainFrm.cpp ProgressBar.cpp ProgressDemo.cpp ProgressDemoDoc.cpp ProgressDemoView.cpp
+         ProgressDemoView.cpp
+         ProgressDemoDoc.cpp
+         ProgressDemo.cpp
+     1>c:\users\vaxoa\onedrive\documents\github\winapi\progressbar_demo\progressdemo.cpp(51): warning C4996: 'CWinApp::Enable3dControls': CWinApp::Enable3dControls is no longer needed. You should remove this call.
+                 f:\new folder (1)\vc\atlmfc\include\afxwin.h(5344) : see declaration of 'CWinApp::Enable3dControls'
+         ProgressBar.cpp
+         MainFrm.cpp
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _VC80_UPGRADE=0x0600 /D _AFXDLL /l"0x0c09" /nologo /fo".\Debug\ProgressDemo.res" ProgressDemo.rc 
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo".\Debug\ProgressDemo.exe.embed.manifest.res" .\Debug\ProgressDemo_manifest.rc 
+       Link:
+         F:\New Folder (1)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\ProgressDemo.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:".\Debug\ProgressDemo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\vaxoa\OneDrive\Documents\GitHub\WINAPI\ProgressBar_demo\Debug\ProgressDemo.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\ProgressDemo.lib" /MACHINE:X86 .\Debug\ProgressDemo.res
+         .\Debug\ProgressDemo.exe.embed.manifest.res
+         .\Debug\MainFrm.obj
+         .\Debug\ProgressBar.obj
+         .\Debug\ProgressDemo.obj
+         .\Debug\ProgressDemoDoc.obj
+         .\Debug\ProgressDemoView.obj
+         .\Debug\StdAfx.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:".\Debug\ProgressDemo.exe.embed.manifest" /manifest .\Debug\ProgressDemo.exe.intermediate.manifest "F:\New Folder (1)\VC\Include\Manifest\dpiaware.manifest"
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo".\Debug\ProgressDemo.exe.embed.manifest.res" .\Debug\ProgressDemo_manifest.rc 
+       LinkEmbedManifest:
+         F:\New Folder (1)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\ProgressDemo.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:".\Debug\ProgressDemo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\vaxoa\OneDrive\Documents\GitHub\WINAPI\ProgressBar_demo\Debug\ProgressDemo.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\ProgressDemo.lib" /MACHINE:X86 .\Debug\ProgressDemo.res
+         .\Debug\ProgressDemo.exe.embed.manifest.res
+         .\Debug\MainFrm.obj
+         .\Debug\ProgressBar.obj
+         .\Debug\ProgressDemo.obj
+         .\Debug\ProgressDemoDoc.obj
+         .\Debug\ProgressDemoView.obj
+         .\Debug\StdAfx.obj
+         ProgressDemo.vcxproj -> C:\Users\vaxoa\OneDrive\Documents\GitHub\WINAPI\ProgressBar_demo\.\Debug\ProgressDemo.exe
+       FinalizeBuildStatus:
+         Deleting file ".\Debug\ProgressDemo.unsuccessfulbuild".
+         Touching ".\Debug\ProgressDemo.lastbuildstate".
+     1>Done Building Project "C:\Users\vaxoa\OneDrive\Documents\GitHub\WINAPI\ProgressBar_demo\ProgressDemo.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:11.85
