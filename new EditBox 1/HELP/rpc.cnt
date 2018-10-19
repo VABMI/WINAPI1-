@@ -1,0 +1,4 @@
+:TITLE Microsoft RPC Programmer's Guide and Reference
+:INDEX Microsoft RPC Programmer's Guide and Reference = rpc.hlp
+:INCLUDE WIN32SDK.CFG
+:INCLUDE RPC.TOC

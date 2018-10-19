@@ -1,0 +1,4 @@
+:TITLE Microsoft Tools Reference
+:INDEX Microsoft Tools Reference = mstools.hlp
+:INCLUDE WIN32SDK.CFG
+:INCLUDE MSTOOLS.TOC
