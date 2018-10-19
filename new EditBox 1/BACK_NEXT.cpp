@@ -1,11 +1,11 @@
 
-static int fgh;
+static int fgh;	static bool gn=1;
+			static bool gm=1;
 	static	char buff2[100];
 if(IDM_UNDO==id)
 {
 	static	char buff[100];
-	static bool gn=1;
-		
+
 		
 		int i;
 
@@ -19,6 +19,18 @@ if(IDM_UNDO==id)
 
 			gn=0;
 			}
+
+		if(gm)
+			{
+
+	
+			sprintf(buff,"%s",buff2);
+
+			gm=0;
+			}
+
+
+
 			i=strlen(buff);
 			int k=strlen(buff);
 			while(i--)
@@ -40,53 +52,42 @@ if(IDM_UNDO==id)
 
 			}
 			SendMessage(EDITGLOBAL,WM_SETTEXT,strlen(buff),(LPARAM)buff);
-			gn=1;
+	
 
 		
 }
 if(id==IDM_NEXT)
 {
-
-	
-	char po[200];
+			gm=1;
+	static bool ko=0;
+	char *po=(char*)malloc(1*strlen(buff2));
 	///sprintf(po,"%s",buff2);
-/*
+	//int fg=fgh;
 
 		//	MessageBox(hwnd,buff2,buff2,0);
-
-		strcat(po,buff2);
-	int G=strlen(buff2);
-	for(int i=fgh;i<=strlen(buff2);i++)
-	{
-
-		if(po[i]==' ')
-		{
-			for(int u=i;u<=strlen(po);u++)
-			{
-				if(po[u]==' ')
-				{
-					po[u]=(char)0;
-					
-
-
-
-				}
-
-			}
-
-
-			fgh=i;
-			break;
-
-		}
-
-		
+	if(!ko){
+	sprintf(po,"%s",buff2);
+	//ko=1;
 	}
+//	int G=strlen(buff2);
+
 	
 
 
-	*/
-    SendMessage(EDITGLOBAL,WM_SETTEXT,strlen(po),(LPARAM)po);
+	for(int ui=fgh;ui<=strlen(buff2);ui++)
+	{
+	if(buff2[ui]==' ') 
+	{	
+		for(int oi=ui;oi<=strlen(buff2);oi++)
+		{
+		po[oi]=NULL;	
+		
+		}
+	fgh=ui+1;
+		break;
+	}
 
-
+   }
+	 SendMessage(EDITGLOBAL,WM_SETTEXT,strlen(po),(LPARAM)po);
+	
 }
