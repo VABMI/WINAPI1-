@@ -5,6 +5,7 @@
 #include "defines.h"
 #include "ReadAndWrite.cpp"
 #include "functions.cpp"
+#include "EditisMesigebi.cpp"
 #include "on_create_msg.cpp"
 #include "cmd_msg.cpp"
 
@@ -26,8 +27,15 @@ HCURSOR hCursor;
 
 	 static char* charReplAl=sechwat2;
 //----------------------------------------------------------------
+
+
+
+
+
+
+//----------------------------------------------------------------
 const UINT findmsg=RegisterWindowMessage(FINDMSGSTRING);  //// finde funqciis messagi
-const UINT findmsgReplace=RegisterWindowMessage(FINDMSGSTRING);
+const UINT findmsgReplace=RegisterWindowMessage(FINDMSGSTRING); //// finde replace funqciis messagi
 long __stdcall vaxo(HWND hwnd,unsigned int message, unsigned int wparam,long lparam)
 {
 	HWND editaa=GetDlgItem(hwnd,editc);

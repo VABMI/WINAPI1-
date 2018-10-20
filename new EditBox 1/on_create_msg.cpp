@@ -36,11 +36,16 @@ HANDLE ss;
 int X,Y,W,H;
 X=10,Y=40,W=700,H=500;
 
-	hw=CreateWindow("edit","123456789111213",editstyle,10,30,r.right-10,r.bottom-30.5,hwnd,(HMENU)editc,0,0);
+	EDITGLOBAL=CreateWindow("edit","123456789111213",editstyle,10,30,r.right-10,r.bottom-30.5,hwnd,(HMENU)editc,(HINSTANCE)GetWindowLongPtr( hwnd, GWLP_HINSTANCE ),0);
+		g_wndProcButtonOrigianl = (WNDPROC)SetWindowLongPtr(EDITGLOBAL, GWLP_WNDPROC, (LONG_PTR)WndProcButton);
+		if(g_wndProcButtonOrigianl)
+		{
 
-	CreateWindow("SCROLLBAR",0,   WS_VISIBLE | WS_CHILD | SBS_VERT,0,0,20,100,hw,(HMENU)20,0,0);
+			int Y=0;
+		}
+//	CreateWindow("SCROLLBAR",0,   WS_VISIBLE | WS_CHILD | SBS_VERT,0,0,20,100,hw,(HMENU)20,0,0);
 
-
+		hw=EDITGLOBAL;
 		SendMessage(hw,EM_LIMITTEXT,999000,0);
 
 

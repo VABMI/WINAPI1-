@@ -9,7 +9,7 @@ HWND EDITGLOBAL,childButton;
 ULONG edittextferi;
 ULONG textlineferi;
 ULONG bckferi;
-
+static bool gn=1;
 HFONT hfont_glob;
 CHOOSEFONT cf_glob;
 LOGFONT lf_glob;

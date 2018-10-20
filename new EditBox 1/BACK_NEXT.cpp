@@ -1,8 +1,10 @@
 
-static int fgh;	static bool gn=1;
-			static bool gm=1;
-	static	char buff2[100];
-if(IDM_UNDO==id)
+static int fgh;	static bool gm=1;
+
+static	char buff2[100];
+
+	
+	if(IDM_UNDO==id)
 {
 	static	char buff[100];
 
