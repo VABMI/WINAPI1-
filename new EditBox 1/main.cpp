@@ -113,7 +113,7 @@ long __stdcall vaxo(HWND hwnd,unsigned int message, unsigned int wparam,long lpa
 
 
 				 }
-		 MessageBox(hwnd,path,path,0);
+	
 			void *buferEdit1=read(hwnd);
 			SendMessage(editaa,WM_SETTEXT,99,(LPARAM)buferEdit1);
 		}

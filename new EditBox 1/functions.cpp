@@ -67,12 +67,12 @@ HMENU hmenu_popup_ToolBar=CreatePopupMenu();
 
 AppendMenu(hmenu,MF_POPUP,(UINT_PTR)hmenu_popup_ToolBar,"&Tool Bar");
 
-AppendMenu(hmenu_popup_ToolBar,MF_STRING,ID_MENU_TOOLBAR,"&Save");
-AppendMenu(hmenu_popup_ToolBar,MF_STRING,123,"&Open");
-AppendMenu(hmenu_popup_ToolBar,MF_STRING,1234,"&Search");
-AppendMenu(hmenu_popup_ToolBar,MF_STRING,1234,"&Print");
-AppendMenu(hmenu_popup_ToolBar,MF_STRING,1234,"&Prev Next");
-AppendMenu(hmenu_popup_ToolBar,MF_STRING,1234,"&Help");
+AppendMenu(hmenu_popup_ToolBar,MF_STRING,MENU_SAVE,"&Save");
+AppendMenu(hmenu_popup_ToolBar,MF_STRING,MENU_OPEN,"&Open");
+AppendMenu(hmenu_popup_ToolBar,MF_STRING,MENU_SERCH,"&Search");
+AppendMenu(hmenu_popup_ToolBar,MF_STRING,MENU_PRINT,"&Print");
+AppendMenu(hmenu_popup_ToolBar,MF_STRING, MENU_NEXT_PREV,"&Prev Next");
+AppendMenu(hmenu_popup_ToolBar,MF_STRING,MENU_HELP,"&Help");
 
 
 

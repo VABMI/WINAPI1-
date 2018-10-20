@@ -22,3 +22,12 @@
 //#define ID_MENU_REGION_ 1005
 
 #define ID_MENU_LOADIMAGE 3000
+//////////// MenuMessagesForTollBar ///////////////////////////////////
+#define MENU_NEXT_PREV	3231
+
+#define MENU_FIND	3233
+#define MENU_PRINT  3234
+#define MENU_SERCH  3235
+#define MENU_SAVE   3236
+#define MENU_HELP   3237
+#define MENU_OPEN   3238

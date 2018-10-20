@@ -456,7 +456,7 @@ long __stdcall on_cmd(HWND hwnd,unsigned int message,unsigned int wparam,long lp
 	SendMessage(h,CB_DELETESTRING,0,0);
 
 	}
-
+#include"MenuMessageForTollBar.cpp"
 
 
 return 0;
