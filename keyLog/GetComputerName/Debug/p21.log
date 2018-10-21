@@ -1,0 +1,27 @@
+﻿Build started 10/20/2018 5:36:03 AM.
+     1>Project "F:\WINAPI1-\keyLog\GetComputerName\p21.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\Debug\p21.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         F:\New Folder (1)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt p21.cpp
+         p21.cpp
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         F:\New Folder (1)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\p21.exe" /INCREMENTAL /NOLOGO odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\Debug\p21.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\WINAPI1-\keyLog\GetComputerName\Debug\p21.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\p21.lib" /MACHINE:X86 .\Debug\p21.exe.embed.manifest.res
+         .\Debug\List_Tree_view.obj
+         .\Debug\p21.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:".\Debug\p21.exe.embed.manifest" /manifest .\Debug\p21.exe.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         p21.vcxproj -> F:\WINAPI1-\keyLog\GetComputerName\.\Debug\p21.exe
+       FinalizeBuildStatus:
+         Deleting file ".\Debug\p21.unsuccessfulbuild".
+         Touching ".\Debug\p21.lastbuildstate".
+     1>Done Building Project "F:\WINAPI1-\keyLog\GetComputerName\p21.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.38

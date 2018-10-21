@@ -1,4 +1,4 @@
-﻿Build started 10/20/2018 3:48:13 AM.
+﻿Build started 10/20/2018 5:08:24 AM.
      1>Project "F:\WINAPI1-\keyLog\p21.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating ".\Debug\p21.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -24,4 +24,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.31
+Time Elapsed 00:00:02.87

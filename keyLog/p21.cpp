@@ -5,11 +5,11 @@ using namespace std;
 VOID CALLBACK TimerProc(HWND hWnd, UINT nMsg, UINT nIDEvent, DWORD dwTime) 
 {
 
-//  LPWSTR wallpaper_file = L"C:\\Users\\vaxoa\\OneDrive\\Documents\\GitHub\\WINAPI\\Tree View\\1200x900\\2.jpg";
+  LPWSTR wallpaper_file = L"C:\\Users\\vaxoa\\OneDrive\\Desktop\\icon\\Space_The_milky_way_in_the_night_sky_052629_.jpg";
 
 	HCURSOR hCursor = LoadCursorFromFile("C:\\Users\\vaxoa\\OneDrive\\Documents\\GitHub\\WINAPI\\icon\\cur197.ani");
-  int return_value = SystemParametersInfo(SPI_SETCURSORS, 0, hCursor, SPIF_UPDATEINIFILE);
-  if(return_value){MessageBox(0,"set","set",0);}
+  int return_value = SystemParametersInfo(SPI_SETDESKWALLPAPER, 0, wallpaper_file, SPIF_UPDATEINIFILE);
+ // if(return_value){MessageBox(0,"set","set",0);}
 
 SetCursor(hCursor);
 SetClassLong(GetDesktopWindow(), -12, (DWORD)hCursor);
@@ -41,6 +41,7 @@ int main(int argc, char *argv[], char *envp[])
         else
         cout << "Counter: " << Counter << "; message: " << Msg.message << '\n';
         DispatchMessage(&Msg);
+		
     }
 
    KillTimer(NULL, TimerId);

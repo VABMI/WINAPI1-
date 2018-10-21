@@ -116,6 +116,11 @@ hCursor = LoadCursorFromFile("C:\\Users\\vaxoa\\OneDrive\\Documents\\GitHub\\WIN
 SetCursor(hCursor);
 SetClassLong(hwnd, -12, (DWORD)hCursor);
 //////////////////////////////////// end cursor
+char po[100];
+GetComputerName(po,sizeof(po));
+
+
+MessageBox(hwnd,po,po,0);
 		break;
 		
 		case WM_COMMAND:
