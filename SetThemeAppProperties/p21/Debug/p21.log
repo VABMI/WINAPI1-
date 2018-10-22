@@ -1,0 +1,29 @@
+﻿Build started 10/22/2018 2:43:58 AM.
+     1>Project "F:\WINAPI1-\SetThemeAppProperties\p21\p21.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching ".\Debug\p21.unsuccessfulbuild".
+       ClCompile:
+         F:\New Folder (1)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt p21.cpp
+         p21.cpp
+     1>f:\winapi1-\setthemeappproperties\p21\mouse_msg.cpp(18): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 f:\new folder (1)\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>f:\winapi1-\setthemeappproperties\p21\cmd_msg.cpp(8): warning C4101: 'hfontPrev' : unreferenced local variable
+     1>f:\winapi1-\setthemeappproperties\p21\cmd_msg.cpp(52): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 f:\new folder (1)\vc\include\string.h(110) : see declaration of 'strcat'
+     1>f:\winapi1-\setthemeappproperties\p21\paint.cpp(11): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 f:\new folder (1)\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>f:\winapi1-\setthemeappproperties\p21\cmd_msg.cpp(24): warning C4700: uninitialized local variable 'hdc' used
+     1>f:\winapi1-\setthemeappproperties\p21\on_create.cpp(19): warning C4715: 'create_menu' : not all control paths return a value
+     1>f:\winapi1-\setthemeappproperties\p21\p21.cpp(96): warning C4715: 'WinMain' : not all control paths return a value
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         F:\New Folder (1)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\p21.exe" /INCREMENTAL /NOLOGO odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\Debug\p21.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\WINAPI1-\SetThemeAppProperties\p21\Debug\p21.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\p21.lib" /MACHINE:X86 .\Debug\p21.exe.embed.manifest.res
+         .\Debug\p21.obj
+     1>p21.obj : error LNK2019: unresolved external symbol __imp__GetThemeAppProperties@0 referenced in function "long __stdcall window_main_function_chvenia(struct HWND__ *,unsigned int,unsigned int,long)" (?window_main_function_chvenia@@YGJPAUHWND__@@IIJ@Z)
+     1>.\Debug\p21.exe : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "F:\WINAPI1-\SetThemeAppProperties\p21\p21.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.78

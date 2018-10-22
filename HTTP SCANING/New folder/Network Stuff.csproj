@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F5655389-16C5-41D6-AE16-A7441197740B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>resource\network_stuff.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>Network Stuff</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Network_Stuff</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="easy_socket\bin_convert.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="easy_socket\checksum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="easy_socket\Cmultiple_elements_parsing.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="easy_socket\hexa_convert.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="easy_socket\icmp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="easy_socket\iphelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="easy_socket\ip_header.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="easy_socket\network_convert.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="easy_socket\packet_ToStringArray.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="easy_socket\RemoteShutDown.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="easy_socket\tcp_header.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="easy_socket\tcp_socket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="easy_socket\Telnet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="easy_socket\udp_header.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="easy_socket\udp_socket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="easy_socket\wake_on_lan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\CommonInteractiveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\CommonTelnetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\FormAddIPEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\FormChooseSniffIp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\FormPing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\FormScan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\FormStat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\FormTCPClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\FormTCPInteractive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\FormTCPInteractiveProxyServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\FormTCPRaw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\FormTCPServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\FormTrace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\FormUDPClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\FormUDPInteractive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\FormUDPServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\FormWhois.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\Form_Agreement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\Form_hexa_view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\Form_packet_capture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\Form_packet_forge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network_Stuff\UserControlPacketsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tools\API\API_error.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\Drawing\CDrawString.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\GUI\CCheck_user_interface_inputs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\GUI\Components\RichTextBoxSynchronized.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tools\GUI\Components\SimpleChart\CAxis.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\GUI\Components\SimpleChart\CLabel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\GUI\Components\SimpleChart\CPlotInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\GUI\Components\SimpleChart\CPlotInfoList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\GUI\Components\SimpleChart\CSimpleChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tools\GUI\Controls\HexViewer\HexViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tools\GUI\Icon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\GUI\ListviewItemComparer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\GUI\Windows\ErrorReport\Cuser_group.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\GUI\Windows\ErrorReport\FormMainCatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\GUI\XPStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\IO\file_access.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\Text\ClassEreg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\Threading\Semaphore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\Xml\XML_access.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Network_Stuff\CommonInteractiveForm.resx">
+      <DependentUpon>CommonInteractiveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network_Stuff\CommonTelnetForm.resx">
+      <DependentUpon>CommonTelnetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network_Stuff\FormAddIPEntry.resx">
+      <DependentUpon>FormAddIPEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network_Stuff\FormChooseSniffIp.resx">
+      <DependentUpon>FormChooseSniffIp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network_Stuff\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network_Stuff\FormPing.resx">
+      <DependentUpon>FormPing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network_Stuff\FormScan.resx">
+      <DependentUpon>FormScan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network_Stuff\FormStat.resx">
+      <DependentUpon>FormStat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network_Stuff\FormTCPClient.resx">
+      <DependentUpon>FormTCPClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network_Stuff\FormTCPInteractive.resx">
+      <DependentUpon>FormTCPInteractive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network_Stuff\FormTCPInteractiveProxyServer.resx">
+      <DependentUpon>FormTCPInteractiveProxyServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network_Stuff\FormTrace.resx">
+      <DependentUpon>FormTrace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network_Stuff\FormUDPClient.resx">
+      <DependentUpon>FormUDPClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network_Stuff\FormUDPInteractive.resx">
+      <DependentUpon>FormUDPInteractive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network_Stuff\FormUDPServer.resx">
+      <DependentUpon>FormUDPServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network_Stuff\FormWhois.resx">
+      <DependentUpon>FormWhois.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network_Stuff\Form_Agreement.resx">
+      <DependentUpon>Form_Agreement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network_Stuff\Form_hexa_view.resx">
+      <DependentUpon>Form_hexa_view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network_Stuff\Form_packet_capture.resx">
+      <DependentUpon>Form_packet_capture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network_Stuff\Form_packet_forge.resx">
+      <DependentUpon>Form_packet_forge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network_Stuff\UserControlPacketsView.resx">
+      <DependentUpon>UserControlPacketsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\GUI\Components\RichTextBoxSynchronized.resx">
+      <DependentUpon>RichTextBoxSynchronized.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\GUI\Components\SimpleChart\CSimpleChart.resx">
+      <DependentUpon>CSimpleChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\GUI\Controls\HexViewer\HexViewer.resx">
+      <DependentUpon>HexViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\GUI\Windows\ErrorReport\FormMainCatch.resx">
+      <DependentUpon>FormMainCatch.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

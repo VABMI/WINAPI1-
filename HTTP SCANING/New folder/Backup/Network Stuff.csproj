@@ -1,0 +1,525 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{F5655389-16C5-41D6-AE16-A7441197740B}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "resource\network_stuff.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "Network Stuff"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "Network_Stuff"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "true"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.XML.dll"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Web.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "easy_socket\bin_convert.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "easy_socket\checksum.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "easy_socket\Cmultiple_elements_parsing.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "easy_socket\hexa_convert.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "easy_socket\icmp.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "easy_socket\ip_header.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "easy_socket\iphelper.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "easy_socket\network_convert.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "easy_socket\packet_ToStringArray.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "easy_socket\RemoteShutDown.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "easy_socket\tcp_header.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "easy_socket\tcp_socket.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "easy_socket\Telnet.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "easy_socket\udp_header.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "easy_socket\udp_socket.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "easy_socket\wake_on_lan.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\CommonInteractiveForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\CommonInteractiveForm.resx"
+                    DependentUpon = "CommonInteractiveForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Network_Stuff\CommonTelnetForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\CommonTelnetForm.resx"
+                    DependentUpon = "CommonTelnetForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Network_Stuff\Form_Agreement.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\Form_Agreement.resx"
+                    DependentUpon = "Form_Agreement.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Network_Stuff\Form_hexa_view.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\Form_hexa_view.resx"
+                    DependentUpon = "Form_hexa_view.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Network_Stuff\Form_packet_capture.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\Form_packet_capture.resx"
+                    DependentUpon = "Form_packet_capture.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Network_Stuff\Form_packet_forge.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\Form_packet_forge.resx"
+                    DependentUpon = "Form_packet_forge.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormAddIPEntry.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormAddIPEntry.resx"
+                    DependentUpon = "FormAddIPEntry.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormChooseSniffIp.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormChooseSniffIp.resx"
+                    DependentUpon = "FormChooseSniffIp.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormMain.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormMain.resx"
+                    DependentUpon = "FormMain.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormPing.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormPing.resx"
+                    DependentUpon = "FormPing.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormScan.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormScan.resx"
+                    DependentUpon = "FormScan.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormStat.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormStat.resx"
+                    DependentUpon = "FormStat.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormTCPClient.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormTCPClient.resx"
+                    DependentUpon = "FormTCPClient.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormTCPInteractive.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormTCPInteractive.resx"
+                    DependentUpon = "FormTCPInteractive.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormTCPInteractiveProxyServer.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormTCPInteractiveProxyServer.resx"
+                    DependentUpon = "FormTCPInteractiveProxyServer.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormTCPRaw.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormTCPServer.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormTrace.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormTrace.resx"
+                    DependentUpon = "FormTrace.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormUDPClient.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormUDPClient.resx"
+                    DependentUpon = "FormUDPClient.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormUDPInteractive.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormUDPInteractive.resx"
+                    DependentUpon = "FormUDPInteractive.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormUDPServer.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormUDPServer.resx"
+                    DependentUpon = "FormUDPServer.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormWhois.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\FormWhois.resx"
+                    DependentUpon = "FormWhois.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Network_Stuff\UserControlPacketsView.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Network_Stuff\UserControlPacketsView.resx"
+                    DependentUpon = "UserControlPacketsView.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tools\API\API_error.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tools\Drawing\CDrawString.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tools\GUI\CCheck_user_interface_inputs.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tools\GUI\Icon.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tools\GUI\ListviewItemComparer.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tools\GUI\XPStyle.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tools\GUI\Components\RichTextBoxSynchronized.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tools\GUI\Components\RichTextBoxSynchronized.resx"
+                    DependentUpon = "RichTextBoxSynchronized.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tools\GUI\Components\SimpleChart\CAxis.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tools\GUI\Components\SimpleChart\CLabel.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tools\GUI\Components\SimpleChart\CPlotInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tools\GUI\Components\SimpleChart\CPlotInfoList.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tools\GUI\Components\SimpleChart\CSimpleChart.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tools\GUI\Components\SimpleChart\CSimpleChart.resx"
+                    DependentUpon = "CSimpleChart.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tools\GUI\Controls\HexViewer\HexViewer.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tools\GUI\Controls\HexViewer\HexViewer.resx"
+                    DependentUpon = "HexViewer.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tools\GUI\Windows\ErrorReport\Cuser_group.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tools\GUI\Windows\ErrorReport\FormMainCatch.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tools\GUI\Windows\ErrorReport\FormMainCatch.resx"
+                    DependentUpon = "FormMainCatch.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tools\IO\file_access.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tools\Text\ClassEreg.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tools\Threading\Semaphore.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tools\Xml\XML_access.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

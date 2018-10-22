@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Network_Stuff">
+</Property><Property Name="Solution File" Value="F:\WINAPI1-\HTTP SCANING\Network_Stuff.sln">
+</Property><Property Name="Date" Value="Sunday, October 21, 2018">
+</Property><Property Name="Time" Value="10:10 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Network_Stuff.sln" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff.sln">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network Stuff.csproj" Description="Project file successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network Stuff.csproj">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network Stuff.csproj.user" Description="Project user file successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network Stuff.csproj.user">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="easy_socket\bin_convert.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\easy_socket\bin_convert.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="easy_socket\checksum.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\easy_socket\checksum.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="easy_socket\Cmultiple_elements_parsing.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\easy_socket\Cmultiple_elements_parsing.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="easy_socket\hexa_convert.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\easy_socket\hexa_convert.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="easy_socket\icmp.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\easy_socket\icmp.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="easy_socket\iphelper.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\easy_socket\iphelper.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="easy_socket\ip_header.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\easy_socket\ip_header.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="easy_socket\network_convert.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\easy_socket\network_convert.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="easy_socket\packet_ToStringArray.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\easy_socket\packet_ToStringArray.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="easy_socket\RemoteShutDown.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\easy_socket\RemoteShutDown.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="easy_socket\tcp_header.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\easy_socket\tcp_header.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="easy_socket\tcp_socket.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\easy_socket\tcp_socket.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="easy_socket\Telnet.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\easy_socket\Telnet.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="easy_socket\udp_header.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\easy_socket\udp_header.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="easy_socket\udp_socket.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\easy_socket\udp_socket.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="easy_socket\wake_on_lan.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\easy_socket\wake_on_lan.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\AssemblyInfo.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\CommonInteractiveForm.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\CommonInteractiveForm.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\CommonTelnetForm.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\CommonTelnetForm.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormAddIPEntry.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormAddIPEntry.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormChooseSniffIp.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormChooseSniffIp.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormMain.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormMain.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormPing.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormPing.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormScan.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormScan.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormStat.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormStat.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormTCPClient.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormTCPClient.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormTCPInteractive.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormTCPInteractive.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormTCPInteractiveProxyServer.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormTCPInteractiveProxyServer.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormTCPRaw.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormTCPRaw.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormTCPServer.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormTCPServer.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormTrace.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormTrace.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormUDPClient.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormUDPClient.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormUDPInteractive.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormUDPInteractive.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormUDPServer.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormUDPServer.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormWhois.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormWhois.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\Form_Agreement.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\Form_Agreement.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\Form_hexa_view.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\Form_hexa_view.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\Form_packet_capture.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\Form_packet_capture.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\Form_packet_forge.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\Form_packet_forge.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\UserControlPacketsView.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\UserControlPacketsView.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\API\API_error.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\API\API_error.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\Drawing\CDrawString.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\Drawing\CDrawString.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\GUI\CCheck_user_interface_inputs.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\GUI\CCheck_user_interface_inputs.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\GUI\Components\RichTextBoxSynchronized.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\GUI\Components\RichTextBoxSynchronized.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\GUI\Components\SimpleChart\CAxis.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\GUI\Components\SimpleChart\CAxis.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\GUI\Components\SimpleChart\CLabel.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\GUI\Components\SimpleChart\CLabel.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\GUI\Components\SimpleChart\CPlotInfo.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\GUI\Components\SimpleChart\CPlotInfo.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\GUI\Components\SimpleChart\CPlotInfoList.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\GUI\Components\SimpleChart\CPlotInfoList.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\GUI\Components\SimpleChart\CSimpleChart.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\GUI\Components\SimpleChart\CSimpleChart.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\GUI\Controls\HexViewer\HexViewer.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\GUI\Controls\HexViewer\HexViewer.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\GUI\Icon.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\GUI\Icon.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\GUI\ListviewItemComparer.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\GUI\ListviewItemComparer.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\GUI\Windows\ErrorReport\Cuser_group.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\GUI\Windows\ErrorReport\Cuser_group.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\GUI\Windows\ErrorReport\FormMainCatch.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\GUI\Windows\ErrorReport\FormMainCatch.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\GUI\XPStyle.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\GUI\XPStyle.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\IO\file_access.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\IO\file_access.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\Text\ClassEreg.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\Text\ClassEreg.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\Threading\Semaphore.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\Threading\Semaphore.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\Xml\XML_access.cs" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\Xml\XML_access.cs">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\CommonInteractiveForm.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\CommonInteractiveForm.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\CommonTelnetForm.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\CommonTelnetForm.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormAddIPEntry.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormAddIPEntry.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormChooseSniffIp.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormChooseSniffIp.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormMain.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormMain.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormPing.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormPing.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormScan.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormScan.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormStat.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormStat.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormTCPClient.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormTCPClient.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormTCPInteractive.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormTCPInteractive.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormTCPInteractiveProxyServer.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormTCPInteractiveProxyServer.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormTrace.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormTrace.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormUDPClient.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormUDPClient.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormUDPInteractive.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormUDPInteractive.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormUDPServer.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormUDPServer.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\FormWhois.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\FormWhois.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\Form_Agreement.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\Form_Agreement.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\Form_hexa_view.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\Form_hexa_view.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\Form_packet_capture.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\Form_packet_capture.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\Form_packet_forge.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\Form_packet_forge.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network_Stuff\UserControlPacketsView.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Network_Stuff\UserControlPacketsView.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\GUI\Components\RichTextBoxSynchronized.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\GUI\Components\RichTextBoxSynchronized.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\GUI\Components\SimpleChart\CSimpleChart.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\GUI\Components\SimpleChart\CSimpleChart.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\GUI\Controls\HexViewer\HexViewer.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\GUI\Controls\HexViewer\HexViewer.resx">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Tools\GUI\Windows\ErrorReport\FormMainCatch.resx" Description="File successfully backed up as F:\WINAPI1-\HTTP SCANING\Backup\Tools\GUI\Windows\ErrorReport\FormMainCatch.resx">
+</Event><Event ErrorLevel="1" Project="Network Stuff" Source="Network Stuff.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network Stuff.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Network Stuff" Source="Network Stuff.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Network_Stuff.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Network_Stuff.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Network Stuff" Source="Network Stuff.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: HTTPrequest - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/HTTPrequest.res" /d "NDEBUG" /d "_AFXDLL" "C:\Projects\Articles\HTTP\HTTPrequest\HTTPrequest.rc"" 
+Creating temporary file "C:\DOCUME~1\andi\LOCALS~1\Temp\RSP1C5.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/HTTPrequest.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Projects\Articles\HTTP\HTTPrequest\HTTPrequest.cpp"
+"C:\Projects\Articles\HTTP\HTTPrequest\HTTPrequestDlg.cpp"
+"C:\Projects\Articles\HTTP\HTTPrequest\Request.cpp"
+"C:\Projects\Articles\HTTP\HTTPrequest\webbrowser2.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\andi\LOCALS~1\Temp\RSP1C5.tmp" 
+Creating temporary file "C:\DOCUME~1\andi\LOCALS~1\Temp\RSP1C6.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/HTTPrequest.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Projects\Articles\HTTP\HTTPrequest\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\andi\LOCALS~1\Temp\RSP1C6.tmp" 
+Creating temporary file "C:\DOCUME~1\andi\LOCALS~1\Temp\RSP1C7.tmp" with contents
+[
+Ws2_32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/HTTPrequest.pdb" /machine:I386 /out:"HTTPrequest.exe" 
+.\Release\HTTPrequest.obj
+.\Release\HTTPrequestDlg.obj
+.\Release\Request.obj
+.\Release\StdAfx.obj
+.\Release\webbrowser2.obj
+.\Release\HTTPrequest.res
+]
+Creating command line "link.exe @C:\DOCUME~1\andi\LOCALS~1\Temp\RSP1C7.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+HTTPrequest.cpp
+HTTPrequestDlg.cpp
+C:\Projects\Articles\HTTP\HTTPrequest\HTTPrequestDlg.cpp(229) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+Request.cpp
+C:\Projects\Articles\HTTP\HTTPrequest\Request.cpp(375) : warning C4101: 'j' : unreferenced local variable
+C:\Projects\Articles\HTTP\HTTPrequest\Request.cpp(376) : warning C4101: 'fp' : unreferenced local variable
+webbrowser2.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+HTTPrequest.exe - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

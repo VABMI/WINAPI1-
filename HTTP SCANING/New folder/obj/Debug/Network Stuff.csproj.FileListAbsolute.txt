@@ -1,0 +1,26 @@
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Network_Stuff.CommonInteractiveForm.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Network_Stuff.CommonTelnetForm.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Network_Stuff.FormAddIPEntry.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\easy_socket.FormChooseSniffIp.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Network_Stuff.FormMain.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Network_Stuff.FormPing.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Network_Stuff.FormScan.FormScan.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Network_Stuff.FormStat.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Network_Stuff.FormTCPClient.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Network_Stuff.FormTCPInteractive.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Network_Stuff.FormTCPInteractiveProxyServer.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Network_Stuff.FormTrace.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Network_Stuff.FormUDPClient.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Network_Stuff.FormUDPInteractive.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Network_Stuff.FormUDPServer.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Network_Stuff.FormWhois.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Network_Stuff.Form_Agreement.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Network_Stuff.Form_hexa_view.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Network_Stuff.Form_packet_capture.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Network_Stuff.Form_packet_forge.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Network_Stuff.UserControlPacketsView.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Tools.GUI.Components.RichTextBoxSynchronized.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Tools.GUI.Components.SimpleChart.CSimpleChart.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Tools.GUI.Controls.HexViewer.HexViewer.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Tools.GUI.Windows.ErrorReport.FormMainCatch.resources
+F:\WINAPI1-\HTTP SCANING\obj\Debug\Network Stuff.csproj.GenerateResource.Cache

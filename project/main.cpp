@@ -70,7 +70,7 @@ DWORD GetVersion(LPCTSTR lpszDllName)
 
 
 //#include "combo func.cpp"
-	HWND hwnd=0;
+HWND hwnd=0;
 HDC hdc;
 bool wmsize=false;
 unsigned int msg1;UINT msg2;
