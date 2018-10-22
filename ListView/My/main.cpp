@@ -44,6 +44,53 @@ VOID SetView(HWND hWndListView, DWORD dwView) ;
 HINSTANCE hInst;
 //////=========================================================////////////////////
 
+
+// InitListViewColumns: Adds columns to a list-view control.
+// hWndListView:        Handle to the list-view control. 
+// Returns TRUE if successful, and FALSE otherwise. 
+BOOL InitListViewColumns(HWND hWndListView) 
+{ 
+    char szText[]="asas";     // Temporary buffer.
+    LVCOLUMN lvc;
+    int iCol=0;
+
+    // Initialize the LVCOLUMN structure.
+    // The mask specifies that the format, width, text,
+    // and subitem members of the structure are valid.
+    lvc.mask = LVCF_FMT | LVCF_WIDTH | LVCF_TEXT | LVCF_SUBITEM;
+
+    // Add the columns.
+    
+ for(int iCol=0;iCol<=5;iCol++)
+ {
+	
+	
+	
+	lvc.iSubItem = iCol;
+        lvc.pszText = (LPSTR)szText;
+        lvc.cx = 100;               // Width of column in pixels.
+
+        if ( iCol < 2 )
+            lvc.fmt = LVCFMT_LEFT;  // Left-aligned column.
+        else
+            lvc.fmt = LVCFMT_RIGHT; // Right-aligned column.
+
+        // Load the names of the column headings from the string resources.
+
+        // Insert the columns into the list view.
+        ListView_InsertColumn(hWndListView, iCol, &lvc);
+        
+}
+
+
+
+    
+    return TRUE;
+} 
+
+
+/////// ==================================================== //////////////////
+
 LRESULT ProcessCustomDraw (LPARAM lParam)
 {
     LPNMLVCUSTOMDRAW lplvcd = (LPNMLVCUSTOMDRAW)lParam;
@@ -152,7 +199,7 @@ MSG msg;
 //===================================================
 long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message, unsigned int wparam,long lparam)
 {
-	/*
+	
 	HWND Lhwnd;
 	switch(message)
 	{
@@ -163,109 +210,13 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message, unsi
 				
 
 	Lhwnd=CreateListView(hwnd);
-
-			}break;
-		case WM_NOTIFY:
-		{
-			switch(LOWORD(wparam))
-			{
-			    case IDC_LIST: 
-				LPNMLISTVIEW pnm = (LPNMLISTVIEW)lparam;
-
-                if(pnm->hdr.hwndFrom == hList &&pnm->hdr.code == NM_CUSTOMDRAW)
-                {
-                    SetWindowLong(hwnd, DWL_MSGRESULT, (LONG)ProcessCustomDraw(lparam));
-                    return TRUE;
-                }
-				
-                if(((LPNMHDR)lparam)->code == NM_DBLCLK)
-				{
-				  char Text[255]={0};  
-				  char Temp[255]={0};
-				  char Temp1[255]={0};
-				  int iSlected=0;
-				  int j=0;
-
-				  iSlected=SendMessage(hList,LVM_GETNEXTITEM,-1,LVNI_FOCUSED);
-				  
-				  if(iSlected==-1)
-				  {
-                    MessageBox(hwnd,"No Items in ListView","Error",MB_OK|MB_ICONINFORMATION);
-					break;
-				  }
-
-				  memset(&LvItem,0,sizeof(LvItem));
-                  LvItem.mask=LVIF_TEXT;
-				  LvItem.iSubItem=0;
-				  LvItem.pszText=Text;
-				  LvItem.cchTextMax=256;
-				  LvItem.iItem=iSlected;
-                  
-				  SendMessage(hList,LVM_GETITEMTEXT, iSlected, (LPARAM)&LvItem);
-				  
-				  sprintf(Temp1,Text);
-				  
-				  for(j=1;j<=5;j++)
-				  {
-					LvItem.iSubItem=j;
-				    SendMessage(hList,LVM_GETITEMTEXT, iSlected, (LPARAM)&LvItem);
-				    sprintf(Temp," %s",Text);
-					lstrcat(Temp1,Temp);
-				  }
-
-				  MessageBox(hwnd,Temp1,"test",MB_OK);
-
-				}
-				if(((LPNMHDR)lparam)->code == NM_CLICK)
-				{
-					iSelect=SendMessage(hList,LVM_GETNEXTITEM,-1,LVNI_FOCUSED);
-				    
-					if(iSelect==-1)
-					{                      
-					  break;
-					}
-					index=iSelect;
-					flag=1;
-				}
-
-                if(((LPNMHDR)lparam)->code == LVN_BEGINLABELEDIT)
-                {
-                  //Editing=1;
-                  hEdit=ListView_GetEditControl(hList);
-                  GetWindowText(hEdit, tempstr, sizeof(tempstr));
-                }
-				
-                if(((LPNMHDR)lparam)->code == LVN_ENDLABELEDIT)
-                {
-                    int iIndex;
-                    char text[255]="";
-
-                    tchar = (TCHAR)msg.wParam;
-                    if(tchar == 0x1b)
-                          escKey=1;
-
-                    iIndex=SendMessage(hList,LVM_GETNEXTITEM,-1,LVNI_FOCUSED);
-                    if(iIndex==-1)
-					   break;
-					
-					LvItem.iSubItem=0;
-                                       
-                    if(escKey==0)
-					{
-						LvItem.pszText=text; 
-						GetWindowText(hEdit, text, sizeof(text));
-                        SendMessage(hList,LVM_SETITEMTEXT,(WPARAM)iIndex,(LPARAM)&LvItem);
-					}
-                    else{
-                        LvItem.pszText=tempstr;
-                        SendMessage(hList,LVM_SETITEMTEXT,(WPARAM)iIndex,(LPARAM)&LvItem);
-                        escKey=0;
-                    }
-                    //Editing=0;
-                }
-                break;
+	InitListViewColumns(Lhwnd);
 			}
-		}
+			break;
+		case WM_NOTIFY:
+	
+
+			break;
 
 		case WM_COMMAND:
 	
@@ -291,10 +242,10 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message, unsi
 		exit(1);
 		//PostQuitMessage(0);
 		break;
-	}*/
+	}
 
 
-
+/*
 
 
   switch(message)
@@ -518,7 +469,7 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message, unsi
                                 escKey=1;
 
                         }
-                        */
+                        
                         if(msg.message==WM_QUIT)// killing while looking for a message
                         {
                                 break;
@@ -673,7 +624,7 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message, unsi
     }
 
 
-
+	*/
 
 
 
