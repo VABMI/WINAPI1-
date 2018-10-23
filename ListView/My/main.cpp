@@ -147,6 +147,8 @@ for(int i=1;i<=5;i++) // Add SubItems in a loop
 }
 
 
+SendMessage(hWndListView,LVM_DELETEITEM,1,0); // delete the item 
+
 
 
 
