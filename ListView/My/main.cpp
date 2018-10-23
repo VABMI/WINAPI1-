@@ -67,6 +67,7 @@ BOOL InitListViewColumns(HWND hWndListView)
 	
 	
 	lvc.iSubItem = iCol;
+	
         lvc.pszText = (LPSTR)szText;
         lvc.cx = 100;               // Width of column in pixels.
 
@@ -104,24 +105,35 @@ BOOL InitListViewColumns(HWND hWndListView)
    item.pszText = TEXT("34567");
    ListView_InsertItem(hWndListView, &item);
    */
+ char *g="123151651";
 
-memset(&LvItem,0,sizeof(LvItem)); // Zero struct's Members
+	LVITEM item1;
+   item1.mask = LVIF_TEXT;
+   item1.cchTextMax = 10000;
 
-//  Setting properties Of members:
+  item1.iSubItem = 0;
+   item1.pszText = g;
+   item1.iItem = 0;
+ //  ListView_InsertItem(hWndListView, &item1);
 
-LvItem.mask=LVIF_TEXT;   // Text Style
-LvItem.cchTextMax = 256; // Max size of test
-LvItem.iItem=0;          // choose item  
-LvItem.iSubItem=0;       // Put in first coluom
-LvItem.pszText="Item 0"; // Text to display (can be from a char variable) (Items)
-
-SendMessage(hList,LVM_INSERTITEM,0,(LPARAM)&LvItem); // Send info to the Listview
+	SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1); // Send info to the Listview
 
 
-   LvItem.iSubItem=2;
+
+
+
+	  item1.iSubItem = 1;
+   item1.pszText = g;
+   item1.iItem = 0;
+ //  ListView_InsertItem(hWndListView, &item1);
+
+	SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1); // Send info to the Listview
+
+
+ //  LvItem.iSubItem=2;
   
-   LvItem.pszText="Asas";
-   SendMessage(hList,LVM_SETITEM,0,(LPARAM)&LvItem); // Enter text to SubItems
+ //  LvItem.pszText="Asas";
+   //SendMessage(hList,LVM_SETITEM,0,(LPARAM)&LvItem); // Enter text to SubItems
 
     return TRUE;
 } 
