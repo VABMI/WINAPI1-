@@ -1,0 +1,20 @@
+﻿Build started 10/23/2018 12:44:49 PM.
+     1>Project "F:\WINAPI1-\EditControl\p21\p21.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\Debug\p21.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         F:\New Folder (1)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt p21.cpp
+         p21.cpp
+     1>f:\winapi1-\editcontrol\p21\mouse_msg.cpp(18): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 f:\new folder (1)\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>f:\winapi1-\editcontrol\p21\cmd_msg.cpp(8): warning C4101: 'hfontPrev' : unreferenced local variable
+     1>f:\winapi1-\editcontrol\p21\cmd_msg.cpp(52): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 f:\new folder (1)\vc\include\string.h(110) : see declaration of 'strcat'
+     1>f:\winapi1-\editcontrol\p21\paint.cpp(11): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 f:\new folder (1)\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>f:\winapi1-\editcontrol\p21\on_create.cpp(57): error C2065: 'CB_SETTEXT' : undeclared identifier
+     1>Done Building Project "F:\WINAPI1-\EditControl\p21\p21.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.27

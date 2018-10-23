@@ -87,24 +87,7 @@ BOOL InitListViewColumns(HWND hWndListView)
 
         
 }
- /*
-   LVITEM item;
-   item.mask = LVIF_TEXT;
-   item.cchTextMax = 6;
 
-   item.iSubItem = 1;
-   item.pszText = TEXT("12345");
-   item.iItem = 0;
-   ListView_InsertItem(hWndListView, &item);
-
-   item.iSubItem = 2; // zero based index of column
-   item.pszText = TEXT("23456");
-   ListView_InsertItem(hWndListView, &item);
-
-   item.iSubItem = 3; // zero based index of column
-   item.pszText = TEXT("34567");
-   ListView_InsertItem(hWndListView, &item);
-   */
  char g[100]="123151651";
 
 	LVITEM item1;
