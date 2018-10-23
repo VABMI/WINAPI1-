@@ -105,35 +105,51 @@ BOOL InitListViewColumns(HWND hWndListView)
    item.pszText = TEXT("34567");
    ListView_InsertItem(hWndListView, &item);
    */
- char *g="123151651";
+ char g[100]="123151651";
 
 	LVITEM item1;
    item1.mask = LVIF_TEXT;
-   item1.cchTextMax = 10000;
+   item1.cchTextMax = 256;
 
   item1.iSubItem = 0;
    item1.pszText = g;
    item1.iItem = 0;
  //  ListView_InsertItem(hWndListView, &item1);
 
-	SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1); // Send info to the Listview
 
 
 
-
-
-	  item1.iSubItem = 1;
-   item1.pszText = g;
-   item1.iItem = 0;
- //  ListView_InsertItem(hWndListView, &item1);
 
 	SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1); // Send info to the Listview
 
 
- //  LvItem.iSubItem=2;
-  
- //  LvItem.pszText="Asas";
-   //SendMessage(hList,LVM_SETITEM,0,(LPARAM)&LvItem); // Enter text to SubItems
+	for(int i=1;i<=5;i++) // Add SubItems in a loop
+{
+   item1.iSubItem=i;
+   sprintf(g,"SubItem %d",i);
+   item1.pszText=g;
+   SendMessage(hWndListView,LVM_SETITEM,0,(LPARAM)&item1); // Enter text to SubItems
+}
+
+
+	item1.iItem=1;           // choose item  
+item1.iSubItem=0;        // Put in first coluom
+item1.pszText="Item 1";  // Text to display 
+
+SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1); // Send to the Listview
+
+for(int i=1;i<=5;i++) // Add SubItems in a loop
+{
+  item1.iSubItem=i;
+  sprintf(g,"SubItem %d",i);
+  item1.pszText=g;
+  SendMessage(hWndListView,LVM_SETITEM,0,(LPARAM)&item1); // Enter text to SubItems
+}
+
+
+
+
+
 
     return TRUE;
 } 
