@@ -174,7 +174,7 @@ void create(HWND hwnd,UINT msg,WPARAM wp,LPARAM lp)
 
 	HICON icon;
 
-icon	= (HICON)LoadImage(NULL,"C:\\Users\\vaxoa\\OneDrive\\Desktop\\icon\\Itzikgur-My-Seven-Downloads-2.ico", IMAGE_ICON,30,30, LR_LOADFROMFILE);
+icon	= (HICON)LoadImage(NULL,"C:\\Users\\vaxoa\\OneDrive\\Desktop\\icon\\Itzikgur-My-Seven-Downloads-2.icao", IMAGE_ICON,30,30, LR_LOADFROMFILE);
 		
 if(icon){
 
