@@ -1,0 +1,30 @@
+﻿Build started 10/16/2018 3:19:36 AM.
+     1>Project "C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\MP3NetLib\MP3NetLib.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\MP3NetLib.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         F:\New Folder (1)\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\\" /AIC:\Windows\Microsoft.NET\Framework\v3.5\ /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\\" /AIC:\Windows\Microsoft.NET\Framework\v3.0\ /AIC:\Windows\Microsoft.NET\Framework\v2.0.50727\ /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\MP3NetLib.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.dll" /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /analyze- /errorReport:prompt Stdafx.cpp /d1clr:nostdlib 
+         Stdafx.cpp
+         F:\New Folder (1)\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\\" /AIC:\Windows\Microsoft.NET\Framework\v3.5\ /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\\" /AIC:\Windows\Microsoft.NET\Framework\v3.0\ /AIC:\Windows\Microsoft.NET\Framework\v2.0.50727\ /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\MP3NetLib.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.dll" /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /analyze- /errorReport:prompt AssemblyInfo.cpp MP3Player.cpp /d1clr:nostdlib 
+         AssemblyInfo.cpp
+         MP3Player.cpp
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\app.res" app.rc 
+       Link:
+         F:\New Folder (1)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\MP3NetLib.dll" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\MP3NetLib.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\MP3NetLib.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /DLL Debug\app.res
+         Debug\AssemblyInfo.obj
+         Debug\MP3Player.obj
+         Debug\Stdafx.obj
+     1>LibMP3.lib(Mp3.obj) : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+         MP3NetLib.vcxproj -> C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\MP3NetLib.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\MP3NetLib.dll;#2" /manifest Debug\MP3NetLib.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\MP3NetLib.unsuccessfulbuild".
+         Touching "Debug\MP3NetLib.lastbuildstate".
+     1>Done Building Project "C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\MP3NetLib\MP3NetLib.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:09.18

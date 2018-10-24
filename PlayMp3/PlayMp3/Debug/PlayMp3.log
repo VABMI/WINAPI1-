@@ -1,0 +1,46 @@
+﻿Build started 10/16/2018 3:19:42 AM.
+     1>Project "C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\PlayMp3\PlayMp3.vcxproj" on node 4 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\PlayMp3.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         F:\New Folder (1)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\PlayMp3.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         F:\New Folder (1)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\PlayMp3.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt LibMP3DLL.cpp PlayMp3.cpp PlayMp3Dlg.cpp
+         PlayMp3Dlg.cpp
+     1>c:\users\vaxoa\onedrive\desktop\playmp3\playmp3\playmp3dlg.cpp(158): warning C4244: 'initializing' : conversion from '__int64' to 'int', possible loss of data
+     1>c:\users\vaxoa\onedrive\desktop\playmp3\playmp3\playmp3dlg.cpp(161): warning C4244: 'initializing' : conversion from '__int64' to 'int', possible loss of data
+     1>c:\users\vaxoa\onedrive\desktop\playmp3\playmp3\playmp3dlg.cpp(320): warning C4244: 'initializing' : conversion from '__int64' to 'int', possible loss of data
+     1>c:\users\vaxoa\onedrive\desktop\playmp3\playmp3\playmp3dlg.cpp(323): warning C4244: 'initializing' : conversion from '__int64' to 'int', possible loss of data
+         PlayMp3.cpp
+         LibMP3DLL.cpp
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /IDebug\ /nologo /fo"Debug\PlayMp3.res" PlayMp3.rc 
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\PlayMp3.exe.embed.manifest.res" Debug\PlayMp3_manifest.rc 
+       Link:
+         F:\New Folder (1)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\PlayMp3.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\PlayMp3.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\PlayMp3.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\PlayMp3.lib" /MACHINE:X86 Debug\PlayMp3.res
+         Debug\PlayMp3.exe.embed.manifest.res
+         Debug\LibMP3DLL.obj
+         Debug\PlayMp3.obj
+         Debug\PlayMp3Dlg.obj
+         Debug\stdafx.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\PlayMp3.exe.embed.manifest" /manifest Debug\PlayMp3.exe.intermediate.manifest "F:\New Folder (1)\VC\Include\Manifest\dpiaware.manifest"
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\PlayMp3.exe.embed.manifest.res" Debug\PlayMp3_manifest.rc 
+       LinkEmbedManifest:
+         F:\New Folder (1)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\PlayMp3.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\PlayMp3.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\PlayMp3.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\PlayMp3.lib" /MACHINE:X86 Debug\PlayMp3.res
+         Debug\PlayMp3.exe.embed.manifest.res
+         Debug\LibMP3DLL.obj
+         Debug\PlayMp3.obj
+         Debug\PlayMp3Dlg.obj
+         Debug\stdafx.obj
+         PlayMp3.vcxproj -> C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\PlayMp3.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\PlayMp3.unsuccessfulbuild".
+         Touching "Debug\PlayMp3.lastbuildstate".
+     1>Done Building Project "C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\PlayMp3\PlayMp3.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:27.41

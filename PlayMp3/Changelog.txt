@@ -1,0 +1,5 @@
+Version 0.6 (2011-07-21)
++ Added C++/CLI interop assembly.
+
+Version 0.5 (2011-07-19)
++ 1st release without media seeking.

@@ -1,0 +1,41 @@
+﻿Build started 10/16/2018 3:19:26 AM.
+     1>Project "C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\LibMP3DLL\LibMP3DLL.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\LibMP3DLL.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         F:\New Folder (1)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D LIBMP3 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBMP3DLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\LibMP3DLL.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         F:\New Folder (1)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D LIBMP3 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBMP3DLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+         F:\New Folder (1)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D LIBMP3 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBMP3DLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\LibMP3DLL.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt LibMP3DLL.cpp Mp3.cpp
+         Mp3.cpp
+         LibMP3DLL.cpp
+         Generating Code...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\LibMP3DLL.dll.embed.manifest.res" Debug\LibMP3DLL_manifest.rc 
+       Link:
+         F:\New Folder (1)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\LibMP3DLL.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"LibMP3DLL.def" /MANIFEST /ManifestFile:"Debug\LibMP3DLL.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\LibMP3DLL.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\LibMP3DLL.lib" /MACHINE:X86 /DLL Debug\LibMP3DLL.dll.embed.manifest.res
+         Debug\dllmain.obj
+         Debug\LibMP3DLL.obj
+         Debug\Mp3.obj
+         Debug\stdafx.obj
+            Creating library C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\LibMP3DLL.lib and object C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\LibMP3DLL.exp
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\LibMP3DLL.dll.embed.manifest" /manifest Debug\LibMP3DLL.dll.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\LibMP3DLL.dll.embed.manifest.res" Debug\LibMP3DLL_manifest.rc 
+       LinkEmbedManifest:
+         F:\New Folder (1)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\LibMP3DLL.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"LibMP3DLL.def" /MANIFEST /ManifestFile:"Debug\LibMP3DLL.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\LibMP3DLL.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\LibMP3DLL.lib" /MACHINE:X86 /DLL Debug\LibMP3DLL.dll.embed.manifest.res
+         Debug\dllmain.obj
+         Debug\LibMP3DLL.obj
+         Debug\Mp3.obj
+         Debug\stdafx.obj
+            Creating library C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\LibMP3DLL.lib and object C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\LibMP3DLL.exp
+         LibMP3DLL.vcxproj -> C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\LibMP3DLL.dll
+       FinalizeBuildStatus:
+         Deleting file "Debug\LibMP3DLL.unsuccessfulbuild".
+         Touching "Debug\LibMP3DLL.lastbuildstate".
+     1>Done Building Project "C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\LibMP3DLL\LibMP3DLL.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:15.78

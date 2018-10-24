@@ -1,0 +1,19 @@
+LIBRARY LibMP3DLL
+EXPORTS
+
+Load		@1
+Cleanup		@2
+Play		@3
+Pause		@4
+Stop		@5
+
+WaitForCompletion   @6
+
+SetVolume   @7
+GetVolume   @8
+
+GetDuration   @9
+
+GetCurrentPosition   @10
+
+SetPositions   @11

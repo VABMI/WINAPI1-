@@ -1,0 +1,31 @@
+﻿Build started 10/16/2018 3:19:37 AM.
+     1>Project "C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\PlayMp3Console\PlayMp3Console.vcxproj" on node 4 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\PlayMp3Console.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         F:\New Folder (1)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\PlayMp3Console.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         F:\New Folder (1)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\PlayMp3Console.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt PlayMp3Console.cpp
+         PlayMp3Console.cpp
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\PlayMp3Console.exe.embed.manifest.res" Debug\PlayMp3Console_manifest.rc 
+       Link:
+         F:\New Folder (1)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\PlayMp3Console.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\PlayMp3Console.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\PlayMp3Console.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\PlayMp3Console.lib" /MACHINE:X86 Debug\PlayMp3Console.exe.embed.manifest.res
+         Debug\PlayMp3Console.obj
+         Debug\stdafx.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\PlayMp3Console.exe.embed.manifest" /manifest Debug\PlayMp3Console.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\PlayMp3Console.exe.embed.manifest.res" Debug\PlayMp3Console_manifest.rc 
+       LinkEmbedManifest:
+         F:\New Folder (1)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\PlayMp3Console.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\PlayMp3Console.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\PlayMp3Console.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\PlayMp3Console.lib" /MACHINE:X86 Debug\PlayMp3Console.exe.embed.manifest.res
+         Debug\PlayMp3Console.obj
+         Debug\stdafx.obj
+         PlayMp3Console.vcxproj -> C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\Debug\PlayMp3Console.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\PlayMp3Console.unsuccessfulbuild".
+         Touching "Debug\PlayMp3Console.lastbuildstate".
+     1>Done Building Project "C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\PlayMp3Console\PlayMp3Console.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:24.48

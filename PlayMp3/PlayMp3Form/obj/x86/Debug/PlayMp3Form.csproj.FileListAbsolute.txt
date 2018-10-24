@@ -1,0 +1,11 @@
+C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\PlayMp3Form\bin\Debug\PlayMp3Form.exe.config
+C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\PlayMp3Form\bin\Debug\PlayMp3Form.exe
+C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\PlayMp3Form\bin\Debug\PlayMp3Form.pdb
+C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\PlayMp3Form\bin\Debug\MP3NetLib.dll
+C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\PlayMp3Form\bin\Debug\MP3NetLib.pdb
+C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\PlayMp3Form\obj\x86\Debug\PlayMp3Form.csprojResolveAssemblyReference.cache
+C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\PlayMp3Form\obj\x86\Debug\PlayMp3Form.Form1.resources
+C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\PlayMp3Form\obj\x86\Debug\PlayMp3Form.Properties.Resources.resources
+C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\PlayMp3Form\obj\x86\Debug\PlayMp3Form.csproj.GenerateResource.Cache
+C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\PlayMp3Form\obj\x86\Debug\PlayMp3Form.exe
+C:\Users\vaxoa\OneDrive\Desktop\PlayMp3\PlayMp3Form\obj\x86\Debug\PlayMp3Form.pdb
