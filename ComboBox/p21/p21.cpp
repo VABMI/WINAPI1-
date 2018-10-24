@@ -32,15 +32,23 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message
             switch(HIWORD(wparam)) // Find out what message it was
             {
             case CBN_DROPDOWN: // This means that the list is about to display
-                MessageBox(hwnd, "A request to display the list has been made",
+                MessageBox(hwnd, "CBN_DROPDOWN",
                            "Display Notification", MB_OK);
                 break;
 
+			case CBN_CLOSEUP :
 
 
+				   MessageBox(hwnd, "CLOSEUP","CLOSEUP", MB_OK);
+
+				break;
 			case CBN_SELCHANGE:
 
 				   MessageBox(hwnd, "Archeva","archeva", MB_OK);
+				break;
+			case CBN_DBLCLK:
+
+				  MessageBox(hwnd, "CBN_DBLCLK","CBN_DBLCLK", MB_OK);
 				break;
             }
         break;
