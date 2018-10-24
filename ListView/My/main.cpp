@@ -343,6 +343,11 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message, unsi
 {
 	
 	HWND Lhwnd;
+
+
+
+
+
 	switch(message)
 	{
 		case WM_CREATE:
@@ -355,12 +360,30 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message, unsi
 	InitListViewColumns(Lhwnd);
 			}
 			break;
-		case WM_NOTIFY:
-	
-
-			break;
-
+		
 		case WM_COMMAND:
+
+			
+			switch((int)LOWORD(wparam))
+			{
+			case LBN_DBLCLK :
+
+
+				MessageBox(hwnd,"LBN_DBLCLK","LBN_DBLCLK",0);
+
+
+				break;
+
+			case LBN_SETFOCUS:
+
+				MessageBox(hwnd,"LBN_SETFOCUS","LBN_SETFOCUS",0);
+
+				break;
+
+
+			}
+
+
 	
 		break;
 		
@@ -370,21 +393,41 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message, unsi
 
 		break;
 
-		case WM_KEYDOWN:
-	
-		break;
-
-		case WM_CTLCOLOREDIT:
-		{
-	
-		}
-		break;
 
 		case WM_DESTROY:
 		exit(1);
 		//PostQuitMessage(0);
 		break;
 	}
+
+
+
+
+
+	   if (message == WM_NOTIFY)
+    {
+
+
+				switch(LOWORD(wparam))
+				{
+
+
+
+				LPNMHDR lpnmh = (LPNMHDR)lparam;
+				if (lpnmh->idFrom == 8553)
+				if (lpnmh->code == LVN_COLUMNCLICK)
+				{
+
+
+
+					MessageBox(hwnd,"Asadasdas","Asdada",0);
+					NMLISTVIEW*    pListView = (NMLISTVIEW*)lparam;
+     
+				}
+			}
+
+
+	   }
 
 
 /*
