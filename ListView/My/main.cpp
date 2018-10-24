@@ -44,30 +44,62 @@ VOID SetView(HWND hWndListView, DWORD dwView) ;
 HINSTANCE hInst;
 //////=========================================================////////////////////
 
-
+HIMAGELIST imageList;
 // InitListViewColumns: Adds columns to a list-view control.
 // hWndListView:        Handle to the list-view control. 
 // Returns TRUE if successful, and FALSE otherwise. 
 BOOL InitListViewColumns(HWND hWndListView) 
 { 
-    char szText[]="asas";     // Temporary buffer.
+   
+	
+	
+	
+	
+	
+	
+	
+  HICON icon;
+
+icon	= (HICON)LoadImage(NULL,"C:\\Users\\vaxoa\\OneDrive\\Desktop\\icon\\Itzikgur-My-Seven-Travel-BMV.ico", IMAGE_ICON,30,30, LR_LOADFROMFILE);
+		
+if(icon){
+
+
+	ImageList_AddIcon(imageList, icon);
+
+
+	SendMessage(hWndListView, LVM_SETIMAGELIST,(WPARAM)LVSIL_NORMAL, (LPARAM)imageList);
+}
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	char szText[]="asas";     // Temporary buffer.
     LVCOLUMN lvc;
     int iCol=0;
 
     // Initialize the LVCOLUMN structure.
     // The mask specifies that the format, width, text,
     // and subitem members of the structure are valid.
-    lvc.mask = LVCF_FMT | LVCF_WIDTH | LVCF_TEXT | LVCF_SUBITEM;
+    lvc.mask = LVCF_FMT | LVCF_WIDTH | LVCF_TEXT | LVCF_SUBITEM|LVCF_IMAGE  ;
 
     // Add the columns.
     
- for(int iCol=0;iCol<=5;iCol++)
+ for(int iCol=0;iCol<=6;iCol++)
  {
 	
 	
-	
-	lvc.iSubItem = iCol;
-	
+		lvc.iImage=0;
+		lvc.iSubItem = iCol;
+		//lvc.iImage=0;
         lvc.pszText = (LPSTR)szText;
         lvc.cx = 100;               // Width of column in pixels.
 
@@ -88,10 +120,13 @@ BOOL InitListViewColumns(HWND hWndListView)
         
 }
 
+
+
+ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
  char g[100]="123151651";
 
 	LVITEM item1;
-   item1.mask = LVIF_TEXT;
+   item1.mask = LVIF_TEXT|LVIF_IMAGE  ;
    item1.cchTextMax = 256;
 
   item1.iSubItem = 0;
@@ -114,7 +149,7 @@ BOOL InitListViewColumns(HWND hWndListView)
    SendMessage(hWndListView,LVM_SETITEM,0,(LPARAM)&item1); // Enter text to SubItems
 }
 
-
+	
 	item1.iItem=1;           // choose item  
 item1.iSubItem=0;        // Put in first coluom
 item1.pszText="Item 1";  // Text to display 
@@ -130,13 +165,54 @@ for(int i=1;i<=5;i++) // Add SubItems in a loop
 }
 
 
-SendMessage(hWndListView,LVM_DELETEITEM,1,0); // delete the item 
+for(int d=1;d<=10;d++){
+
+
+
+
+		
+	item1.iItem=d;           // choose item  
+item1.iSubItem=0;        // Put in first coluom
+item1.pszText="Item 1";  // Text to display 
+
+SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1); // Send to the Listview
+
+for(int i=1;i<=5;i++) // Add SubItems in a loop
+{
+  item1.iSubItem=i;
+  sprintf(g,"SubItem %d",i);
+  item1.pszText=g;
+  SendMessage(hWndListView,LVM_SETITEM,0,(LPARAM)&item1); // Enter text to SubItems
+}
+
+
+}
 
 
 
 
 
-    return TRUE;
+//SendMessage(hWndListView,LVM_DELETEITEM,1,0); // delete the item 
+
+
+///////////////////////////// iconebis chasmaaa ////////////////////////////
+
+
+
+	item1.iItem=6;           // choose item  
+item1.iSubItem=0;        // Put in first coluom
+item1.pszText="Item 1";  // Text to display 
+
+SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1); // Send to the Listview
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+  
+
+//////////////////////////////////////////////////////////////////////////
+return TRUE;
 } 
 
 
