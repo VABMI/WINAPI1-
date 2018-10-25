@@ -2,12 +2,15 @@
 #include <stdio.h>
 #include "commctrl.h"
 #include <Uxtheme.h>
+#pragma comment(lib,"comctl32.lib")
 
-HWND CreateListView (HWND hwndParent) ;
+
+
+#include"Create_ListView.cpp"
 VOID SetView(HWND hWndListView, DWORD dwView) ;
 #define IDM_CODE_SAMPLES 1
 
-#pragma comment(lib,"comctl32.lib")
+
 
 ///==========================Defines ==============================//
 
@@ -43,284 +46,11 @@ VOID SetView(HWND hWndListView, DWORD dwView) ;
 ///==============================================================////
 HINSTANCE hInst;
 //////=========================================================////////////////////
-
-
-// InitListViewColumns: Adds columns to a list-view control.
-// hWndListView:        Handle to the list-view control. 
-// Returns TRUE if successful, and FALSE otherwise. 
-BOOL InitListViewColumns(HWND hWndListView) 
-{ 
-
-	   LVCOLUMN lvc; /////// svetebis struqtura ..............
-
-
-		HIMAGELIST imageList1 = ::ImageList_Create(20,20,ILC_COLORDDB | ILC_MASK,1,100); ///// imig listis hendeli 
-		HICON icon;
-		/////////////////// iconisssss
-	icon	= (HICON)LoadImage(NULL,"C:\\Users\\vaxoa\\OneDrive\\Desktop\\icon\\Itzikgur-My-Seven-Travel-BMV.ico", IMAGE_ICON,30,30, LR_LOADFROMFILE);
-		
-if(icon)
-	{
-	ImageList_AddIcon(imageList1, icon); ///// image listshi iconis chasma
-
-	}
-
-	
-if(ImageList_GetImageCount(imageList1) == 1)
-	{				
-					///--- image listis gagzavna list views tvis /////////////////////
-			SendMessage(hWndListView, LVM_SETIMAGELIST,(WPARAM)LVSIL_NORMAL, (LPARAM)imageList1);	
-	
-
-	}
-
-
-/////////////////////////////////////////////// ar mushaobs ListView_SetImageList ?????????? ======//
-
-
-
-if(ImageList_GetImageCount(imageList1) == 1)
-	{
-		if(ListView_SetImageList(hWndListView, imageList1,LVSIL_NORMAL))
-		{
-
-			SendMessage(hWndListView, LVM_SETIMAGELIST,(WPARAM)LVSIL_SMALL, (LPARAM)imageList1);
-
-
-		}
-		
-	}
-	
-	
-	
-	
-	
-	
-//////////====================== END SET IMAGE LIST ===============================//////////////////////////////////
-	char szText[]="asas";     // Temporary buffer.
- 
-    int iCol=0;
-
-    // Initialize the LVCOLUMN structure.
-    // The mask specifies that the format, width, text,
-    // and subitem members of the structure are valid.
-    lvc.mask = LVCF_FMT | LVCF_WIDTH | LVCF_TEXT | LVCF_SUBITEM|LVCF_IMAGE  ;
-
-    // Add the columns.
-    
- for(int iCol=0;iCol<=6;iCol++)
- {
-	
-	
-		lvc.iImage=0;
-		lvc.iSubItem = iCol;
-		//lvc.iImage=0;
-        lvc.pszText = (LPSTR)szText;
-        lvc.cx = 100;               // Width of column in pixels.
-		lvc.cxIdeal=300;
-        if ( iCol < 2 )
-            lvc.fmt = LVCFMT_LEFT;  // Left-aligned column.
-        else
-            lvc.fmt = LVCFMT_RIGHT; // Right-aligned column.
-
-        // Load the names of the column headings from the string resources.
-
-        // Insert the columns into the list view.
-        ListView_InsertColumn(hWndListView, iCol, &lvc);
-		
-			char lll[100];
-
-
-
-        
-}
-
-
-
- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
- char g[100]="123151651";
-
-	LVITEM item1;
-   item1.mask = LVIF_TEXT|LVIF_IMAGE  ;
-   item1.cchTextMax = 256;
-   item1.iImage=0;
-  item1.iSubItem = 0;
-   item1.pszText = g;
-   item1.iItem = 0;
- //  ListView_InsertItem(hWndListView, &item1);
-
-
-
-
-
-	SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1); // Send info to the Listview
-
-
-	for(int i=1;i<=5;i++) // Add SubItems in a loop
-{
-   item1.iSubItem=i;
-   sprintf(g,"SubItem %d",i);
-   item1.pszText=g;
-   SendMessage(hWndListView,LVM_SETITEM,0,(LPARAM)&item1); // Enter text to SubItems
-}
-
-	
-	item1.iItem=1;           // choose item  
-item1.iSubItem=0;        // Put in first coluom
-item1.pszText="Item 1";  // Text to display 
-
-SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1); // Send to the Listview
-
-for(int i=1;i<=5;i++) // Add SubItems in a loop
-{
-  item1.iSubItem=i;
-  sprintf(g,"SubItem %d",i);
-  item1.pszText=g;
-  SendMessage(hWndListView,LVM_SETITEM,0,(LPARAM)&item1); // Enter text to SubItems
-}
-
-
-for(int d=1;d<=10;d++){
-
-
-
-
-		
-	item1.iItem=d;           // choose item  
-item1.iSubItem=0;        // Put in first coluom
-item1.pszText="Item 1";  // Text to display 
-
-SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1); // Send to the Listview
-
-for(int i=1;i<=5;i++) // Add SubItems in a loop
-{
-  item1.iSubItem=i;
-  sprintf(g,"SubItem %d",i);
-  item1.pszText=g;
-  SendMessage(hWndListView,LVM_SETITEM,0,(LPARAM)&item1); // Enter text to SubItems
-}
-
-
-}
-
-
-
-
-
-//SendMessage(hWndListView,LVM_DELETEITEM,1,0); // delete the item 
-
-
-///////////////////////////// iconebis chasmaaa ////////////////////////////
-
-
-
-	item1.iItem=6;           // choose item  
-item1.iSubItem=0;        // Put in first coluom
-item1.pszText="Item 1";  // Text to display 
-
-SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1); // Send to the Listview
-/////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-  
-
-//////////////////////////////////////////////////////////////////////////
-return TRUE;
-} 
-
+#include"InitListViewColumns.cpp"
 
 /////// ==================================================== //////////////////
-
-LRESULT ProcessCustomDraw (LPARAM lParam)
-{
-    LPNMLVCUSTOMDRAW lplvcd = (LPNMLVCUSTOMDRAW)lParam;
-
-    switch(lplvcd->nmcd.dwDrawStage) 
-    {
-        case CDDS_PREPAINT : //Before the paint cycle begins
-            //request notifications for individual listview items
-            return CDRF_NOTIFYITEMDRAW;
-            
-        case CDDS_ITEMPREPAINT: //Before an item is drawn
-            {
-                return CDRF_NOTIFYSUBITEMDRAW;
-            }
-            break;
-    
-        case CDDS_SUBITEM | CDDS_ITEMPREPAINT: //Before a subitem is drawn
-            {
-                switch(lplvcd->iSubItem)
-                {
-                    case 0:
-                    {
-                      lplvcd->clrText   = RGB(255,255,255);
-                      lplvcd->clrTextBk = RGB(240,55,23);
-                      return CDRF_NEWFONT;
-                    }
-                    break;
-                    
-                    case 1:
-                    {
-                      lplvcd->clrText   = RGB(255,255,0);
-                      lplvcd->clrTextBk = RGB(0,0,0);
-                      return CDRF_NEWFONT;
-                    }
-                    break;  
-
-                    case 2:
-                    {
-                      lplvcd->clrText   = RGB(20,26,158);
-                      lplvcd->clrTextBk = RGB(200,200,10);
-                      return CDRF_NEWFONT;
-                    }
-                    break;
-
-                    case 3:
-                    {
-                      lplvcd->clrText   = RGB(12,15,46);
-                      lplvcd->clrTextBk = RGB(200,200,200);
-                      return CDRF_NEWFONT;
-                    }
-                    break;
-
-                    case 4:
-                    {
-                      lplvcd->clrText   = RGB(120,0,128);
-                      lplvcd->clrTextBk = RGB(20,200,200);
-                      return CDRF_NEWFONT;
-                    }
-                    break;
-
-                    case 5:
-                    {
-                      lplvcd->clrText   = RGB(255,255,255);
-                      lplvcd->clrTextBk = RGB(0,0,150);
-                      return CDRF_NEWFONT;
-                    }
-                    break;
-
-                }
- 
-            }
-    }
-    return CDRF_DODEFAULT;
-}
-
+#include "ProcessCustomDraw.cpp"
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
 //----------------------------------------------------------------
 	//	LVITEM LvItem; 
 //----------------------------------------------------------------
@@ -363,26 +93,7 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message, unsi
 		
 		case WM_COMMAND:
 
-			
-			switch((int)LOWORD(wparam))
-			{
-			case LBN_DBLCLK :
-
-
-				MessageBox(hwnd,"LBN_DBLCLK","LBN_DBLCLK",0);
-
-
-				break;
-
-			case LBN_SETFOCUS:
-
-				MessageBox(hwnd,"LBN_SETFOCUS","LBN_SETFOCUS",0);
-
-				break;
-
-
-			}
-
+	
 
 	
 		break;
@@ -401,35 +112,9 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message, unsi
 	}
 
 
-
-
-
-	   if (message == WM_NOTIFY)
-    {
-
-
-				switch(LOWORD(wparam))
-				{
-
-
-
-				LPNMHDR lpnmh = (LPNMHDR)lparam;
-				if (lpnmh->idFrom == 8553)
-				if (lpnmh->code == LVN_COLUMNCLICK)
-				{
-
-
-
-					MessageBox(hwnd,"Asadasdas","Asdada",0);
-					NMLISTVIEW*    pListView = (NMLISTVIEW*)lparam;
-     
-				}
-			}
-
-
-	   }
-
-
+////////////// WM_NOTIFY //////////
+#include"MSG_ListView.cpp"  //////
+/////////////////////////////////
 /*
 
 
@@ -849,13 +534,6 @@ style=WS_VISIBLE|WS_OVERLAPPEDWINDOW|WS_CLIPCHILDREN;
 X=10;Y=30;W=750;H=500;
 hwnd=CreateWindow(wc.lpszClassName,"Main",style,X,Y,W,H,0,0,0,0);
 
-	
-//////////////// list Vieew //
-  
-
-/////////////////////////////////////////////////
-
-
 MSG msg;
 	while(GetMessage(&msg,0,0,0))
 	{
@@ -865,36 +543,6 @@ MSG msg;
 }
 
 
-
-HWND CreateListView (HWND hwndParent) 
-{
-    INITCOMMONCONTROLSEX icex;           // Structure for control initialization.
-    icex.dwICC = ICC_LISTVIEW_CLASSES;
-    InitCommonControlsEx(&icex);
-
-    RECT rcClient;                       // The parent window's client area.
-
-    GetClientRect (hwndParent, &rcClient); 
-	HINSTANCE hInst;
-    // Create the list-view window in report view with label editing enabled.
-  //  HWND hWndListView = CreateWindow( WC_LISTVIEW, "asas",WS_CHILD | LVS_REPORT | LVS_EDITLABELS,0, 0,1000,1000,(HMENU)200,0,NULL); 
-
-
-
-
-
-	InitCommonControls();
-HWND hwndList = CreateWindow(WC_LISTVIEW, "", 
-         WS_VISIBLE|WS_BORDER|WS_CHILD | LVS_REPORT | LVS_EDITLABELS, 
-		 10, 10,rcClient.right-20 ,rcClient.bottom-20, 
-         hwndParent, (HMENU)369, 0, 0);
-
-
-
-
-
-    return (hwndList);
-}
 
 
 // SetView: Sets a list-view's window style to change the view.
