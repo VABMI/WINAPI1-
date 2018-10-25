@@ -8,10 +8,10 @@ BOOL InitListViewColumns(HWND hWndListView)
 	   LVCOLUMN lvc; /////// svetebis struqtura ..............
 
 
-		HIMAGELIST imageList1 = ::ImageList_Create(20,20,ILC_COLORDDB | ILC_MASK,1,100); ///// imig listis hendeli 
+		HIMAGELIST imageList1 = ::ImageList_Create(40,40,ILC_COLORDDB | ILC_MASK,2,500); ///// imig listis hendeli 
 		HICON icon;
 		/////////////////// iconisssss
-	icon	= (HICON)LoadImage(NULL,"C:\\Users\\vaxoa\\OneDrive\\Desktop\\icon\\Itzikgur-My-Seven-Travel-BMV.ico", IMAGE_ICON,30,30, LR_LOADFROMFILE);
+	icon	= (HICON)LoadImage(NULL,"C:\\Users\\vaxoa\\OneDrive\\Desktop\\icon\\Itzikgur-My-Seven-Travel-BMV.ico", IMAGE_ICON,800,800, LR_LOADFROMFILE);
 		
 if(icon)
 	{
@@ -59,7 +59,7 @@ if(ImageList_GetImageCount(imageList1) == 1)
     // The mask specifies that the format, width, text,
     // and subitem members of the structure are valid.
     lvc.mask = LVCF_FMT | LVCF_WIDTH | LVCF_TEXT | LVCF_SUBITEM|LVCF_IMAGE  ;
-
+	
     // Add the columns.
     
  for(int iCol=0;iCol<=6;iCol++)
@@ -89,13 +89,22 @@ if(ImageList_GetImageCount(imageList1) == 1)
         
 }
 
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+    LVGROUP group = { 0 };
+    group.cbSize = sizeof(LVGROUP);
+    group.mask = LVGF_GROUPID|LVGF_HEADER;
+    group.iGroupId = 11;//shown
+	group.pszHeader=L"wewewe";
+    ListView_InsertGroup(hWndListView, -1, &group);
+    
 
+	SendMessage(hWndListView, LVM_INSERTGROUP,-1,(LPARAM)&group);
  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
  char g[100]="123151651";
 
 	LVITEM item1;
-   item1.mask = LVIF_TEXT|LVIF_IMAGE  ;
+   item1.mask = LVIF_TEXT|LVIF_IMAGE|LVIF_GROUPID;
    item1.cchTextMax = 256;
    item1.iImage=0;
   item1.iSubItem = 0;
@@ -105,7 +114,7 @@ if(ImageList_GetImageCount(imageList1) == 1)
 
 
 
-
+		item1.iGroupId=11;
 
 	SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1); // Send info to the Listview
 
