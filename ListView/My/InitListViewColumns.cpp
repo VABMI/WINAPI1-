@@ -95,26 +95,30 @@ if(ImageList_GetImageCount(imageList1) == 1)
     group.cbSize = sizeof(LVGROUP);
     group.mask = LVGF_GROUPID|LVGF_HEADER;
     group.iGroupId = 11;//shown
-	group.pszHeader=L"wewewe";
+	group.pszHeader=L"addddddddd";
+	group.pszDescriptionTop=L"dfdfd";
+	group.cchHeader=100;
+
+
     ListView_InsertGroup(hWndListView, -1, &group);
     
 
-	SendMessage(hWndListView, LVM_INSERTGROUP,-1,(LPARAM)&group);
+	//SendMessage(hWndListView, LVM_INSERTGROUP,-1,(LPARAM)&group);
  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
  char g[100]="123151651";
 
 	LVITEM item1;
-   item1.mask = LVIF_TEXT|LVIF_IMAGE|LVIF_GROUPID;
+   item1.mask = LVIF_TEXT|LVIF_IMAGE;
    item1.cchTextMax = 256;
    item1.iImage=0;
-  item1.iSubItem = 0;
+   item1.iSubItem = 0;
    item1.pszText = g;
    item1.iItem = 0;
  //  ListView_InsertItem(hWndListView, &item1);
 
 
 
-		item1.iGroupId=11;
+	//	item1.iGroupId=11;
 
 	SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1); // Send info to the Listview
 
@@ -179,14 +183,22 @@ for(int i=1;i<=5;i++) // Add SubItems in a loop
 
 	item1.iItem=6;           // choose item  
 item1.iSubItem=0;        // Put in first coluom
-item1.pszText="Item 1";  // Text to display 
+item1.pszText="Item 122";  // Text to display 
 
 SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1); // Send to the Listview
 /////////////////////////////////////////////////////////////////////////////////////////
+memset(&item1,1,sizeof(item1));
+
+   item1.mask = LVIF_GROUPID;
+   item1.cchTextMax = 256;
+   item1.iImage=0;
+  item1.iSubItem = 0;
+   item1.pszText = "Item 359";
+   item1.iItem = 0;
+   item1.iGroupId=11;
 
 
-
-
+   SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1); 
   
 
 //////////////////////////////////////////////////////////////////////////

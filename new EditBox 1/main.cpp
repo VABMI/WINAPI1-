@@ -2,16 +2,17 @@
 #include "head.h"
 #include "globals.h"
 	//	#include <ole.h>
+#pragma comment(lib,"comctl32.lib")
 #include "defines.h"
 #include "ReadAndWrite.cpp"
 #include "functions.cpp"
-#include "EditisMesigebi.cpp"
-#include "on_create_msg.cpp"
+
 #include "cmd_msg.cpp"
 
 #include "paint_msg.cpp"
 
-
+#include "EditisMesigebi.cpp"
+#include "on_create_msg.cpp"
 
 
 #pragma comment(lib,"comctl32.lib")
@@ -27,7 +28,6 @@ HCURSOR hCursor;
 
 	 static char* charReplAl=sechwat2;
 //----------------------------------------------------------------
-
 
 
 

@@ -1,10 +1,5 @@
 
 
-HWND    g_hwndButton            = NULL;  
-HWND       g_hwndButton1	=NULL;
-WNDPROC g_wndProcButtonOrigianl = NULL;   
-BOOL    g_bSeeingMouse          = FALSE;
-
 
 
 
@@ -34,14 +29,29 @@ LRESULT CALLBACK WndProcButton (HWND hwnd, UINT message, WPARAM wParam, LPARAM l
 	   
 			   switch(message)
 			   {
+
+
 			   case WM_KEYDOWN:
 
-				   if(gn==0)
+				//   if(lParam==VK_CONTROL)
+				     if(wParam==VK_CONTROL)
 				   {
-					   gn=1;
+					   if(lParam==0x43)
+					   int y=0;
 
 				   }
-				 	  // int x=0;
+				   break;
+			   case WM_SYSKEYDOWN:
+				 
+
+				   if(wParam==0x43)
+				   {
+					//	if(lParam==VK_CONTROL)
+					   int y=0;
+
+				   }
+
+
 				   break;				
 			   }
 			    

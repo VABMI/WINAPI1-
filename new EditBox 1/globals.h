@@ -22,5 +22,11 @@ char szFindWhat2[100]="drtert";
 char ReplaceWith[100]="ReplaceWith"; 
 
 bool vb=1;
+//////////////////// edit wndProc
+HWND    g_hwndButton            = NULL;  
+HWND       g_hwndButton1	=NULL;
+WNDPROC g_wndProcButtonOrigianl = NULL;   
+BOOL    g_bSeeingMouse          = FALSE;
+
 
 

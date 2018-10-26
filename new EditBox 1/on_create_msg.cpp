@@ -29,9 +29,6 @@ HWND Hbutton;
  //olde=(WNDPROC)SetWindowLong(childButton,GWL_WNDPROC,(long)buttonNewPro);
 
 //  olde=(WNDPROC)SetWindowLong(hwnd,GWL_WNDPROC,(long)buttonNewPro);
-HANDLE ss;
- ss=LoadLibrary("RICHED32.DLL");
-
 
 int X,Y,W,H;
 X=10,Y=40,W=700,H=500;
