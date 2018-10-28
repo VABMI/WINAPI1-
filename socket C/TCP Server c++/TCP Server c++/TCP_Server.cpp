@@ -5,7 +5,7 @@
 using namespace std;
 void main()
 {
-	
+	L:
 	WSADATA wsData;
 	WORD ver = MAKEWORD(2,2);
 	int WsOK = WSAStartup(ver,&wsData);
@@ -33,7 +33,7 @@ void main()
 	sockaddr_in hint;
 	hint.sin_family=AF_INET;
 	hint.sin_port=htons(54000);
-	hint.sin_addr.S_un.S_addr=INADDR_ANY;
+	hint.sin_addr.S_un.S_addr=INADDR_ANY; /// ver gavige
 
 
 
@@ -56,14 +56,14 @@ void main()
 	if(getnameinfo((sockaddr*)&client,sizeof(client),host,NI_MAXHOST,service,NI_MAXSERV,0)==0)
 	{
 
-		cout << host << "connected on port " << service <<endl;
+		cout << host << " :connected on port " << service <<endl;
 
 	}
 		else 
 		{
 
 			inet_ntop(AF_INET,&client.sin_addr,host,NI_MAXHOST);
-			cout<<host <<"connected on port " <<ntohs(client.sin_port) << endl;
+			cout<<host <<" :connected on port " <<ntohs(client.sin_port) << endl;
 		}
 
 	closesocket(listening);
@@ -77,7 +77,13 @@ void main()
 		if(bytesReceived == SOCKET_ERROR)
 		{
 			cerr << "error  in recv(). quitting" << endl;
+				cout<<"client disconnected " << endl; ////
 			break;
+
+		}
+		if(strlen(buf)>0)
+		{
+		cout<<"CLIENT> "<<buf<<endl;
 
 		}
 
@@ -94,7 +100,7 @@ void main()
 		send(clientSocket,buf,bytesReceived + 1,0);
 
 		}
-
+	goto L;
 	closesocket(clientSocket);
 
 	WSACleanup();

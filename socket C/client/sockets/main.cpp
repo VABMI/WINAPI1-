@@ -12,7 +12,7 @@ void  main()
 {
 
 
-string ipAddress="188.169.18.47"; 
+string ipAddress="127.0.0.1"; 
 int port = 54000;
 WSAData data;
 WORD ver = MAKEWORD(2,2);
@@ -38,7 +38,7 @@ if(sock == INVALID_SOCKET)
 sockaddr_in hint;
 hint.sin_family = AF_INET;
 hint.sin_port = htons(port);
-inet_pton(AF_INET,ipAddress.c_str(),&hint.sin_addr);
+inet_pton(AF_INET,ipAddress.c_str(),&hint.sin_addr); /// ver gavigee
 
 
 int connResult = connect(sock,(sockaddr*)&hint,sizeof(hint));
@@ -60,7 +60,11 @@ do
 {
 	cout<< "> ";
 	getline(cin,userInput);
-	if(userInput.size() > 0)
+	if(userInput.size()<=0)
+	{
+		userInput="sheitane striqoni";
+	}
+	if(userInput.size() > 0) ///    c_str utitebs  userInput ze misamartze rac weria anu send agzavnis orobitshi da cherez operatiulida akitxebs ororbitshi
 	{
 		int sendResult = send(sock,userInput.c_str(),userInput.size()+1,0);
 		if(sendResult != SOCKET_ERROR)
@@ -80,8 +84,8 @@ do
 	}
 
 }while(userInput.size()>0);
+ /// aq itisheba kavshiri da wyvets mushaobas orive programa
+//closesocket(sock);
 
-closesocket(sock);
-
-WSACleanup();
+//WSACleanup();
 }
