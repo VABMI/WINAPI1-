@@ -52,7 +52,7 @@ HWND DoCreateStatusBar(HWND hwndParent, int idStatus, HINSTANCE
 	 if(!hIcon)
 	  {
 
-		  MessageBox(hwndParent,"ERROR Status Bar icon ","ERROR Status Bar icon ",0);
+		  //MessageBox(hwndParent,"ERROR Status Bar icon ","ERROR Status Bar icon ",0);
 
 	  }
 	 SendMessage(hwndStatus, SB_SETICON, 4, (LPARAM)hIcon);

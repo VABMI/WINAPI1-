@@ -1,56 +1,64 @@
-﻿Build started 10/26/2018 1:51:47 AM.
+﻿Build started 28.10.2018 13:03:11.
      1>Project "F:\WINAPI1-\new EditBox 1\main.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating ".\Debug\main.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         F:\New Folder (1)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         D:\New Folder\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt main.cpp
          main.cpp
      1>f:\winapi1-\new editbox 1\readandwrite.cpp(9): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 f:\new folder (1)\vc\include\stdio.h(234) : see declaration of 'fopen'
+                 d:\new folder\vc\include\stdio.h(234) : see declaration of 'fopen'
      1>f:\winapi1-\new editbox 1\readandwrite.cpp(7): warning C4101: 'ptr' : unreferenced local variable
      1>f:\winapi1-\new editbox 1\readandwrite.cpp(5): warning C4101: 'buf' : unreferenced local variable
      1>f:\winapi1-\new editbox 1\readandwrite.cpp(108): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 f:\new folder (1)\vc\include\stdio.h(234) : see declaration of 'fopen'
+                 d:\new folder\vc\include\stdio.h(234) : see declaration of 'fopen'
      1>f:\winapi1-\new editbox 1\functions.cpp(121): warning C4101: 'rgbPrev' : unreferenced local variable
      1>f:\winapi1-\new editbox 1\functions.cpp(169): warning C4101: 'hbrush' : unreferenced local variable
      1>f:\winapi1-\new editbox 1\functions.cpp(293): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 f:\new folder (1)\vc\include\stdio.h(371) : see declaration of 'sprintf'
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
      1>f:\winapi1-\new editbox 1\functions.cpp(295): warning C4018: '<=' : signed/unsigned mismatch
      1>f:\winapi1-\new editbox 1\functions.cpp(270): warning C4101: 'hf' : unreferenced local variable
      1>f:\winapi1-\new editbox 1\functions.cpp(291): warning C4101: 'g' : unreferenced local variable
      1>f:\winapi1-\new editbox 1\functions.cpp(357): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 f:\new folder (1)\vc\include\stdio.h(371) : see declaration of 'sprintf'
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
      1>f:\winapi1-\new editbox 1\functions.cpp(358): warning C4018: '<=' : signed/unsigned mismatch
      1>f:\winapi1-\new editbox 1\functions.cpp(334): warning C4101: 'hf' : unreferenced local variable
      1>f:\winapi1-\new editbox 1\functions.cpp(355): warning C4101: 'g' : unreferenced local variable
      1>f:\winapi1-\new editbox 1\back_next.cpp(20): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 f:\new folder (1)\vc\include\stdio.h(371) : see declaration of 'sprintf'
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
      1>f:\winapi1-\new editbox 1\back_next.cpp(29): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 f:\new folder (1)\vc\include\stdio.h(371) : see declaration of 'sprintf'
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
      1>f:\winapi1-\new editbox 1\back_next.cpp(71): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 f:\new folder (1)\vc\include\stdio.h(371) : see declaration of 'sprintf'
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
      1>f:\winapi1-\new editbox 1\back_next.cpp(79): warning C4018: '<=' : signed/unsigned mismatch
      1>f:\winapi1-\new editbox 1\back_next.cpp(83): warning C4018: '<=' : signed/unsigned mismatch
      1>f:\winapi1-\new editbox 1\cmd_msg.cpp(163): warning C4244: '=' : conversion from 'wchar_t' to 'char', possible loss of data
      1>f:\winapi1-\new editbox 1\cmd_msg.cpp(449): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 f:\new folder (1)\vc\include\string.h(110) : see declaration of 'strcat'
+                 d:\new folder\vc\include\string.h(110) : see declaration of 'strcat'
      1>f:\winapi1-\new editbox 1\cmd_msg.cpp(11): warning C4101: 'ganuleba' : unreferenced local variable
      1>f:\winapi1-\new editbox 1\cmd_msg.cpp(26): warning C4101: 'prev' : unreferenced local variable
      1>f:\winapi1-\new editbox 1\cmd_msg.cpp(241): warning C4101: 'l' : unreferenced local variable
      1>f:\winapi1-\new editbox 1\paint_msg.cpp(11): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 f:\new folder (1)\vc\include\stdio.h(371) : see declaration of 'sprintf'
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>f:\winapi1-\new editbox 1\editismesigebi.cpp(77): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>f:\winapi1-\new editbox 1\editismesigebi.cpp(86): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>f:\winapi1-\new editbox 1\editismesigebi.cpp(131): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>f:\winapi1-\new editbox 1\editismesigebi.cpp(139): warning C4018: '<=' : signed/unsigned mismatch
+     1>f:\winapi1-\new editbox 1\editismesigebi.cpp(143): warning C4018: '<=' : signed/unsigned mismatch
      1>f:\winapi1-\new editbox 1\on_create_msg.cpp(36): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
      1>f:\winapi1-\new editbox 1\on_create_msg.cpp(25): warning C4101: 'Hbutton' : unreferenced local variable
      1>f:\winapi1-\new editbox 1\findereplace.cpp(46): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 f:\new folder (1)\vc\include\stdio.h(371) : see declaration of 'sprintf'
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
      1>f:\winapi1-\new editbox 1\findereplace.cpp(62): warning C4018: '<=' : signed/unsigned mismatch
      1>f:\winapi1-\new editbox 1\findereplace.cpp(74): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 f:\new folder (1)\vc\include\stdio.h(371) : see declaration of 'sprintf'
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
      1>f:\winapi1-\new editbox 1\main.cpp(91): warning C4018: '<=' : signed/unsigned mismatch
      1>f:\winapi1-\new editbox 1\main.cpp(167): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 f:\new folder (1)\vc\include\stdio.h(371) : see declaration of 'sprintf'
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
      1>f:\winapi1-\new editbox 1\main.cpp(171): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 f:\new folder (1)\vc\include\stdio.h(371) : see declaration of 'sprintf'
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
      1>f:\winapi1-\new editbox 1\findereplace.cpp(10): warning C4101: 'bufs' : unreferenced local variable
      1>f:\winapi1-\new editbox 1\findereplace.cpp(15): warning C4101: 'ff' : unreferenced local variable
      1>f:\winapi1-\new editbox 1\functions.cpp(102): warning C4715: 'create_menu' : not all control paths return a value
@@ -59,7 +67,7 @@
        ManifestResourceCompile:
          All outputs are up-to-date.
        Link:
-         F:\New Folder (1)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\main.exe" /INCREMENTAL /NOLOGO odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\Debug\main.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\WINAPI1-\new EditBox 1\Debug\main.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\main.lib" /MACHINE:X86 .\Debug\main.exe.embed.manifest.res
+         D:\New Folder\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\main.exe" /INCREMENTAL /NOLOGO odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\Debug\main.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\WINAPI1-\new EditBox 1\Debug\main.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\main.lib" /MACHINE:X86 .\Debug\main.exe.embed.manifest.res
          .\Debug\main.obj
          .\Debug\printer.obj
          .\Debug\Replace_All.obj
@@ -72,7 +80,7 @@
          All outputs are up-to-date.
          main.vcxproj -> F:\WINAPI1-\new EditBox 1\.\Debug\main.exe
        BscMake:
-         F:\New Folder (1)\VC\bin\bscmake.exe /nologo /o".\Debug\main.bsc" .\Debug\main.sbr .\Debug\printer.sbr .\Debug\Replace_All.sbr .\Debug\StatusBar.sbr .\Debug\ToolBar.sbr
+         D:\New Folder\VC\bin\bscmake.exe /nologo /o".\Debug\main.bsc" .\Debug\main.sbr .\Debug\printer.sbr .\Debug\Replace_All.sbr .\Debug\StatusBar.sbr .\Debug\ToolBar.sbr
        FinalizeBuildStatus:
          Deleting file ".\Debug\main.unsuccessfulbuild".
          Touching ".\Debug\main.lastbuildstate".
@@ -80,4 +88,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:05.54
+Time Elapsed 00:00:04.38
