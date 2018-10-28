@@ -1,0 +1,57 @@
+﻿Build started 29.10.2018 0:23:25.
+     1>Project "F:\WINAPI1-\SendMail\email\email\email.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "F:\WINAPI1-\SendMail\email\Debug\".
+       InitializeBuildStatus:
+         Creating "Debug\email.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         D:\New Folder\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\email.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         D:\New Folder\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\email.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt email.cpp
+         email.cpp
+     1>d:\new folder\vc\include\sys\socket.h(118): error C2143: syntax error : missing ';' before '*'
+     1>d:\new folder\vc\include\sys\socket.h(118): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\new folder\vc\include\sys\socket.h(118): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\new folder\vc\include\sys\socket.h(119): error C2143: syntax error : missing ';' before '*'
+     1>d:\new folder\vc\include\sys\socket.h(119): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\new folder\vc\include\sys\socket.h(119): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\new folder\vc\include\sys\socket.h(120): error C2143: syntax error : missing ';' before '*'
+     1>d:\new folder\vc\include\sys\socket.h(120): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\new folder\vc\include\sys\socket.h(120): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\new folder\vc\include\sys\socket.h(121): error C2143: syntax error : missing ';' before '*'
+     1>d:\new folder\vc\include\sys\socket.h(121): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\new folder\vc\include\sys\socket.h(121): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\new folder\vc\include\netinet\in.h(72): error C2011: 'in_addr' : 'struct' type redefinition
+                 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\inaddr.h(22) : see declaration of 'in_addr'
+     1>d:\new folder\vc\include\netinet\in.h(81): warning C4005: 'IN_CLASSA' : macro redefinition
+                 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\ws2def.h(524) : see previous definition of 'IN_CLASSA'
+     1>d:\new folder\vc\include\netinet\in.h(87): warning C4005: 'IN_CLASSB' : macro redefinition
+                 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\ws2def.h(530) : see previous definition of 'IN_CLASSB'
+     1>d:\new folder\vc\include\netinet\in.h(93): warning C4005: 'IN_CLASSC' : macro redefinition
+                 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\ws2def.h(536) : see previous definition of 'IN_CLASSC'
+     1>d:\new folder\vc\include\netinet\in.h(104): warning C4005: 'INADDR_ANY' : macro redefinition
+                 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\ws2def.h(547) : see previous definition of 'INADDR_ANY'
+     1>d:\new folder\vc\include\netinet\in.h(105): warning C4005: 'INADDR_BROADCAST' : macro redefinition
+                 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\ws2def.h(549) : see previous definition of 'INADDR_BROADCAST'
+     1>d:\new folder\vc\include\netinet\in.h(115): error C2011: 'sockaddr_in' : 'struct' type redefinition
+                 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\ws2def.h(583) : see declaration of 'sockaddr_in'
+     1>d:\new folder\vc\include\netinet\in.h(131): error C2079: 'ip_opts::ip_dst' uses undefined struct 'in_addr'
+     1>d:\new folder\vc\include\netinet\in.h(132): error C2380: type(s) preceding 'ip_opts' (constructor with return type, or illegal redefinition of current class-name?)
+     1>d:\new folder\vc\include\netinet\in.h(132): error C2059: syntax error : '['
+     1>d:\new folder\vc\include\netinet\in.h(132): error C2238: unexpected token(s) preceding ';'
+     1>d:\new folder\vc\include\netinet\in.h(145): warning C4005: 'IP_RECVDSTADDR' : macro redefinition
+                 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\ws2ipdef.h(135) : see previous definition of 'IP_RECVDSTADDR'
+     1>f:\winapi1-\sendmail\email\email\email.cpp(24): error C2079: 'addr' uses undefined struct 'sockaddr_in'
+     1>f:\winapi1-\sendmail\email\email\email.cpp(25): error C2228: left of '.sin_family' must have class/struct/union
+                 type is 'int'
+     1>f:\winapi1-\sendmail\email\email\email.cpp(26): error C2228: left of '.sin_port' must have class/struct/union
+                 type is 'int'
+     1>f:\winapi1-\sendmail\email\email\email.cpp(43): error C2440: '=' : cannot convert from 'char *' to 'in_addr *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>f:\winapi1-\sendmail\email\email\email.cpp(44): error C2664: 'inet_ntoa' : cannot convert parameter 1 from 'in_addr *' to 'in_addr'
+                 Source or target has incomplete type
+     1>Done Building Project "F:\WINAPI1-\SendMail\email\email\email.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.79
