@@ -158,63 +158,6 @@ SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1); // Send to the Listvi
   item1.pszText="111111";
   SendMessage(hWndListView,LVM_SETITEM,0,(LPARAM)&item1);
 
-/*
-
-for(int d=1;d<=10;d++){	
-item1.iItem=d;           // choose item  
-item1.iSubItem=0;        // Put in first coluom
-item1.pszText="Item 1";  // Text to display 
-
-SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1); // Send to the Listview
-
-		for(int i=1;i<=5;i++) // Add SubItems in a loop
-		{
-		  item1.iSubItem=i;
-		  sprintf(g,"SubItem %d",i);
-		  item1.pszText=g;
-		  SendMessage(hWndListView,LVM_SETITEM,0,(LPARAM)&item1); // Enter text to SubItems
-		}
-
-
-}
-
-
-
-
-
-//SendMessage(hWndListView,LVM_DELETEITEM,1,0); // delete the item 
-
-
-///////////////////////////// iconebis chasmaaa ////////////////////////////
-
-
-
-	item1.iItem=6;           // choose item  
-item1.iSubItem=0;        // Put in first coluom
-item1.pszText="Item 125452";  // Text to display 
-
-SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1); // Send to the Listview
-
-           // choose item  
-item1.iSubItem=1;        // Put in first coluom
-item1.pszText="Item 125452";  // Text to display 
-
-SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1);
-/////////////////////////////////////////////////////////////////////////////////////////
-memset(&item1,1,sizeof(item1));
-
-   //item1.mask = LVIF_GROUPID;
-   item1.cchTextMax = 256;
-   item1.iImage=0;
-  item1.iSubItem = 0;
-   item1.pszText = "Item 359";
-   item1.iItem = 0;
-   item1.iGroupId=11;
-
-
-   SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1); 
-  
-  */
 //////////////////////////////////////////////////////////////////////////
 return TRUE;
 } 

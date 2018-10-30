@@ -31,8 +31,9 @@ HWND hwndList = CreateWindow(WC_LISTVIEW, "",
          hwndParent, (HMENU)369, 0, 0);
 
 
+	ListView_SetExtendedListViewStyle(hwndList, LVS_EX_FULLROWSELECT|LVS_EX_TWOCLICKACTIVATE|LVS_EX_SUBITEMIMAGES|LVS_EX_GRIDLINES|LVS_EX_CHECKBOXES);
 
-
+	ListView_SetItemState (hwndList, 0,0, LVIS_OVERLAYMASK);
 
     return (hwndList);
 }
