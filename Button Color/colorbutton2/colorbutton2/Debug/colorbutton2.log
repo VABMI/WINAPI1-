@@ -1,0 +1,21 @@
+﻿Build started 30.10.2018 8:26:55.
+     1>Project "F:\WINAPI1-\Button Color\colorbutton2\colorbutton2\colorbutton2.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "F:\WINAPI1-\Button Color\colorbutton2\Debug\".
+       InitializeBuildStatus:
+         Creating "Debug\colorbutton2.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         D:\New Folder\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\colorbutton2.exe.embed.manifest.res" Debug\colorbutton2_manifest.rc 
+       Link:
+         D:\New Folder\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\WINAPI1-\Button Color\colorbutton2\Debug\colorbutton2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\colorbutton2.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\WINAPI1-\Button Color\colorbutton2\Debug\colorbutton2.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\WINAPI1-\Button Color\colorbutton2\Debug\colorbutton2.lib" /MACHINE:X86 Debug\colorbutton2.exe.embed.manifest.res
+         Debug\main.obj
+     1>MSVCRTD.lib(crtexew.obj) : error LNK2019: unresolved external symbol _WinMain@16 referenced in function ___tmainCRTStartup
+     1>F:\WINAPI1-\Button Color\colorbutton2\Debug\colorbutton2.exe : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "F:\WINAPI1-\Button Color\colorbutton2\colorbutton2\colorbutton2.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:04.04

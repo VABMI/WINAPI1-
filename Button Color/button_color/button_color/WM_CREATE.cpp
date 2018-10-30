@@ -20,7 +20,7 @@
 
 
 				   HWND Pushlike_Button1 = CreateWindowEx(NULL, L"BUTTON", L"PUSH ME!", 
-                                                        WS_VISIBLE | WS_CHILD | BS_AUTOCHECKBOX | BS_PUSHLIKE, 
+                                                        WS_VISIBLE | WS_CHILD | BS_AUTOCHECKBOX | BS_PUSHLIKE|BS_OWNERDRAW, 
                                                         300, 50, 30, 30, hwnd, (HMENU)IDC_PUSHLIKE_BUTTON1, NULL, NULL);
                 if(Pushlike_Button1 == NULL)
                     {

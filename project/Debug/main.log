@@ -1,26 +1,80 @@
-﻿Build started 10/21/2018 9:51:38 AM.
+﻿Build started 30.10.2018 10:15:51.
      1>Project "F:\WINAPI1-\project\main.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Creating ".\Debug\main.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching ".\Debug\main.unsuccessfulbuild".
        ClCompile:
-         F:\New Folder (1)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         D:\New Folder\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt CreateForm.cpp OpenFileDilog.cpp RegistrReadUser.cpp clock.cpp main.cpp reading.cpp
+         CreateForm.cpp
+     1>f:\winapi1-\project\createform.cpp(72): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>f:\winapi1-\project\createform.cpp(83): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>f:\winapi1-\project\createform.cpp(92): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>f:\winapi1-\project\createform.cpp(183): warning C4305: 'argument' : truncation from '__int64' to 'DWORD'
+     1>f:\winapi1-\project\createform.cpp(183): warning C4309: 'argument' : truncation of constant value
+     1>f:\winapi1-\project\createform.cpp(185): warning C4305: 'argument' : truncation from '__int64' to 'DWORD'
+     1>f:\winapi1-\project\createform.cpp(185): warning C4309: 'argument' : truncation of constant value
+     1>f:\winapi1-\project\createform.cpp(233): warning C4101: 'hw3' : unreferenced local variable
+     1>f:\winapi1-\project\createform.cpp(233): warning C4101: 'hw2' : unreferenced local variable
+     1>f:\winapi1-\project\createform.cpp(233): warning C4101: 'hw1' : unreferenced local variable
+         Generating Code...
+         Compiling...
+         reading.cpp
          main.cpp
-     1>f:\winapi1-\project\main.cpp(14): warning C4101: 'info1' : unreferenced local variable
      1>f:\winapi1-\project\kbd_msg.cpp(15): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 f:\new folder (1)\vc\include\stdio.h(234) : see declaration of 'fopen'
+                 d:\new folder\vc\include\stdio.h(234) : see declaration of 'fopen'
      1>f:\winapi1-\project\kbd_msg.cpp(48): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 f:\new folder (1)\vc\include\stdio.h(234) : see declaration of 'fopen'
+                 d:\new folder\vc\include\stdio.h(234) : see declaration of 'fopen'
      1>f:\winapi1-\project\kbd_msg.cpp(65): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 f:\new folder (1)\vc\include\stdio.h(371) : see declaration of 'sprintf'
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
      1>f:\winapi1-\project\suratisarcheva.cpp(10): warning C4018: '<=' : signed/unsigned mismatch
      1>f:\winapi1-\project\hdd.cpp(79): warning C4101: 'p' : unreferenced local variable
      1>f:\winapi1-\project\hdd.cpp(68): warning C4101: 'pp' : unreferenced local variable
      1>f:\winapi1-\project\hdd.cpp(80): warning C4101: 'delet' : unreferenced local variable
-     1>f:\winapi1-\project\main.cpp(311): warning C4715: 'mainn' : not all control paths return a value
+         clock.cpp
+     1>f:\winapi1-\project\clock.cpp(11): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>f:\winapi1-\project\clock.cpp(12): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\string.h(110) : see declaration of 'strcat'
+     1>f:\winapi1-\project\clock.cpp(40): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>f:\winapi1-\project\clock.cpp(45): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>f:\winapi1-\project\clock.cpp(51): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>f:\winapi1-\project\clock.cpp(56): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>f:\winapi1-\project\clock.cpp(63): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>f:\winapi1-\project\clock.cpp(71): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>f:\winapi1-\project\clock.cpp(79): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>f:\winapi1-\project\clock.cpp(82): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
+         RegistrReadUser.cpp
+     1>f:\winapi1-\project\registrreaduser.cpp(39): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>f:\winapi1-\project\registrreaduser.cpp(74): warning C4018: '<=' : signed/unsigned mismatch
+     1>f:\winapi1-\project\registrreaduser.cpp(98): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>f:\winapi1-\project\registrreaduser.cpp(124): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(234) : see declaration of 'fopen'
+         OpenFileDilog.cpp
+     1>f:\winapi1-\project\openfiledilog.cpp(36): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>f:\winapi1-\project\openfiledilog.cpp(38): warning C4018: '<=' : signed/unsigned mismatch
+     1>f:\winapi1-\project\openfiledilog.cpp(65): warning C4172: returning address of local variable or temporary
+     1>f:\winapi1-\project\openfiledilog.cpp(13): warning C4101: 'hf' : unreferenced local variable
+     1>f:\winapi1-\project\openfiledilog.cpp(34): warning C4101: 'g' : unreferenced local variable
+         Generating Code...
+     1>f:\winapi1-\project\openfiledilog.cpp(69): warning C4715: 'open1' : not all control paths return a value
+     1>f:\winapi1-\project\main.cpp(336): warning C4715: 'mainn' : not all control paths return a value
        ManifestResourceCompile:
          All outputs are up-to-date.
        Link:
-         F:\New Folder (1)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\main.exe" /VERBOSE:Lib /INCREMENTAL /NOLOGO odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\Debug\main.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\WINAPI1-\project\Debug\main.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\main.lib" /MACHINE:X86 .\Debug\main.exe.embed.manifest.res
+         D:\New Folder\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\main.exe" /VERBOSE:Lib /INCREMENTAL /NOLOGO odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\Debug\main.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\WINAPI1-\project\Debug\main.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\main.lib" /MACHINE:X86 .\Debug\main.exe.embed.manifest.res
          .\Debug\clock.obj
          .\Debug\CreateForm.obj
          .\Debug\hwnd.obj
@@ -28,6 +82,38 @@
          .\Debug\OpenFileDilog.obj
          .\Debug\reading.obj
          .\Debug\RegistrReadUser.obj
+         
+         Searching libraries
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\odbc32.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\odbccp32.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\kernel32.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\user32.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\gdi32.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\winspool.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\comdlg32.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\advapi32.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\shell32.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\ole32.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\oleaut32.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\uuid.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\comctl32.lib:
+             Searching D:\New Folder\VC\lib\LIBCMTD.lib:
+             Searching D:\New Folder\VC\lib\OLDNAMES.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\odbc32.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\odbccp32.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\kernel32.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\user32.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\gdi32.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\winspool.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\comdlg32.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\advapi32.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\shell32.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\ole32.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\oleaut32.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\uuid.lib:
+             Searching C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\comctl32.lib:
+         
+         Finished searching libraries
        Manifest:
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:".\Debug\main.exe.embed.manifest" /manifest .\Debug\main.exe.intermediate.manifest
          All outputs are up-to-date.
@@ -35,7 +121,7 @@
          All outputs are up-to-date.
          main.vcxproj -> F:\WINAPI1-\project\.\Debug\main.exe
        BscMake:
-         F:\New Folder (1)\VC\bin\bscmake.exe /nologo /o".\Debug\main.bsc" .\Debug\clock.sbr .\Debug\CreateForm.sbr .\Debug\hwnd.sbr .\Debug\main.sbr .\Debug\OpenFileDilog.sbr .\Debug\reading.sbr .\Debug\RegistrReadUser.sbr
+         D:\New Folder\VC\bin\bscmake.exe /nologo /o".\Debug\main.bsc" .\Debug\clock.sbr .\Debug\CreateForm.sbr .\Debug\hwnd.sbr .\Debug\main.sbr .\Debug\OpenFileDilog.sbr .\Debug\reading.sbr .\Debug\RegistrReadUser.sbr
        FinalizeBuildStatus:
          Deleting file ".\Debug\main.unsuccessfulbuild".
          Touching ".\Debug\main.lastbuildstate".
@@ -43,4 +129,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:05.73
+Time Elapsed 00:00:09.75

@@ -11,7 +11,7 @@
 DWORD GetVersion(LPCTSTR lpszDllName)
 {
 
-	OSVERSIONINFOEXA info1;
+//	OSVERSIONINFOEXA info1;
 
 
     HINSTANCE hinstDll;
@@ -198,6 +198,31 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message, unsi
 
 	
 		break;
+
+
+		   case WM_CTLCOLORBTN:
+            HBRUSH hBrushBtn;
+            hBrushBtn = (HBRUSH) GetStockObject(NULL_BRUSH);
+            SetBkMode((HDC) wparam, TRANSPARENT);
+    return ((LRESULT) hBrushBtn);
+	/*
+
+	case WM_CTLCOLORBTN:
+		{
+    COLORREF colorref; //Creates our COLORREF value, with a very creative name
+    colorref = RGB(244,97,41); //This RGB value is dark green
+    HBRUSH hBrushBtn;
+    hBrushBtn = CreateSolidBrush(TRANSPARENT);
+	SetBkMode((HDC)wparam, colorref);
+
+	
+    return (INT_PTR)(HBRUSH)SetDCBrushColor(GetDC(GetDlgItem(hwnd,3)),BLACK_BRUSH);//GetStockObject(BLACK_BRUSH);
+		}
+	
+	break;
+
+	*/
+
 	case WM_CREATE:
 	//				 DoCreateStatusBar(hwnd,6,0,7);
 	//	CreateThread(0,0,reading,hwnd,0,0);

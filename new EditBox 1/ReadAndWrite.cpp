@@ -20,11 +20,11 @@ char *read(HWND hwnd)
 	 char *cv;
 	if(size<16)
 	{
-	cv=( char*)malloc(size);
+		cv=( char*)malloc(size);
 	}
 	else 
 	{
-	cv=( char*)malloc(size-19);
+		cv=( char*)malloc(size);
 
 	}
 	 //free(&z);
@@ -39,9 +39,10 @@ char *read(HWND hwnd)
 	}
 	else
 	{
-			while(fread(cv,size, 1, file));
-
-			fclose(file);
+		//	while(fgetc(c,size, 1, file));
+		fread(cv,size,1,file);
+		cv[size]=0;
+		fclose(file);
 	}
 
 /*

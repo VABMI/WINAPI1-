@@ -16,7 +16,7 @@ case WM_NOTIFY:
                 if (item->uItemState & CDIS_SELECTED)
                 {
                     //Select our color when the button is selected
-                    if (selectbrush == NULL)
+						if (selectbrush == NULL)
                         selectbrush = CreateGradientBrush(RGB(180, 0, 0), RGB(255, 180, 0), item);
 
                     //Create pen for button border
