@@ -154,7 +154,8 @@ wc.hIcon=(HICON)LoadImage(0,"c:\\1.ico",IMAGE_ICON,16,16,LR_LOADFROMFILE);
 style=WS_VISIBLE|WS_OVERLAPPEDWINDOW|WS_CLIPCHILDREN;
 X=10;Y=30;W=750;H=500;
 hwnd=CreateWindow(wc.lpszClassName,"Main",style,X,Y,W,H,0,0,0,0);
-
+CreateWindow("button","SelectAll",WS_VISIBLE|WS_BORDER|WS_CHILD,10,0,100,30,hwnd,(HMENU)55,0,0);
+CreateWindow("button","DeleteAll",WS_VISIBLE|WS_BORDER|WS_CHILD,115,0,100,30,hwnd,(HMENU)55,0,0);
 MSG msg;
 	while(GetMessage(&msg,0,0,0))
 	{

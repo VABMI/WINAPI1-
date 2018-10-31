@@ -27,7 +27,7 @@ HWND CreateListView (HWND hwndParent)
 	InitCommonControls();
 HWND hwndList = CreateWindow(WC_LISTVIEW, "", 
          WS_VISIBLE|WS_BORDER|WS_CHILD | LVS_REPORT | LVS_EDITLABELS|LVS_ALIGNTOP|LVS_SHAREIMAGELISTS|LVS_AUTOARRANGE , 
-		 10, 10,rcClient.right-20 ,rcClient.bottom-20, 
+		 10, 40,rcClient.right-20 ,rcClient.bottom-20, 
          hwndParent, (HMENU)369, 0, 0);
 
 
