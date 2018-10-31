@@ -84,42 +84,83 @@ char *szText[100]={"ID_NUMBER","NAME","LASTNAME","EMAIL","PASSWORD"};     // Tem
 
 
 
+		/////////////////////////// userebis chawera /////////////////
 
 
-   // ListView_InsertGroup(hWndListView, -1, &group);
-    
+	FILE *file;
+	file=fopen("C:\\Users\\vakho1\\Desktop\\text.txt","r");
+	
 
-	//SendMessage(hWndListView, LVM_INSERTGROUP,-1,(LPARAM)&group);
- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
- char g[100]="123151651";
+
+		struct person{
+		char  ID_NUMBER[20];
+		char NAME[20];
+		char LASTNAME[20];
+		char EMAIL[20];
+		char PASSWORD[20];
+
+
+	};
+	
+		struct person per;	 
 
 	LVITEM item1;
    item1.mask = LVIF_TEXT|LVIF_IMAGE;
    item1.cchTextMax = 256;
    item1.iImage=0;
-   item1.iSubItem = 0;
-   item1.pszText = g;
-   item1.iItem = 0;
- //  ListView_InsertItem(hWndListView, &item1);
+  
+
+ 
 
 
 
-	//	item1.iGroupId=11;
-
-	//	SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1); // Send info to the Listview
 
 
-	for(int i=0;i<=5;i++) // Add SubItems in a loop
-{
+		while(fscanf(file, "%s %s %s %s %s",per.ID_NUMBER,per.NAME,per.LASTNAME,per.EMAIL,per.PASSWORD)!=EOF)
+		{
+			
+		static int x=0;
+		static int y=0;
+		item1.iSubItem = x;	   
+		item1.iItem = y;
+			 y++;
+			 
+			 
+			 item1.pszText =per.ID_NUMBER ;
+		   	SendMessage(hWndListView,LVM_INSERTITEM,0,(LPARAM)&item1); 
+		 
 
-   item1.iSubItem=i;
-   sprintf(g,"SubItem %d",i);
-   item1.pszText=g;
-   SendMessage(hWndListView,LVM_SETITEM,0,(LPARAM)&item1); // Enter text to SubItems
-}
+			x++;
+			
+   item1.iSubItem=x;
+   item1.pszText=per.NAME;
+   SendMessage(hWndListView,LVM_SETITEM,x,(LPARAM)&item1); // Enter text to SubItems
+   x++;
+   item1.iSubItem=x;
+   item1.pszText=per.LASTNAME;
+   SendMessage(hWndListView,LVM_SETITEM,x,(LPARAM)&item1); 
+   x++;
+   item1.iSubItem=x;
+   item1.pszText=per.EMAIL;
+   SendMessage(hWndListView,LVM_SETITEM,x,(LPARAM)&item1);
+   x++;
+   item1.iSubItem=x;
+   item1.pszText=per.PASSWORD;
+   SendMessage(hWndListView,LVM_SETITEM,x,(LPARAM)&item1);
+   x=0;
+	}
+
+
+
+
+
+// Send info to the Listview
+
+
+
 
 	
-
+	
 //////////////////////////////////////////////////////////////////////////
 return TRUE;
 } 

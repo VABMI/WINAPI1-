@@ -1,5 +1,10 @@
 #include <windows.h>
 #include <stdio.h>
+
+#include<conio.h>
+#include<stdlib.h>
+
+
 #include "commctrl.h"
 #include <Uxtheme.h>
 #pragma comment(lib,"comctl32.lib")
