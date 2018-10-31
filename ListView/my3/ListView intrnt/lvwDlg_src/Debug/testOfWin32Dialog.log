@@ -1,0 +1,38 @@
+﻿Build started 7/24/2018 12:02:02 AM.
+     1>Project "C:\Users\vaxoa\OneDrive\Desktop\ListView\lvwDlg_src\testOfWin32Dialog.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\testOfWin32Dialog.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         F:\New Folder (1)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\testOfWin32Dialog.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt testOfWin32Dialog.cpp
+         testOfWin32Dialog.cpp
+     1>c:\users\vaxoa\onedrive\desktop\listview\lvwdlg_src\testofwin32dialog.cpp(166): warning C4101: 'hIcon' : unreferenced local variable
+     1>c:\users\vaxoa\onedrive\desktop\listview\lvwdlg_src\testofwin32dialog.cpp(196): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 f:\new folder (1)\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\vaxoa\onedrive\desktop\listview\lvwdlg_src\testofwin32dialog.cpp(204): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 f:\new folder (1)\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\vaxoa\onedrive\desktop\listview\lvwdlg_src\testofwin32dialog.cpp(274): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 f:\new folder (1)\vc\include\string.h(110) : see declaration of 'strcat'
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         F:\New Folder (1)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Debug\testOfWin32Dialog.exe" /INCREMENTAL /NOLOGO comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\testOfWin32Dialog.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"Debug\testOfWin32Dialog.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\testOfWin32Dialog.lib" /MACHINE:X86 Debug\testOfWin32Dialog.res
+         Debug\testOfWin32Dialog.exe.embed.manifest.res
+         Debug\stdafx.obj
+         Debug\testOfWin32Dialog.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\testOfWin32Dialog.exe.embed.manifest" /manifest Debug\testOfWin32Dialog.exe.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         testOfWin32Dialog.vcxproj -> C:\Users\vaxoa\OneDrive\Desktop\ListView\lvwDlg_src\Debug\testOfWin32Dialog.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\testOfWin32Dialog.unsuccessfulbuild".
+         Touching "Debug\testOfWin32Dialog.lastbuildstate".
+     1>Done Building Project "C:\Users\vaxoa\OneDrive\Desktop\ListView\lvwDlg_src\testOfWin32Dialog.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.90

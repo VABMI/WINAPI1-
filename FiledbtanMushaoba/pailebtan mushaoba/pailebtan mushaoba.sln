@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pailebtan mushaoba", "pailebtan mushaoba\pailebtan mushaoba.vcxproj", "{F6CDA69F-6DDB-4820-9F63-A02D11118270}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6CDA69F-6DDB-4820-9F63-A02D11118270}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F6CDA69F-6DDB-4820-9F63-A02D11118270}.Debug|Win32.Build.0 = Debug|Win32
+		{F6CDA69F-6DDB-4820-9F63-A02D11118270}.Release|Win32.ActiveCfg = Release|Win32
+		{F6CDA69F-6DDB-4820-9F63-A02D11118270}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
