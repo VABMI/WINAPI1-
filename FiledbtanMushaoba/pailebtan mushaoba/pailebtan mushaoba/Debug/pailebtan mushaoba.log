@@ -1,0 +1,31 @@
+﻿Build started 31.10.2018 12:18:32.
+     1>Project "F:\WINAPI1-\FiledbtanMushaoba\pailebtan mushaoba\pailebtan mushaoba\pailebtan mushaoba.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\pailebtan mushaoba.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         D:\New Folder\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>f:\winapi1-\filedbtanmushaoba\pailebtan mushaoba\pailebtan mushaoba\main.cpp(10): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>f:\winapi1-\filedbtanmushaoba\pailebtan mushaoba\pailebtan mushaoba\main.cpp(26): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(253) : see declaration of 'fscanf'
+     1>f:\winapi1-\filedbtanmushaoba\pailebtan mushaoba\pailebtan mushaoba\main.cpp(36): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 d:\new folder\vc\include\conio.h(128) : see declaration of 'getch'
+     1>f:\winapi1-\filedbtanmushaoba\pailebtan mushaoba\pailebtan mushaoba\main.cpp(12): warning C4101: 'str3' : unreferenced local variable
+     1>f:\winapi1-\filedbtanmushaoba\pailebtan mushaoba\pailebtan mushaoba\main.cpp(9): warning C4101: 'h' : unreferenced local variable
+     1>f:\winapi1-\filedbtanmushaoba\pailebtan mushaoba\pailebtan mushaoba\main.cpp(12): warning C4101: 'str1' : unreferenced local variable
+     1>f:\winapi1-\filedbtanmushaoba\pailebtan mushaoba\pailebtan mushaoba\main.cpp(12): warning C4101: 'str2' : unreferenced local variable
+       Link:
+         D:\New Folder\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\WINAPI1-\FiledbtanMushaoba\pailebtan mushaoba\Debug\pailebtan mushaoba.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\pailebtan mushaoba.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\WINAPI1-\FiledbtanMushaoba\pailebtan mushaoba\Debug\pailebtan mushaoba.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\WINAPI1-\FiledbtanMushaoba\pailebtan mushaoba\Debug\pailebtan mushaoba.lib" /MACHINE:X86 Debug\main.obj
+         LINK : F:\WINAPI1-\FiledbtanMushaoba\pailebtan mushaoba\Debug\pailebtan mushaoba.exe not found or not built by the last incremental link; performing full link
+         pailebtan mushaoba.vcxproj -> F:\WINAPI1-\FiledbtanMushaoba\pailebtan mushaoba\Debug\pailebtan mushaoba.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"F:\WINAPI1-\FiledbtanMushaoba\pailebtan mushaoba\Debug\pailebtan mushaoba.exe;#1" /manifest "Debug\pailebtan mushaoba.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Debug\pailebtan mushaoba.unsuccessfulbuild".
+         Touching "Debug\pailebtan mushaoba.lastbuildstate".
+     1>Done Building Project "F:\WINAPI1-\FiledbtanMushaoba\pailebtan mushaoba\pailebtan mushaoba\pailebtan mushaoba.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.73
