@@ -76,12 +76,12 @@ char *szText[100]={"ID_NUMBER","NAME","LASTNAME","EMAIL","PASSWORD"};     // Tem
 	
 		for(int i=0;i<=iCol;i++){
 		lvc.iSubItem = i;
-		
+			SendMessage(hWndListView,LVM_SETTEXTBKCOLOR,0,RGB(1+(15*i)+1,7+(15*i)+3,i+96));
         lvc.pszText = (LPSTR)szText[i];
         ListView_InsertColumn(hWndListView, i, &lvc);
 
 		}
-
+		
 
 
 		/////////////////////////// userebis chawera /////////////////

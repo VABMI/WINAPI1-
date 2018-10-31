@@ -93,12 +93,34 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message, unsi
 
 	Lhwnd=CreateListView(hwnd);
 	InitListViewColumns(Lhwnd);
+	
+	SendMessage(Lhwnd,LVM_SETTEXTCOLOR,0,RGB(255,255,255));
+
+	SendMessage(hList,LVM_GETNEXTITEM,1,LVNI_SELECTED);
+	//SetWindowLong(
 			}
 			break;
 		
 		case WM_COMMAND:
 
-	
+			{
+				if(wparam==53)
+				{
+						SendMessage(GetDlgItem(hwnd,369),LVM_DELETEALLITEMS,0,0);
+
+				}
+
+
+				if(wparam==55)
+				{
+						SendMessage(GetDlgItem(hwnd,369),LVM_DELETECOLUMN,3,0);
+
+				}
+
+
+
+
+			}
 
 	
 		break;
@@ -154,8 +176,8 @@ wc.hIcon=(HICON)LoadImage(0,"c:\\1.ico",IMAGE_ICON,16,16,LR_LOADFROMFILE);
 style=WS_VISIBLE|WS_OVERLAPPEDWINDOW|WS_CLIPCHILDREN;
 X=10;Y=30;W=750;H=500;
 hwnd=CreateWindow(wc.lpszClassName,"Main",style,X,Y,W,H,0,0,0,0);
-CreateWindow("button","SelectAll",WS_VISIBLE|WS_BORDER|WS_CHILD,10,0,100,30,hwnd,(HMENU)55,0,0);
-CreateWindow("button","DeleteAll",WS_VISIBLE|WS_BORDER|WS_CHILD,115,0,100,30,hwnd,(HMENU)55,0,0);
+CreateWindow("button","deleteColumn",WS_VISIBLE|WS_BORDER|WS_CHILD,10,0,100,30,hwnd,(HMENU)55,0,0);
+CreateWindow("button","DeleteAll",WS_VISIBLE|WS_BORDER|WS_CHILD,115,0,100,30,hwnd,(HMENU)53,0,0);
 MSG msg;
 	while(GetMessage(&msg,0,0,0))
 	{
