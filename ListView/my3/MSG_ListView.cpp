@@ -9,7 +9,9 @@
 
 
 				LPNMHDR lpnmh = (LPNMHDR)lparam;
-				if (lpnmh->idFrom == 369)
+			//	if (lpnmh->idFrom == 369)
+
+
 				if (lpnmh->code == LVN_COLUMNCLICK)
 				{
 
@@ -19,7 +21,32 @@
      
 				}
 
+				if (lpnmh->code ==LVN_ITEMACTIVATE   )
+				{
 
+
+						MessageBox(hwnd,"LVN_ITEMACTIVATE   ","LVN_ITEMACTIVATE",0);
+
+
+				}
+				if (lpnmh->code ==LVN_ODCACHEHINT)
+				{
+
+					MessageBox(hwnd,"LVN_ODCACHEHINT","LVN_ODCACHEHINT",0);
+
+				}
+
+				if (lpnmh->code ==LVN_ITEMCHANGED)
+				{
+
+
+						BOOL checked = IsDlgButtonChecked(GetDlgItem(hwnd,369), 0);
+						if (checked) {
+						 MessageBox(hwnd,"CHEKBOX","CHEKBOX",0);
+						} 
+
+					
+				}
 				if(((LPNMHDR)lparam)->code == NM_CLICK) 
 					{
 						int iSlected;
