@@ -21,10 +21,11 @@ SetMenu(hwnd,hmenu);
 HFONT create_font(HWND hwnd)
 {
 HFONT hfont;
-hfont=CreateFont(23,14,1,1,FW_BOLD,1,1,1,ANSI_CHARSET, 
+hfont=CreateFont(14,6,0,0,FW_HEAVY,0,1,0,ANSI_CHARSET, 
       OUT_TT_PRECIS, CLIP_DEFAULT_PRECIS, DEFAULT_QUALITY, 
       DEFAULT_PITCH | FF_DONTCARE,"Tahoma");
-SendMessage(hwnd,WM_SETFONT,(UINT)hfont,0);
+
+SendMessage(hwnd,WM_SETFONT,(UINT)hfont,1);
 return hfont;
 }
 //---------------------------------------------

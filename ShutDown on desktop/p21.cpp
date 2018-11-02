@@ -33,11 +33,17 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message
 	switch(message)
 	{
 		case WM_CREATE:
+			{
 		//on_create(hwnd,message,wparam,lparam);
-		break;
+			
+				create_font(GetDlgItem(hwnd,1));
+				InvalidateRect(hwnd,0,1);
+			}
+			break;
 		
 		case WM_COMMAND:
 		on_cmd(hwnd,message,wparam,lparam);
+		
 		break;
 		
 		case WM_RBUTTONDOWN:
@@ -93,11 +99,29 @@ X=1205;Y=3;W=70;H=30;
 
 	hwnd=CreateWindow("12","main",style,X,Y,W,H,0,0,0,0);
 	HWND hwnd1=CreateWindow("button","ShutDown",WS_VISIBLE|WS_CHILD,0,0,W,H,hwnd,(HMENU)1,0,0);
+		create_font(hwnd1);
+
+
+
+	HRGN hrgn;	
+	RECT r;
+	HDC hdc=GetDC(hwnd);
+	GetClientRect(hwnd,&r);
+	hrgn=CreateEllipticRgn(r.left,r.top,r.right,r.bottom);
+	SetWindowRgn(hwnd,hrgn,1);
+
+
 
 
 	hwnd=CreateWindow("12","main",style,X+80,Y,W,H,0,0,0,0);
 	hwnd1=CreateWindow("button","RESTART",WS_VISIBLE|WS_CHILD,0,0,W,H,hwnd,(HMENU)2,0,0);
+	hdc=GetDC(hwnd);
+	GetClientRect(hwnd,&r);
+	hrgn=CreateEllipticRgn(r.left,r.top,r.right,r.bottom);
+	SetWindowRgn(hwnd,hrgn,1);
 
+
+		create_font(hwnd1);
 MSG msg;
 int s=1;
 	while(s!=0)
