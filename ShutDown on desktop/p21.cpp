@@ -122,6 +122,21 @@ X=1205;Y=3;W=70;H=30;
 
 
 		create_font(hwnd1);
+
+
+		
+
+		HCURSOR	hCursor = LoadCursorFromFile("Glove Normal.cur");
+
+		SendMessage(hwnd1, WM_SETCURSOR, 0, (LPARAM) hCursor);
+		SetWindowLong(hwnd1, GCL_HCURSOR, (LONG)hCursor);
+		SetWindowLongPtr(hwnd1, GCL_HCURSOR, (LONG_PTR)hCursor);
+
+		// SetClassLong (buton, GCL_HCURSOR, (LONG) LoadCursor (NULL, IDC_CROSS)); //// standartuli kursoris chasma
+		 SetClassLong (hwnd1, GCL_HCURSOR, (LONG) hCursor);
+		 
+
+
 MSG msg;
 int s=1;
 	while(s!=0)
