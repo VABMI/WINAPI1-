@@ -3,3 +3,5 @@ cpp0x.pl/kursy/Kurs-WinAPI-C++/Kontrolki/ListView/207
 
 
 https://docs.microsoft.com/en-us/windows/desktop/Controls/create-a-list-view-control#related-topics
+
+https://stackoverflow.com/questions/29950430/what-is-the-difference-between-lvm-getitem-and-lvm-getitemtext

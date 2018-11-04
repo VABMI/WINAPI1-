@@ -1,7 +1,65 @@
 
+
+
+
+
+if (message == WM_NOTIFY)
+   {
+		if ((((LPNMHDR)lparam)->hwndFrom) == GetDlgItem(hwnd, 1))
+		{
+			switch (((LPNMHDR)lparam)->code)
+			{
+				MessageBox(hwnd,"asdad","Asdasd",0);
+			case LVN_GETEMPTYMARKUP:
+			{
+				NMLVEMPTYMARKUP *em = (NMLVEMPTYMARKUP *)lparam;
+				em->dwFlags = EMF_CENTERED;
+				//	wcscpy_s(em->szMarkup, 256, L"No Logs");
+				return TRUE;
+			}
+			break;
+
+			case LVN_GETDISPINFO:
+			{
+				NMLVDISPINFO* pDispInfo = (NMLVDISPINFO*)lparam;
+				if (pDispInfo->item.mask & LVIF_TEXT)
+				{
+					
+					switch (pDispInfo->item.iSubItem)
+					{
+				//	case 0: text = "text1"; break;
+				//	case 1: text = "text2"; break;
+
+					default: break;
+					}
+					//lstrcpyn(pDispInfo->item.pszText, text, pDispInfo->item.cchTextMax);
+					//return TRUE;
+				}
+			}
+
+		}
+	}
+}
+
+
+
+
+
 	   if (message == WM_NOTIFY)
     {
 
+
+
+
+
+
+
+
+
+
+
+
+		//////+++++++++++++ END GET ITEM ========================================///////////
 
 				switch(LOWORD(wparam))
 				{
@@ -16,16 +74,23 @@
 				{
 
 
-					MessageBox(hwnd,"LVN_COLUMNCLICK","LVN_COLUMNCLICK",0);
+				//	MessageBox(hwnd,"LVN_COLUMNCLICK","LVN_COLUMNCLICK",0);
 					NMLISTVIEW*    pListView = (NMLISTVIEW*)lparam;
      
 				}
 
 				if (lpnmh->code ==LVN_ITEMACTIVATE   )
 				{
+						int f=SendMessage(GetDlgItem(hwnd,369),LVM_GETNEXTITEM,-1,LVNI_FOCUSED);
 
+						char k[20];
+						sprintf(k,"%i",f);
 
-						MessageBox(hwnd,"LVN_ITEMACTIVATE   ","LVN_ITEMACTIVATE",0);
+						 LVITEM klo;
+						 
+						int oi=	SendMessage(GetDlgItem(hwnd,369),LVM_GETITEM,0,(LPARAM)0);
+
+						MessageBox(hwnd,k,"LVN_ITEMACTIVATE",0);
 
 
 				}

@@ -10,7 +10,19 @@
 #pragma comment(lib,"comctl32.lib")
 
 
+int GetListViewItemText( HWND a_hWnd, int a_Item, int a_SubItem) {
+     char buffer( 1024 );
+    LVITEM lvi ;
+    lvi.mask = LVIF_TEXT;  // Only required when using LVM_GETITEM
+    lvi.pszText = &buffer;
+    lvi.cchMaxText =(int) 22;
+    lvi.iItem = a_Item;    // Only required when using LVM_GETITEM
+    lvi.iSubItem = a_SubItem;
 
+    ::SendMessage( hwnd, LVM_GETITEM, 0, reinterpret_cast<LPARAM>( &lvi ) );
+
+    return std::wstring( lvi.pszText );
+}
 #include"Create_ListView.cpp"
 VOID SetView(HWND hWndListView, DWORD dwView) ;
 #define IDM_CODE_SAMPLES 1
