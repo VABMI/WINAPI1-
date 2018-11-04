@@ -87,10 +87,15 @@ if (message == WM_NOTIFY)
 						sprintf(k,"%i",f);
 
 						 LVITEM klo;
-						 
-						int oi=	SendMessage(GetDlgItem(hwnd,369),LVM_GETITEM,0,(LPARAM)0);
+						 char gg[1000];
+						 for(int i=0;i<=4;i++)
+						 {
+							gg,MessageBox(hwnd, GetListViewItemText(GetDlgItem(hwnd,369),f,i),k,0));
+							
+						 }
+					//	 int oi=	SendMessage(GetDlgItem(hwnd,369),LVM_GETITEM,0,(LPARAM)0);
 
-						MessageBox(hwnd,k,"LVN_ITEMACTIVATE",0);
+						
 
 
 				}
