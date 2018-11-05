@@ -87,12 +87,15 @@ if (message == WM_NOTIFY)
 						sprintf(k,"%i",f);
 
 						 LVITEM klo;
-						 char gg[1000];
+						static char gg[1000];
+						ZeroMemory(&gg,strlen(gg));
 						 for(int i=0;i<=4;i++)
-						 {
-							gg,MessageBox(hwnd, GetListViewItemText(GetDlgItem(hwnd,369),f,i),k,0));
+						 { 
+							strcat(gg, GetListViewItemText(GetDlgItem(hwnd,369),f,i));
+							strcat(gg,"_");
 							
 						 }
+						 MessageBox(hwnd,gg,gg,0);
 					//	 int oi=	SendMessage(GetDlgItem(hwnd,369),LVM_GETITEM,0,(LPARAM)0);
 
 						

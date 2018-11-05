@@ -9,30 +9,7 @@
 #include <Uxtheme.h>
 #pragma comment(lib,"comctl32.lib")
 
-
-char * GetListViewItemText( HWND a_hWnd, int a_Item, int a_SubItem) {
-     char buffer[1025];
-	
-	 LVITEM lvi={0} ;
-    lvi.mask = LVIF_TEXT;  // Only required when using LVM_GETITEM
-    lvi.pszText = buffer;
-    lvi.cchTextMax =1024;
-    lvi.iItem = a_Item;    // Only required when using LVM_GETITEM
-    lvi.iSubItem = a_SubItem;
-	//for(int i=1;i<=5;i++){
-	
-	
-		//lvi.iItem = i; 
-    SendMessage( a_hWnd, LVM_GETITEM, 0, reinterpret_cast<LPARAM>( &lvi ) );
-	
-	//}
-	//lvi.pszText;
-	char *hh=(char*)malloc(strlen(buffer));
-	strcpy(hh,buffer);
-	
-   return  hh;
-}
-
+#include "GetListViewItemText.cpp";
 #include"Create_ListView.cpp"
 VOID SetView(HWND hWndListView, DWORD dwView) ;
 #define IDM_CODE_SAMPLES 1
@@ -139,6 +116,15 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message, unsi
 
 				}
 
+				if(wparam==54)
+				{		  
+					
+					
+					#include"GetListViewItemTextALL.cpp";
+					
+					
+				}
+
 
 
 
@@ -200,6 +186,7 @@ X=10;Y=30;W=750;H=500;
 hwnd=CreateWindow(wc.lpszClassName,"Main",style,X,Y,W,H,0,0,0,0);
 CreateWindow("button","deleteColumn",WS_VISIBLE|WS_BORDER|WS_CHILD,10,0,100,30,hwnd,(HMENU)55,0,0);
 CreateWindow("button","DeleteAll",WS_VISIBLE|WS_BORDER|WS_CHILD,115,0,100,30,hwnd,(HMENU)53,0,0);
+CreateWindow("button","GET ALL SELECTED",WS_VISIBLE|WS_BORDER|WS_CHILD,115+120,0,200,30,hwnd,(HMENU)54,0,0);
 MSG msg;
 	while(GetMessage(&msg,0,0,0))
 	{
