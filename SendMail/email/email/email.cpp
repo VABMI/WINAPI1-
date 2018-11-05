@@ -24,7 +24,11 @@ int ConnectToServer(const char *server_address){
 	struct sockaddr_in addr;
 	addr.sin_family=AF_INET;
 	addr.sin_port=htons(25);
-	
+	if(inet_pton(AF_INET,GetIPAddress(server_address,addr.sin_addr)==1)
+	{
+		 connect(socket_fd,&addr,sizeof(addr));
+
+	}
 	
 	
 	return socket_fd;

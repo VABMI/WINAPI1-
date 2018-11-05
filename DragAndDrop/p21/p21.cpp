@@ -29,7 +29,7 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message
 		 {
 
 
-				DragAcceptFiles(hwnd,1);
+			//	DragAcceptFiles(hwnd,1);
 
 
 
@@ -58,7 +58,7 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message
 			HDROP	hDrop =(HDROP) wparam;
 				DragQueryFile(hDrop,0,kk,99);
 
-    	MessageBox(hwnd,kk,kk,0);
+    	MessageBox(hwnd,kk,"aaaaaa",0);
 
 
 		}
