@@ -24,6 +24,24 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="curl.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="easy.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="multi.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="urlapi.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="curl_setup.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config-win32.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

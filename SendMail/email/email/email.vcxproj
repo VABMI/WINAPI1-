@@ -75,8 +75,14 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="config-win32.h" />
+    <ClInclude Include="curl.h" />
+    <ClInclude Include="curl_setup.h" />
+    <ClInclude Include="easy.h" />
+    <ClInclude Include="multi.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="urlapi.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="email.cpp" />

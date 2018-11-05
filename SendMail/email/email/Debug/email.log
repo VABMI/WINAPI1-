@@ -1,4 +1,4 @@
-﻿Build started 05.11.2018 17:20:02.
+﻿Build started 06.11.2018 0:28:40.
      1>Project "F:\WINAPI1-\SendMail\email\email\email.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Touching "Debug\email.unsuccessfulbuild".
@@ -38,17 +38,9 @@
      1>d:\new folder\vc\include\netinet\in.h(132): error C2238: unexpected token(s) preceding ';'
      1>d:\new folder\vc\include\netinet\in.h(145): warning C4005: 'IP_RECVDSTADDR' : macro redefinition
                  c:\program files (x86)\microsoft sdks\windows\v7.0a\include\ws2ipdef.h(135) : see previous definition of 'IP_RECVDSTADDR'
-     1>f:\winapi1-\sendmail\email\email\email.cpp(24): error C2079: 'addr' uses undefined struct 'sockaddr_in'
-     1>f:\winapi1-\sendmail\email\email\email.cpp(25): error C2228: left of '.sin_family' must have class/struct/union
-                 type is 'int'
-     1>f:\winapi1-\sendmail\email\email\email.cpp(26): error C2228: left of '.sin_port' must have class/struct/union
-                 type is 'int'
-     1>f:\winapi1-\sendmail\email\email\email.cpp(43): error C2440: '=' : cannot convert from 'char *' to 'in_addr *'
-                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
-     1>f:\winapi1-\sendmail\email\email\email.cpp(44): error C2664: 'inet_ntoa' : cannot convert parameter 1 from 'in_addr *' to 'in_addr'
-                 Source or target has incomplete type
+     1>f:\winapi1-\sendmail\email\email\curl.h(37): fatal error C1083: Cannot open include file: 'curlver.h': No such file or directory
      1>Done Building Project "F:\WINAPI1-\SendMail\email\email\email.vcxproj" (build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:01.59
+Time Elapsed 00:00:00.82
