@@ -6,7 +6,7 @@
 				{
 				
 					switch(((LPNMHDR)lparam)->code)
-					{/*
+					{
 					case NM_RCLICK:
 						MessageBox(hwnd,"RRRR clicked button","RRR clicked button",0);
 						break;
@@ -17,11 +17,11 @@
 
 					case NM_SETFOCUS :
 
-							MessageBox(hwnd,"SETFOCUS","SETFOCUS",0);
+							 MessageBox(hwnd,"SETFOCUS","SETFOCUS",0);
 						break;
 					case TVN_ITEMEXPANDING :
 
-	//					MessageBox(hwnd,"asdsad","asdas",0);
+						MessageBox(hwnd,"asdsad","asdas",0);
 						
 						break;
 
@@ -29,11 +29,11 @@
 
 						case TVN_KEYDOWN :
 
-							MessageBox(hwnd,"TreeView ","TreeView ",0);
+					//		MessageBox(hwnd,"TreeView ","TreeView ",0);
 							
 							break;
 
-							*/
+							
 					case TVN_GETDISPINFO:
 						{
 							
@@ -50,11 +50,11 @@
 						break;
 						case TVN_DELETEITEM:
 					
-							// MessageBox(hwnd,"asdsad","asdas",0);
+							 MessageBox(hwnd,"TVN_DELETEITEM","TVN_DELETEITEM",0);
 						
 						break;
 						case TVN_ITEMCHANGING:
-							// MessageBox(hwnd,"asdsad","asdas",0);
+							 MessageBox(hwnd,"TVN_ITEMCHANGING","TVN_ITEMCHANGING",0);
 							break;
 
 						case TVN_SELCHANGED:

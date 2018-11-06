@@ -1,23 +1,27 @@
-﻿Build started 7/23/2018 11:37:05 PM.
-     1>Project "C:\Users\vaxoa\OneDrive\Documents\GitHub\WINAPI\timer\threads\threads\threads.vcxproj" on node 2 (build target(s)).
+﻿Build started 06.11.2018 14:04:13.
+     1>Project "F:\WINAPI1-\timer\threads\threads\threads.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Touching "Debug\threads.unsuccessfulbuild".
        ClCompile:
-         All outputs are up-to-date.
-         F:\New Folder (1)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\threads.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Timer.cpp
+         D:\New Folder\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\threads.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         D:\New Folder\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\threads.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt MenuBar.cpp threads.cpp Timer.cpp
          Timer.cpp
+         threads.cpp
+         MenuBar.cpp
+         Generating Code...
        ManifestResourceCompile:
-         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\threads.exe.embed.manifest.res" Debug\threads_manifest.rc 
        Link:
-         F:\New Folder (1)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\vaxoa\OneDrive\Documents\GitHub\WINAPI\timer\threads\Debug\threads.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\threads.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\vaxoa\OneDrive\Documents\GitHub\WINAPI\timer\threads\Debug\threads.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\vaxoa\OneDrive\Documents\GitHub\WINAPI\timer\threads\Debug\threads.lib" /MACHINE:X86 Debug\threads.exe.embed.manifest.res
+         D:\New Folder\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\WINAPI1-\timer\threads\Debug\threads.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\threads.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\WINAPI1-\timer\threads\Debug\threads.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\WINAPI1-\timer\threads\Debug\threads.lib" /MACHINE:X86 Debug\threads.exe.embed.manifest.res
          Debug\MenuBar.obj
          Debug\stdafx.obj
          Debug\threads.obj
          Debug\Timer.obj
      1>threads.obj : error LNK2005: "struct HWND__ * hwnd1" (?hwnd1@@3PAUHWND__@@A) already defined in stdafx.obj
-     1>C:\Users\vaxoa\OneDrive\Documents\GitHub\WINAPI\timer\threads\Debug\threads.exe : fatal error LNK1169: one or more multiply defined symbols found
-     1>Done Building Project "C:\Users\vaxoa\OneDrive\Documents\GitHub\WINAPI\timer\threads\threads\threads.vcxproj" (build target(s)) -- FAILED.
+     1>F:\WINAPI1-\timer\threads\Debug\threads.exe : fatal error LNK1169: one or more multiply defined symbols found
+     1>Done Building Project "F:\WINAPI1-\timer\threads\threads\threads.vcxproj" (build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:00.60
+Time Elapsed 00:00:03.19

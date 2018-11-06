@@ -1,11 +1,12 @@
 #include <windows.h>
 #include <stdio.h>
+#include <CommCtrl.h>
 
 HFONT hfont_global;
 HDC hdc;
 #include "cmd_msg.cpp"
 #include "on_create.cpp"
- 
+#include "HBRUSHES.cpp"
 
 HWND    g_hwndButton            = NULL;   
 HWND       g_hwndButton1	=NULL;
@@ -15,9 +16,116 @@ BOOL    g_bSeeingMouse          = FALSE;
 
 
 
-
+#define SHUTDOWN 1
+#define  RESTART 2
 
 //----------------------------------------------------------------
+
+LRESULT CALLBACK WndProcButton (HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam);
+
+HWND    g_hwndButton            = NULL;  
+HWND       g_hwndButton1	=NULL;
+WNDPROC g_wndProcButtonOrigianl = NULL;   
+BOOL    g_bSeeingMouse          = FALSE;
+
+//----------------------------------------------------------------
+
+LRESULT CALLBACK WndProcButton (HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
+{
+
+	   WNDPROC wpOld = (WNDPROC)GetWindowLongPtr(g_hwndButton, GWLP_USERDATA);
+
+	   if(wpOld)
+	   {
+			   switch(message)
+			   {
+				   
+
+	      case WM_RBUTTONDOWN:
+
+			  	MessageBox(hwnd,"asdasd","asdasd",0);
+			
+			  break;
+			   
+			   
+			   
+			   case WM_ERASEBKGND:
+
+			
+
+
+					 break;
+					case WM_NCDESTROY:
+					
+					 break;
+					    case WM_GETDLGCODE:
+
+								
+							break;
+			   }
+			    
+
+	   }
+
+
+
+
+
+
+
+
+
+
+	 switch( message )
+    {
+   
+      
+
+
+	      case WM_RBUTTONDOWN:
+
+			  	MessageBox(hwnd,"asdasd","asdasd",0);
+			
+			  break;
+
+    }
+
+
+
+
+
+
+
+
+
+    switch( message )
+    {
+		
+
+	      case WM_RBUTTONDOWN:
+
+			  	MessageBox(hwnd,"asdasd","asdasd",0);
+			
+			  break;
+
+
+
+
+
+    case WM_COMMAND:
+		if(wParam==1)
+		{
+
+			
+		}
+      //  SetFocus( g_hwndButton );
+        break;
+    default:
+        
+        break;
+    }
+    return CallWindowProc( g_wndProcButtonOrigianl, hwnd, message, wParam, lParam );
+}
 
 //----------------------------------------------------------------
 long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message
@@ -32,6 +140,14 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message
 
 	switch(message)
 	{
+
+#include "Wm_notify.cpp"
+
+
+
+
+
+
 		case WM_CREATE:
 			{
 		//on_create(hwnd,message,wparam,lparam);
@@ -98,7 +214,7 @@ X=1205;Y=3;W=70;H=30;
 
 
 	hwnd=CreateWindow("12","main",style,X,Y,W,H,0,0,0,0);
-	HWND hwnd1=CreateWindow("button","ShutDown",WS_VISIBLE|WS_CHILD,0,0,W,H,hwnd,(HMENU)1,0,0);
+	HWND hwnd1=CreateWindow("button","ShutDown",WS_VISIBLE|WS_CHILD,0,0,W,H,hwnd,(HMENU)SHUTDOWN,0,0);
 		create_font(hwnd1);
 
 
@@ -114,7 +230,7 @@ X=1205;Y=3;W=70;H=30;
 
 
 	hwnd=CreateWindow("12","main",style,X+80,Y,W,H,0,0,0,0);
-	hwnd1=CreateWindow("button","RESTART",WS_VISIBLE|WS_CHILD,0,0,W,H,hwnd,(HMENU)2,0,0);
+	hwnd1=CreateWindow("button","RESTART",WS_VISIBLE|WS_CHILD,0,0,W,H,hwnd,(HMENU)RESTART,0,0);
 	hdc=GetDC(hwnd);
 	GetClientRect(hwnd,&r);
 	hrgn=CreateEllipticRgn(r.left,r.top,r.right,r.bottom);

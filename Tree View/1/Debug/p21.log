@@ -1,21 +1,20 @@
-﻿Build started 31.10.2018 6:56:34.
-     1>Project "F:\WINAPI1-\Tree View\p21.vcxproj" on node 2 (build target(s)).
+﻿Build started 06.11.2018 14:02:57.
+     1>Project "F:\WINAPI1-\Tree View\1\p21.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating ".\Debug\p21.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
          D:\New Folder\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt p21.cpp
          p21.cpp
-     1>f:\winapi1-\tree view\p21.cpp(95): warning C4101: 'hti' : unreferenced local variable
-     1>f:\winapi1-\tree view\p21.cpp(372): warning C4101: 'himl' : unreferenced local variable
-     1>f:\winapi1-\tree view\p21.cpp(448): warning C4060: switch statement contains no 'case' or 'default' labels
-     1>f:\winapi1-\tree view\wm_noty_tree.cpp(77): warning C4018: '<=' : signed/unsigned mismatch
-     1>f:\winapi1-\tree view\wm_noty_tree.cpp(119): warning C4060: switch statement contains no 'case' or 'default' labels
-     1>f:\winapi1-\tree view\p21.cpp(506): warning C4101: 'buton' : unreferenced local variable
-     1>f:\winapi1-\tree view\p21.cpp(542): warning C4101: 'rcClient' : unreferenced local variable
+     1>f:\winapi1-\tree view\1\p21.cpp(95): warning C4101: 'hti' : unreferenced local variable
+     1>f:\winapi1-\tree view\1\p21.cpp(452): warning C4060: switch statement contains no 'case' or 'default' labels
+     1>f:\winapi1-\tree view\1\wm_noty_tree.cpp(77): warning C4018: '<=' : signed/unsigned mismatch
+     1>f:\winapi1-\tree view\1\wm_noty_tree.cpp(119): warning C4060: switch statement contains no 'case' or 'default' labels
+     1>f:\winapi1-\tree view\1\p21.cpp(510): warning C4101: 'buton' : unreferenced local variable
+     1>f:\winapi1-\tree view\1\p21.cpp(546): warning C4101: 'rcClient' : unreferenced local variable
        ManifestResourceCompile:
          All outputs are up-to-date.
        Link:
-         D:\New Folder\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\p21.exe" /INCREMENTAL /NOLOGO odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\Debug\p21.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\WINAPI1-\Tree View\Debug\p21.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\p21.lib" /MACHINE:X86 .\Debug\p21.exe.embed.manifest.res
+         D:\New Folder\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\p21.exe" /INCREMENTAL /NOLOGO odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\Debug\p21.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\WINAPI1-\Tree View\1\Debug\p21.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\p21.lib" /MACHINE:X86 .\Debug\p21.exe.embed.manifest.res
          .\Debug\List_Tree_view.obj
          .\Debug\p21.obj
        Manifest:
@@ -23,11 +22,11 @@
          All outputs are up-to-date.
        LinkEmbedManifest:
          All outputs are up-to-date.
-         p21.vcxproj -> F:\WINAPI1-\Tree View\.\Debug\p21.exe
+         p21.vcxproj -> F:\WINAPI1-\Tree View\1\.\Debug\p21.exe
        FinalizeBuildStatus:
          Deleting file ".\Debug\p21.unsuccessfulbuild".
          Touching ".\Debug\p21.lastbuildstate".
-     1>Done Building Project "F:\WINAPI1-\Tree View\p21.vcxproj" (build target(s)).
+     1>Done Building Project "F:\WINAPI1-\Tree View\1\p21.vcxproj" (build target(s)).
 
 Build succeeded.
 
