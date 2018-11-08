@@ -74,7 +74,7 @@ if (message == WM_NOTIFY)
 				{
 
 
-				//	MessageBox(hwnd,"LVN_COLUMNCLICK","LVN_COLUMNCLICK",0);
+					MessageBox(hwnd,"LVN_COLUMNCLICK","LVN_COLUMNCLICK",0);
 					NMLISTVIEW*    pListView = (NMLISTVIEW*)lparam;
      
 				}
@@ -135,9 +135,49 @@ if (message == WM_NOTIFY)
 					}
 
 
-			if(((LPNMHDR)lparam)->code == NM_RCLICK) 	
+			if(((LPNMHDR)lparam)->code ==NM_RCLICK) 	///rCLICK
 					{
-						MessageBox(hwnd,"NM_RCLICK","NM_RCLICK",0);
+											  // display a menu created using CreateMenu()
+						HMENU hMenu = ::CreateMenu();
+	
+
+
+					int f=SendMessage(GetDlgItem(hwnd,369),LVM_GETNEXTITEM,-1,LVNI_FOCUSED);
+
+					HMENU hmenu_popup_file=CreatePopupMenu();
+					if (NULL != hMenu)
+					{
+						POINT point;
+						// add a few test items
+        
+		
+						::AppendMenu(hmenu_popup_file, MF_STRING, 1, "Item 1");
+						::AppendMenu(hmenu_popup_file, MF_STRING, 2, "Item 2");
+						::AppendMenu(hmenu_popup_file, MF_STRING, 3, "Item 3");
+
+						ClientToScreen(GetDlgItem(hwnd,369),&point);
+						point.x = LOWORD (lparam);
+						point.y = HIWORD (lparam);
+						int sel;
+
+							if (GetCursorPos(&point)&&f!=-1)
+							{
+								//cursor position now in p.x and p.y
+
+								 sel = ::TrackPopupMenuEx(hmenu_popup_file, TPM_CENTERALIGN | TPM_RETURNCMD,point.x,point.y,GetDlgItem(hwnd,369),NULL);
+								 f=-1;
+								 SendMessage(GetDlgItem(hwnd,369),LVNI_FOCUSED,-1,-1);
+							}
+						//	int sel = ::TrackPopupMenuEx(hmenu_popup_file, TPM_CENTERALIGN | TPM_RETURNCMD,point.x,point.y,GetDlgItem(hwnd,369),NULL);
+
+
+					   ::DestroyMenu(hmenu_popup_file);
+
+
+	
+					}
+									
+									//	MessageBox(hwnd,"NM_RCLICK","NM_RCLICK",0);
 					}
 
 

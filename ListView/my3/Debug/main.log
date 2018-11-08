@@ -1,4 +1,4 @@
-﻿Build started 05.11.2018 11:55:14.
+﻿Build started 07.11.2018 19:01:13.
      1>Project "F:\WINAPI1-\ListView\my3\main.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating ".\Debug\main.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -13,7 +13,7 @@
                  d:\new folder\vc\include\stdio.h(234) : see declaration of 'fopen'
      1>f:\winapi1-\listview\my3\initlistviewcolumns.cpp(119): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  d:\new folder\vc\include\stdio.h(253) : see declaration of 'fscanf'
-     1>f:\winapi1-\listview\my3\main.cpp(123): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>f:\winapi1-\listview\my3\main.cpp(147): warning C4067: unexpected tokens following preprocessor directive - expected a newline
      1>f:\winapi1-\listview\my3\getlistviewitemtextall.cpp(10): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  d:\new folder\vc\include\string.h(110) : see declaration of 'strcat'
      1>f:\winapi1-\listview\my3\getlistviewitemtextall.cpp(11): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
@@ -34,7 +34,8 @@
      1>f:\winapi1-\listview\my3\msg_listview.cpp(95): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  d:\new folder\vc\include\string.h(110) : see declaration of 'strcat'
      1>f:\winapi1-\listview\my3\msg_listview.cpp(89): warning C4101: 'klo' : unreferenced local variable
-     1>f:\winapi1-\listview\my3\main.cpp(196): warning C4715: 'WinMain' : not all control paths return a value
+     1>f:\winapi1-\listview\my3\main.cpp(94): warning C4715: 'create_menu' : not all control paths return a value
+     1>f:\winapi1-\listview\my3\main.cpp(225): warning C4715: 'WinMain' : not all control paths return a value
        ManifestResourceCompile:
          All outputs are up-to-date.
        Link:
@@ -55,4 +56,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.37
+Time Elapsed 00:00:03.61

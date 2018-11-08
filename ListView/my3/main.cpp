@@ -8,7 +8,7 @@
 #include "commctrl.h"
 #include <Uxtheme.h>
 #pragma comment(lib,"comctl32.lib")
-
+#include "on_notify_msg.cpp" /// messig funqcia
 #include "GetListViewItemText.cpp";
 #include"Create_ListView.cpp"
 VOID SetView(HWND hWndListView, DWORD dwView) ;
@@ -73,6 +73,30 @@ char tempstr[100]="";
 TCHAR tchar;
 MSG msg;
 //===================================================
+
+
+UINT create_menu(HWND hwnd)
+{
+HMENU hmenu=CreateMenu();
+	if(!hmenu)
+	return GetLastError();
+
+HMENU hmenu_popup_file=CreatePopupMenu();
+AppendMenu(hmenu,MF_POPUP,(UINT_PTR)hmenu_popup_file,"&File");
+AppendMenu(hmenu_popup_file,MF_STRING,100,"&ABCD");
+AppendMenu(hmenu_popup_file,MF_STRING,200,"&2");
+
+HMENU hmenu_popup_options=CreatePopupMenu();
+AppendMenu(hmenu, MF_POPUP, (UINT_PTR)hmenu_popup_options, "&Options");
+AppendMenu(hmenu_popup_options,MF_STRING,300,"&3");
+AppendMenu(hmenu_popup_options,MF_STRING,400,"&4");
+SetMenu(hwnd,hmenu);
+}
+
+
+
+
+//===================================================
 long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message, unsigned int wparam,long lparam)
 {
 	
@@ -93,7 +117,7 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message, unsi
 	Lhwnd=CreateListView(hwnd);
 	InitListViewColumns(Lhwnd);
 	
-	SendMessage(Lhwnd,LVM_SETTEXTCOLOR,0,RGB(255,255,255));
+	SendMessage(Lhwnd,LVM_SETTEXTCOLOR,0,RGB(25,25,255));
 
 	SendMessage(hList,LVM_GETNEXTITEM,1,LVNI_SELECTED);
 	//SetWindowLong(
@@ -144,8 +168,13 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message, unsi
 		exit(1);
 		//PostQuitMessage(0);
 		break;
+	
+		case WM_NOTIFY:
+			//on_notify(hwnd,message,wparam,lparam);
+			break;
+	
 	}
-
+	
 
 ////////////// WM_NOTIFY //////////
 #include"MSG_ListView.cpp"  //////

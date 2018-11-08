@@ -1,0 +1,142 @@
+﻿Build started 07.11.2018 16:45:34.
+     1>Project "F:\WINAPI1-\click PopUp\popupp\popupp\popupp.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\popupp.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         D:\New Folder\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\popupp.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt popupp.cpp
+         popupp.cpp
+     1>f:\winapi1-\click popup\popupp\popupp\menufunctions.h(14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>f:\winapi1-\click popup\popupp\popupp\menufunctions.h(14): error C2143: syntax error : missing ',' before '&'
+     1>f:\winapi1-\click popup\popupp\popupp\menufunctions.h(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>f:\winapi1-\click popup\popupp\popupp\menufunctions.h(15): error C2143: syntax error : missing ',' before '&'
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(26): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(26): error C2143: syntax error : missing ',' before '&'
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(30): error C2065: 'itemText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(30): error C2228: left of '.GetLength' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(30): error C3861: 'ASSERT': identifier not found
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(31): error C2065: 'itemID' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(31): error C3861: 'ASSERT': identifier not found
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(32): error C3861: 'ASSERT': identifier not found
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(35): error C2065: 'itemText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(35): error C2228: left of '.Find' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(41): error C2146: syntax error : missing ';' before identifier 'popupMenuName'
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(41): error C2065: 'popupMenuName' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(41): error C2065: 'itemText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(41): error C2228: left of '.Left' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(41): error C2065: 'itemText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(41): error C2228: left of '.Find' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(43): error C2146: syntax error : missing ';' before identifier 'remainingText'
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(43): error C2065: 'remainingText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(43): error C2065: 'itemText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(43): error C2228: left of '.Right' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(43): error C2065: 'itemText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(43): error C2228: left of '.GetLength' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(43): error C2065: 'popupMenuName' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(43): error C2228: left of '.GetLength' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(60): error C3861: 'TRACE': identifier not found
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(61): error C2065: 'popupMenuName' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(71): error C2065: 'remainingText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(71): error C2065: 'itemID' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(79): error C2065: 'remainingText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(79): error C2065: 'itemID' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(82): error C2065: 'popupMenuName' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(100): error C2065: 'itemID' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(100): error C2065: 'itemText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(121): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(121): error C2143: syntax error : missing ',' before '&'
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(124): error C2084: function 'bool MenuFunctions::AddMenuItem(HMENU,const int)' already has a body
+                 f:\winapi1-\click popup\popupp\popupp\menufunctions.h(14) : see previous definition of 'AddMenuItem'
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(124): error C2084: function 'bool MenuFunctions::AddMenuItem(HMENU,const int)' already has a body
+                 f:\winapi1-\click popup\popupp\popupp\menufunctions.h(14) : see previous definition of 'AddMenuItem'
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(127): error C2065: 'itemText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(127): error C2228: left of '.GetLength' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(127): error C3861: 'ASSERT': identifier not found
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(128): error C3861: 'ASSERT': identifier not found
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(132): error C2065: 'pInsertPositions' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(132): error C2065: 'pInsertPositions' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(147): error C2065: 'pInsertPositions' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(150): error C2065: 'pInsertPositions' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(154): error C2065: 'itemText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(154): error C2228: left of '.Find' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(160): error C2146: syntax error : missing ';' before identifier 'popupMenuName'
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(160): error C2065: 'popupMenuName' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(160): error C2065: 'itemText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(160): error C2228: left of '.Left' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(160): error C2065: 'itemText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(160): error C2228: left of '.Find' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(162): error C2146: syntax error : missing ';' before identifier 'remainingText'
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(162): error C2065: 'remainingText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(162): error C2065: 'itemText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(162): error C2228: left of '.Right' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(162): error C2065: 'itemText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(162): error C2228: left of '.GetLength' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(162): error C2065: 'popupMenuName' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(162): error C2228: left of '.GetLength' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(188): error C2065: 'popupMenuName' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(200): error C2065: 'remainingText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(201): error C2065: 'itemID' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(202): error C2440: '=' : cannot convert from 'bool (__cdecl *)(HMENU,const int)' to 'bool'
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(202): warning C4305: '=' : truncation from 'bool (__cdecl *)(HMENU,const int)' to 'bool'
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(202): warning C4800: 'bool (__cdecl *)(HMENU,const int)' : forcing value to bool 'true' or 'false' (performance warning)
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(198): error C3861: 'AddMenuItem': identifier not found
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(212): error C2065: 'remainingText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(213): error C2065: 'itemID' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(214): error C2440: '=' : cannot convert from 'bool (__cdecl *)(HMENU,const int)' to 'bool'
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(214): warning C4305: '=' : truncation from 'bool (__cdecl *)(HMENU,const int)' to 'bool'
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(214): warning C4800: 'bool (__cdecl *)(HMENU,const int)' : forcing value to bool 'true' or 'false' (performance warning)
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(210): error C3861: 'AddMenuItem': identifier not found
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(218): error C2065: 'popupMenuName' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(232): error C2065: 'itemID' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(235): error C2065: 'itemID' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(235): error C2065: 'itemText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(240): error C2065: 'itemID' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(249): error C3861: 'ASSERT': identifier not found
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(269): error C2065: 'CFont' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(269): error C2146: syntax error : missing ';' before identifier 'menuFont'
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(269): error C2065: 'menuFont' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(273): error C3861: 'VERIFY': identifier not found
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(275): error C2065: 'menuFont' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(275): error C2228: left of '.CreateFontIndirectW' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(277): error C2065: 'CDC' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(277): error C2146: syntax error : missing ';' before identifier 'dc'
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(277): error C2065: 'dc' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(279): error C2065: 'dc' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(279): error C2228: left of '.Attach' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(280): error C2065: 'dc' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(280): error C2228: left of '.SaveDC' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(281): error C2065: 'dc' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(281): error C2228: left of '.SelectObject' must have class/struct/union
+                 type is ''unknown-type''
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(281): error C2065: 'menuFont' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(313): error C2065: 'CSize' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(313): error C2146: syntax error : missing ';' before identifier 'textSize'
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(313): error C2065: 'textSize' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(314): error C2065: 'CString' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(314): error C2146: syntax error : missing ';' before identifier 'itemText'
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(314): error C2065: 'itemText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(316): error C2065: 'itemText' : undeclared identifier
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(316): error C2228: left of '.Replace' must have class/struct/union
+     1>f:\winapi1-\click popup\popupp\popupp\popupp.cpp(316): fatal error C1003: error count exceeds 100; stopping compilation
+     1>Done Building Project "F:\WINAPI1-\click PopUp\popupp\popupp\popupp.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.31
