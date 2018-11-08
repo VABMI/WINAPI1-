@@ -10,10 +10,16 @@ using namespace std;
 
 void  main()
 {
-
-
-string ipAddress="127.0.0.1"; 
-int port = 54000;
+char *ipin;
+//scanf("%s",&ipin);
+int port = 80;
+string ipAddress;//=ipin;
+cout<<endl<<"________________\n";
+cout<<"sheiyvane IP->: ";
+cin>>ipAddress;
+cout<<endl<<"sheiyvane PORT_N->:";
+cin>>port;
+cout<<endl<<"________________\n";
 WSAData data;
 WORD ver = MAKEWORD(2,2);
 int wsResult = WSAStartup(ver,&data);
