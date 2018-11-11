@@ -9,7 +9,7 @@ HMENU hmenu=CreateMenu();
 HMENU hmenu_popup_file=CreatePopupMenu();
 AppendMenu(hmenu,MF_POPUP,(UINT_PTR)hmenu_popup_file,"&File");
 AppendMenu(hmenu_popup_file,MF_STRING,100,"&ABCD");
-AppendMenu(hmenu_popup_file,MF_STRING,200,"&2");
+AppendMenu(hmenu_popup_file,MF_STRING,200,"&RGB");
 
 HMENU hmenu_popup_options=CreatePopupMenu();
 AppendMenu(hmenu, MF_POPUP, (UINT_PTR)hmenu_popup_options, "&Options");

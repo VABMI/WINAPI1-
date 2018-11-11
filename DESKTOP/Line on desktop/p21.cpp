@@ -1,6 +1,9 @@
 #include <windows.h>
 #include <stdio.h>
-
+#include <conio.h>
+#include <math.h>
+	//#include <graphics.h>
+#include <dos.h>
 HFONT hfont_global;
 
 #include "mouse_msg.cpp"
@@ -14,14 +17,71 @@ HFONT hfont_global;
 //----------------------------------------------------------------
 
 //----------------------------------------------------------------
-long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message
-					, unsigned int wparam,long lparam)
+long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message, unsigned int wparam,long lparam)
 {
 	switch(message)
 	{
 		case WM_CREATE:
-		on_create(hwnd,message,wparam,lparam);
-		break;
+
+			{	 HDC hdc=GetDC(GetDesktopWindow());
+    while(1)
+	{
+		SendMessage(GetDesktopWindow(),WM_PAINT,0,1);
+		InvalidateRect(GetDesktopWindow(),0,1);
+		Sleep(1000);
+		    int gd = 0,gm;
+    int angle = 0;
+    double x, y;
+ 
+  //  initgraph(&gd, &gm, "C:\\TC\\BGI");
+ 
+// line(0, getmaxy() / 2, getmaxx(), getmaxy() / 2);
+ /* generate a sine wave */
+ for(x = 0; x < 1350; x+=1) {
+ 
+     /* calculate y value given x */
+     y = 50*sin(angle*3.141/180);
+     y = 5/2 - y;
+ 
+	 y+=500;
+//	 x+=1000;
+	for(int i=0;i<=1;i++)
+		{
+					
+				for(int j=0;j<=0;j++)
+				{
+					SetPixel(hdc,x+j,y+i,RGB(8, 130, 211));
+					SetPixel(hdc,x-j,y-i,RGB(8, 130, 211));
+					SetPixel(hdc,x-j,y+i,RGB(8, 130, 211));
+					SetPixel(hdc,x+j,y-i,RGB(8, 130, 211));
+				}
+
+		}
+	Sleep(7);
+
+ // delay(100);
+  y-=500;
+//	 x-=1000;
+  /* increment angle */
+  angle+=9;
+ }
+ 
+
+
+
+
+
+
+
+	}
+	 //   ReleaseDC(GetDesktopWindow(),hdc);
+	//SendMessage(hwnd,WM_SETFONT,(UINT)hfont,0);
+
+//		on_create(hwnd,message,wparam,lparam);
+	
+			}
+
+	break;
 		
 		case WM_COMMAND:
 		on_cmd(hwnd,message,wparam,lparam);

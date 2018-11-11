@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p21", "p21.vcxproj", "{1C4DE029-ACF2-F2C7-7027-D2075D181626}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p21", "p21.vcxproj", "{28CAE8FC-C922-CAF8-516B-B0ABB0F919A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1C4DE029-ACF2-F2C7-7027-D2075D181626}.Debug|Win32.ActiveCfg = Debug|Win32
-		{1C4DE029-ACF2-F2C7-7027-D2075D181626}.Debug|Win32.Build.0 = Debug|Win32
-		{1C4DE029-ACF2-F2C7-7027-D2075D181626}.Release|Win32.ActiveCfg = Release|Win32
-		{1C4DE029-ACF2-F2C7-7027-D2075D181626}.Release|Win32.Build.0 = Release|Win32
+		{28CAE8FC-C922-CAF8-516B-B0ABB0F919A6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{28CAE8FC-C922-CAF8-516B-B0ABB0F919A6}.Debug|Win32.Build.0 = Debug|Win32
+		{28CAE8FC-C922-CAF8-516B-B0ABB0F919A6}.Release|Win32.ActiveCfg = Release|Win32
+		{28CAE8FC-C922-CAF8-516B-B0ABB0F919A6}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
