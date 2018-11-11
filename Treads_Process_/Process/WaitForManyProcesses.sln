@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProcessManager", "ProcessManager\ProcessManager.vcxproj", "{D8463E42-FE88-4C38-A837-5EBCCE79F939}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestApp", "TestApp\TestApp.vcxproj", "{995B4BB3-4833-40BC-B897-B1A01C1623CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8463E42-FE88-4C38-A837-5EBCCE79F939}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D8463E42-FE88-4C38-A837-5EBCCE79F939}.Debug|Win32.Build.0 = Debug|Win32
+		{D8463E42-FE88-4C38-A837-5EBCCE79F939}.Release|Win32.ActiveCfg = Release|Win32
+		{D8463E42-FE88-4C38-A837-5EBCCE79F939}.Release|Win32.Build.0 = Release|Win32
+		{995B4BB3-4833-40BC-B897-B1A01C1623CC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{995B4BB3-4833-40BC-B897-B1A01C1623CC}.Debug|Win32.Build.0 = Debug|Win32
+		{995B4BB3-4833-40BC-B897-B1A01C1623CC}.Release|Win32.ActiveCfg = Release|Win32
+		{995B4BB3-4833-40BC-B897-B1A01C1623CC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

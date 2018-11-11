@@ -1,5 +1,5 @@
-﻿Build started 28.10.2018 10:49:19.
-     1>Project "F:\WINAPI1-\keyLog\keyloger\keyloger\keyloger.vcxproj" on node 2 (rebuild target(s)).
+﻿Build started 10.11.2018 10:55:22.
+     1>Project "F:\WINAPI1-\keyLog\keyloger\keyloger\keyloger.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Touching "Debug\keyloger.unsuccessfulbuild".
        ClCompile:
@@ -71,8 +71,8 @@
      1>keyloger.obj : error LNK2019: unresolved external symbol _gethostbyname@4 referenced in function "int __cdecl sendEmail(char *,char *,char *,char *,char *)" (?sendEmail@@YAHPAD0000@Z)
      1>keyloger.obj : error LNK2019: unresolved external symbol _WSAStartup@8 referenced in function "int __cdecl sendEmail(char *,char *,char *,char *,char *)" (?sendEmail@@YAHPAD0000@Z)
      1>F:\WINAPI1-\keyLog\keyloger\Debug\keyloger.exe : fatal error LNK1120: 8 unresolved externals
-     1>Done Building Project "F:\WINAPI1-\keyLog\keyloger\keyloger\keyloger.vcxproj" (rebuild target(s)) -- FAILED.
+     1>Done Building Project "F:\WINAPI1-\keyLog\keyloger\keyloger\keyloger.vcxproj" (build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:02.04
+Time Elapsed 00:00:04.68

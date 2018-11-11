@@ -1,0 +1,21 @@
+﻿Build started 10.11.2018 12:31:41.
+     1>Project "F:\WINAPI1-\WindowTreads\CreateProcess\CreateProcess\CreateProcess.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\CreateProcess.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         D:\New Folder\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         D:\New Folder\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\WINAPI1-\WindowTreads\CreateProcess\Debug\CreateProcess.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\CreateProcess.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\WINAPI1-\WindowTreads\CreateProcess\Debug\CreateProcess.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\WINAPI1-\WindowTreads\CreateProcess\Debug\CreateProcess.lib" /MACHINE:X86 Debug\main.obj
+         LINK : F:\WINAPI1-\WindowTreads\CreateProcess\Debug\CreateProcess.exe not found or not built by the last incremental link; performing full link
+         CreateProcess.vcxproj -> F:\WINAPI1-\WindowTreads\CreateProcess\Debug\CreateProcess.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"F:\WINAPI1-\WindowTreads\CreateProcess\Debug\CreateProcess.exe;#1" /manifest Debug\CreateProcess.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\CreateProcess.unsuccessfulbuild".
+         Touching "Debug\CreateProcess.lastbuildstate".
+     1>Done Building Project "F:\WINAPI1-\WindowTreads\CreateProcess\CreateProcess\CreateProcess.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.39

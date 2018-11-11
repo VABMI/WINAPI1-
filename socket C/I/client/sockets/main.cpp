@@ -13,8 +13,8 @@ void  main()
 char *ipin;
 //scanf("%s",&ipin);
 int port = 80;
-string ipAddress;//=ipin;
-cout<<endl<<"________________\n";
+string ipAddress;;//=ipin;
+cout<<endl<<"________________ 188.169.18.47 __\n";
 cout<<"sheiyvane IP->: ";
 cin>>ipAddress;
 cout<<endl<<"sheiyvane PORT_N->:";
