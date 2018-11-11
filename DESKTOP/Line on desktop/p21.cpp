@@ -24,14 +24,15 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message, unsi
 		case WM_CREATE:
 
 			{	 HDC hdc=GetDC(GetDesktopWindow());
-    while(1)
+					    int gd = 0,gm;
+    int angle = 0;
+    double x, y;
+  //  while(1)
 	{
 		SendMessage(GetDesktopWindow(),WM_PAINT,0,1);
 		InvalidateRect(GetDesktopWindow(),0,1);
 		Sleep(1000);
-		    int gd = 0,gm;
-    int angle = 0;
-    double x, y;
+
  
   //  initgraph(&gd, &gm, "C:\\TC\\BGI");
  
@@ -57,7 +58,7 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message, unsi
 				}
 
 		}
-	Sleep(7);
+	//Sleep(1);
 
  // delay(100);
   y-=500;
@@ -77,7 +78,7 @@ long __stdcall window_main_function_chvenia(HWND hwnd,unsigned int message, unsi
 	 //   ReleaseDC(GetDesktopWindow(),hdc);
 	//SendMessage(hwnd,WM_SETFONT,(UINT)hfont,0);
 
-//		on_create(hwnd,message,wparam,lparam);
+		on_create(hwnd,message,wparam,lparam);
 	
 			}
 

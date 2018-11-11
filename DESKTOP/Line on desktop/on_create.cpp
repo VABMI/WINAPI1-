@@ -7,7 +7,20 @@ HMENU hmenu=CreateMenu();
 	return GetLastError();
 
 HMENU hmenu_popup_file=CreatePopupMenu();
+
 AppendMenu(hmenu,MF_POPUP,(UINT_PTR)hmenu_popup_file,"&File");
+
+
+
+
+HWND hw1=CreateWindow("button","button",WS_VISIBLE|WS_CHILD|WS_BORDER,0,0,60,60,(HWND)hmenu_popup_file,(HMENU)10,0,0);
+
+
+
+
+
+
+/*
 AppendMenu(hmenu_popup_file,MF_STRING,100,"&ABCD");
 AppendMenu(hmenu_popup_file,MF_STRING,200,"&RGB");
 
@@ -15,6 +28,7 @@ HMENU hmenu_popup_options=CreatePopupMenu();
 AppendMenu(hmenu, MF_POPUP, (UINT_PTR)hmenu_popup_options, "&Options");
 AppendMenu(hmenu_popup_options,MF_STRING,300,"&3");
 AppendMenu(hmenu_popup_options,MF_STRING,400,"&4");
+*/
 SetMenu(hwnd,hmenu);
 }
 //---------------------------------------------
