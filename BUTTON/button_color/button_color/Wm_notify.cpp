@@ -3,13 +3,52 @@ case WM_NOTIFY:
             LPNMHDR some_item = (LPNMHDR)lParam;
 
 
+			//  LPNMHDR header1 = *reinterpret_cast<LPNMHDR>(lParam);
+			
+			  if(((LPNMHDR)lParam)->code == NM_HOVER)
+			   {
+					 // Process the hover message
 
+				   MessageBox(hwnd,L"asad",L"Asdasd",0);
+
+
+			  }
+			  
+            switch (((LPNMHDR)lParam)->code)
+            {
+                case BCN_HOTITEMCHANGE:
+
+
+
+                {
+					
+					
+					
+					
+					if(((LPNMHDR)lParam)->idFrom==IDC_EXIT_BUTTON){
+					 MessageBox(hwnd,L"asad",L"Asdasd",0);
+					}
+               //     NMBCHOTITEM* hot_item = reinterpret_cast<NMBCHOTITEM*>(lParam);
+
+                    // Handle to the button
+                //    HWND button_handle = header->hwndFrom;
+
+                    // ID of the button, if you're using resources
+                  //  UINT_PTR button_id = header->idFrom;
+
+                    // You can check if the mouse is entering or leaving the hover area
+                 //   bool entering = hot_item->dwFlags & HICF_ENTERING;
+//
+                   // return 0;
+                }
+            }
+		
 
 ////////////////////////////////////////////////////////////////////  EXIT BUTTONNNNN  //////////////////////////////////////////////////
 
 
-			/*
-            if (some_item->idFrom == IDC_EXIT_BUTTON && some_item->code == NM_CUSTOMDRAW)
+			
+            if (some_item->idFrom == IDC_EXIT_BUTTON )
             {
                 LPNMCUSTOMDRAW item = (LPNMCUSTOMDRAW)some_item;
 
@@ -79,7 +118,7 @@ case WM_NOTIFY:
                     return CDRF_DODEFAULT;
                 }
             }
-			*/
+			
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

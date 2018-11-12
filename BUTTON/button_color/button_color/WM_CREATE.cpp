@@ -1,12 +1,34 @@
 ﻿        case WM_CREATE:
             {
-                HWND Exit_Button = CreateWindowEx(NULL, L"BUTTON", L"EXIT", WS_VISIBLE | WS_CHILD | BS_PUSHBUTTON,10, 50, 68, 68, hwnd, (HMENU)IDC_EXIT_BUTTON, NULL, NULL);
+                HWND Exit_Button = CreateWindowEx(NULL, L"BUTTON", L"EXIT", WS_VISIBLE | WS_CHILD | BS_PUSHBUTTON|BS_NOTIFY,10, 50, 68, 68, hwnd, (HMENU)IDC_EXIT_BUTTON, NULL, NULL);
 				
 				HBITMAP mybut12= (HBITMAP)LoadImage(NULL,L"C:\\Users\\vakho1\\Desktop\\New Bitmap Image.bmp", IMAGE_BITMAP,100,100, LR_LOADFROMFILE);
 				
+
+
+
+				
+				
+				
+				
+				
+		HCURSOR	hCursor2 = LoadCursorFromFile(L"F:\\WINAPI1-\\ShutDown on desktop\\Glove Normal.cur");
+
+		SendMessage(Exit_Button, WM_SETCURSOR, 0, (LPARAM) hCursor2);
+		SetWindowLong(Exit_Button, GCL_HCURSOR, (LONG)hCursor2);
+		SetWindowLongPtr(Exit_Button, GCL_HCURSOR, (LONG_PTR)hCursor2);
+
+		// SetClassLong (buton, GCL_HCURSOR, (LONG) LoadCursor (NULL, IDC_CROSS)); //// standartuli kursoris chasma
+	//	 SetClassLong (Exit_Button, GCL_HCURSOR, (LONG) hCursor2);
+				
+
+
+
+
+
 				if(mybut12)	{
 					
-					SendMessage(Exit_Button, (UINT)BM_SETIMAGE,   (WPARAM)IMAGE_BITMAP, (LPARAM)mybut12);
+					//SendMessage(Exit_Button, (UINT)BM_SETIMAGE,   (WPARAM)IMAGE_BITMAP, (LPARAM)mybut12);
 
 
 				}
@@ -14,10 +36,29 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 				
-				  HWND Exit_Button1 = CreateWindowEx(NULL, L"BUTTON", L"qss", WS_VISIBLE | WS_CHILD | BS_PUSHBUTTON,80, 50, 68, 68, hwnd, (HMENU)IDC_EXIT_BUTTON, NULL, NULL);
+				  HWND Exit_Button1 = CreateWindowEx(NULL, L"BUTTON", L"qss", WS_VISIBLE | WS_CHILD | BS_PUSHBUTTON,300, 50, 68, 68, hwnd, (HMENU)IDC_EXIT_BUTTON, NULL, NULL);
 
 				HBITMAP mybut13=  (HBITMAP)LoadImage(NULL,L"C:\\Users\\vakho1\\Desktop\\aa.bmp", IMAGE_BITMAP,100,70, LR_LOADFROMFILE);
-						if(mybut13){
+				
+				
+		HCURSOR	hCursor1 = LoadCursorFromFile(L"F:\\WINAPI1-\\icon\\cur197.ani");
+
+		SendMessage(Exit_Button1, WM_SETCURSOR, 0, (LPARAM) hCursor1);
+		SetWindowLong(Exit_Button1, GCL_HCURSOR, (LONG)hCursor1);
+		SetWindowLongPtr(Exit_Button1, GCL_HCURSOR, (LONG_PTR)hCursor1);
+
+		// SetClassLong (buton, GCL_HCURSOR, (LONG) LoadCursor (NULL, IDC_CROSS)); //// standartuli kursoris chasma
+	//	 SetClassLong (Exit_Button1, GCL_HCURSOR, (LONG) hCursor1);
+				
+				
+				
+				
+				
+				if(mybut13){
+
+
+
+		
 
 
 

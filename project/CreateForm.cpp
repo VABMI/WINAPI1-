@@ -185,9 +185,9 @@ void page(HWND hwnd)
 	CreateWindow("static","LINE",WS_VISIBLE|WS_CHILD|0x20000109FL,250,70,3,r.bottom,hwnd,(HMENU)1232,0,0);
 
 
-			CreateWindow("Button","LogOut",WS_VISIBLE|WS_CHILD,r.right-80,0,70,70,hwnd,(HMENU)LOGOUT,0,0);
-			 CreateWindow("Button","VIDEO",WS_VISIBLE|WS_CHILD,r.right-160,0,70,70,hwnd,(HMENU)1234,0,0);
-			 CreateWindow("Button","SMS",WS_VISIBLE|WS_CHILD,r.right-(160+80),0,70,70,hwnd,(HMENU)1235,0,0);
+			HWND log=CreateWindow("Button","LogOut",WS_VISIBLE|WS_CHILD,r.right-80,0,70,70,hwnd,(HMENU)LOGOUT,0,0);
+		HWND call= CreateWindow("Button","VIDEO",WS_VISIBLE|WS_CHILD,r.right-160,0,70,70,hwnd,(HMENU)1234,0,0);
+		HWND	sms= CreateWindow("Button","SMS",WS_VISIBLE|WS_CHILD,r.right-(160+80),0,70,70,hwnd,(HMENU)1235,0,0);
 			 CreateWindow("Button","PHOTO",WS_VISIBLE|WS_CHILD,r.right-(160+80+80),0,70,70,hwnd,(HMENU)1236,0,0);
 		
 			 	 CreateWindow("Static","PHOTO",WS_VISIBLE|WS_CHILD,10,0,70,70,hwnd,(HMENU)1237,0,0);
@@ -216,14 +216,17 @@ void page(HWND hwnd)
 
 									}
 
+				HBITMAP mybut12= (HBITMAP)LoadImage(NULL,"C:\\Users\\vakho1\\Desktop\\New Bitmap Image.bmp", IMAGE_BITMAP,115,100, LR_LOADFROMFILE);
+				
+					if(mybut12)	{SendMessage(sms, (UINT)BM_SETIMAGE,   (WPARAM)IMAGE_BITMAP, (LPARAM)mybut12);}
 
-
-
-
-
-
-
-
+			mybut12= (HBITMAP)LoadImage(NULL,"C:\\Users\\vakho1\\Desktop\\call.bmp", IMAGE_BITMAP,115,100, LR_LOADFROMFILE);
+				
+				if(mybut12)	{SendMessage(call, (UINT)BM_SETIMAGE,   (WPARAM)IMAGE_BITMAP, (LPARAM)mybut12);}
+				
+			mybut12= (HBITMAP)LoadImage(NULL,"C:\\Users\\vakho1\\Desktop\\log.bmp", IMAGE_BITMAP,120,100, LR_LOADFROMFILE);
+				
+				if(mybut12)	{SendMessage(log, (UINT)BM_SETIMAGE,   (WPARAM)IMAGE_BITMAP, (LPARAM)mybut12);}
 
 
 }
