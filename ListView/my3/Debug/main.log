@@ -1,4 +1,4 @@
-﻿Build started 07.11.2018 19:01:13.
+﻿Build started 12.11.2018 17:11:12.
      1>Project "F:\WINAPI1-\ListView\my3\main.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating ".\Debug\main.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -27,13 +27,15 @@
      1>f:\winapi1-\listview\my3\getlistviewitemtextall.cpp(31): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  d:\new folder\vc\include\string.h(110) : see declaration of 'strcat'
      1>f:\winapi1-\listview\my3\msg_listview.cpp(34): warning C4065: switch statement contains 'default' but no 'case' labels
-     1>f:\winapi1-\listview\my3\msg_listview.cpp(87): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>f:\winapi1-\listview\my3\msg_listview.cpp(88): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
-     1>f:\winapi1-\listview\my3\msg_listview.cpp(94): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 d:\new folder\vc\include\string.h(110) : see declaration of 'strcat'
      1>f:\winapi1-\listview\my3\msg_listview.cpp(95): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  d:\new folder\vc\include\string.h(110) : see declaration of 'strcat'
-     1>f:\winapi1-\listview\my3\msg_listview.cpp(89): warning C4101: 'klo' : unreferenced local variable
+     1>f:\winapi1-\listview\my3\msg_listview.cpp(96): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\string.h(110) : see declaration of 'strcat'
+     1>f:\winapi1-\listview\my3\msg_listview.cpp(161): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\new folder\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>f:\winapi1-\listview\my3\msg_listview.cpp(90): warning C4101: 'klo' : unreferenced local variable
      1>f:\winapi1-\listview\my3\main.cpp(94): warning C4715: 'create_menu' : not all control paths return a value
      1>f:\winapi1-\listview\my3\main.cpp(225): warning C4715: 'WinMain' : not all control paths return a value
        ManifestResourceCompile:
@@ -56,4 +58,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.61
+Time Elapsed 00:00:03.43

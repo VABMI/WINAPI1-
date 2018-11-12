@@ -69,7 +69,7 @@ if (message == WM_NOTIFY)
 				LPNMHDR lpnmh = (LPNMHDR)lparam;
 			//	if (lpnmh->idFrom == 369)
 
-
+				///////////////////////// svetze daklikva //////////////
 				if (lpnmh->code == LVN_COLUMNCLICK)
 				{
 
@@ -78,7 +78,8 @@ if (message == WM_NOTIFY)
 					NMLISTVIEW*    pListView = (NMLISTVIEW*)lparam;
      
 				}
-
+					/////////////////////////END svetze daklikva //////////////
+				//////////////////////////// active ////////////////////////////////
 				if (lpnmh->code ==LVN_ITEMACTIVATE   )
 				{
 						int f=SendMessage(GetDlgItem(hwnd,369),LVM_GETNEXTITEM,-1,LVNI_FOCUSED);
@@ -102,6 +103,8 @@ if (message == WM_NOTIFY)
 
 
 				}
+
+/////////////////////////////////////END active ////////////////////////////////
 				if (lpnmh->code ==LVN_ODCACHEHINT)
 				{
 
@@ -134,17 +137,51 @@ if (message == WM_NOTIFY)
 							
 					}
 
-
+/////////////////////// Rclick struqturis shevseba da pop up menus gamotana ///////////////////////////////
 			if(((LPNMHDR)lparam)->code ==NM_RCLICK) 	///rCLICK
 					{
-											  // display a menu created using CreateMenu()
-						HMENU hMenu = ::CreateMenu();
-	
 
+						/////////////////////////////////////////////////////////////////////////
+						HMENU hMenu = ::CreateMenu();
+						HMENU hmenu_popup_file=CreatePopupMenu();
+
+
+							if (NULL != hMenu)
+							{
+								::AppendMenu(hmenu_popup_file, MF_STRING, 1, "Item 1");
+								::AppendMenu(hmenu_popup_file, MF_STRING, 2, "Item 2");
+								::AppendMenu(hmenu_popup_file, MF_STRING, 3, "Item 3");
+							}
+						////////////////////////////////////////////////////////////////////////
+					LPNMITEMACTIVATE	 lpnmitem = (LPNMITEMACTIVATE) lparam;
+
+
+
+					char fgr[100];
+					sprintf(fgr,"%d",lpnmitem->iItem);
+				//	MessageBox(hwnd,fgr,"Asdas",0);
+
+					if(lpnmitem->iItem!=-1)
+					{
+					::TrackPopupMenuEx(hmenu_popup_file, TPM_CENTERALIGN | TPM_RETURNCMD,lpnmitem->ptAction.x,lpnmitem->ptAction.y+100,GetDlgItem(hwnd,369),NULL);
+					
+					
+					
+					
+					//MessageBox(hwnd,"Asdad","asdasd",0);
+					}
+
+
+
+
+						  // display a menu created using CreateMenu()
+						
+	
+					/*
 
 					int f=SendMessage(GetDlgItem(hwnd,369),LVM_GETNEXTITEM,-1,LVNI_FOCUSED);
 
-					HMENU hmenu_popup_file=CreatePopupMenu();
+				
 					if (NULL != hMenu)
 					{
 						POINT point;
@@ -164,7 +201,7 @@ if (message == WM_NOTIFY)
 							{
 								//cursor position now in p.x and p.y
 
-								 sel = ::TrackPopupMenuEx(hmenu_popup_file, TPM_CENTERALIGN | TPM_RETURNCMD,point.x,point.y,GetDlgItem(hwnd,369),NULL);
+								// sel = ::TrackPopupMenuEx(hmenu_popup_file, TPM_CENTERALIGN | TPM_RETURNCMD,point.x,point.y,GetDlgItem(hwnd,369),NULL);
 								 f=-1;
 								 SendMessage(GetDlgItem(hwnd,369),LVNI_FOCUSED,-1,-1);
 							}
@@ -178,7 +215,16 @@ if (message == WM_NOTIFY)
 					}
 									
 									//	MessageBox(hwnd,"NM_RCLICK","NM_RCLICK",0);
-					}
+
+
+					*/
+
+
+
+
+
+
+}
 
 
 
